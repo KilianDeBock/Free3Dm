@@ -10,7 +10,10 @@
     "backend"
   ],
   "scripts": {
-    "start:dev": "concurrently \"yarn workspace backend start:dev\" \"yarn workspace front-office dev\" \"yarn workspace back-office dev\""
+    "start:dev": "npm run tools:breaking:check && concurrently \"yarn workspace backend start:dev\" \"yarn workspace front-office dev\" \"yarn workspace back-office dev\"",
+    "tools:version:update": "node ./.lyttle_tools/src/automations/version-manager/version.js",
+    "tools:breaking:check": "node ./.lyttle_tools/src/automations/breaking/check.js",
+    "tools:breaking:accept": "node ./.lyttle_tools/src/automations/breaking/accept.js"
   },
   "dependencies": {
     "concurrently": "^7.4.0"
