@@ -1,0 +1,101 @@
+Types Source: https://all3dp.com/1/3d-printer-filament-types-3d-printing-3d-filament/
+1,75mm PLA Filament - White
+1,75mm PLA Filament - Gray
+1,75mm PLA Filament - Black
+1,75mm PLA Filament - Brown
+1,75mm PLA Filament - Red
+1,75mm PLA Filament - Orange
+1,75mm PLA Filament - Yellow
+1,75mm PLA Filament - Green
+1,75mm PLA Filament - Blue
+1,75mm PLA Filament - Dark Blue
+1,75mm PLA Filament - Purple
+1,75mm PLA Filament - Pink
+1,75mm PLA Filament (Glow-in-the-Dark) - Blue
+1,75mm PLA Filament (Glow-in-the-Dark) - White (green)
+1,75mm ABS Filament - White
+1,75mm ABS Filament - Gray
+1,75mm ABS Filament - Black
+1,75mm ABS Filament - Brown
+1,75mm ABS Filament - Red
+1,75mm ABS Filament - Orange
+1,75mm ABS Filament - Yellow
+1,75mm ABS Filament - Green
+1,75mm ABS Filament - Blue
+1,75mm ABS Filament - Dark Blue
+1,75mm ABS Filament - Purple
+1,75mm ABS Filament - Pink
+1,75mm PETG Filament - White
+1,75mm PETG Filament - Gray
+1,75mm PETG Filament - Black
+1,75mm PETG Filament - Brown
+1,75mm PETG Filament - Red
+1,75mm PETG Filament - Orange
+1,75mm PETG Filament - Yellow
+1,75mm PETG Filament - Green
+1,75mm PETG Filament - Blue
+1,75mm PETG Filament - Dark Blue
+1,75mm PETG Filament - Purple
+1,75mm PETG Filament - Pink
+1,75mm TPE (flexible) Filament - White
+1,75mm TPE (flexible) Filament - Gray
+1,75mm TPE (flexible) Filament - Black
+1,75mm TPE (flexible) Filament - Brown
+1,75mm TPE (flexible) Filament - Red
+1,75mm TPE (flexible) Filament - Orange
+1,75mm TPE (flexible) Filament - Yellow
+1,75mm TPE (flexible) Filament - Green
+1,75mm TPE (flexible) Filament - Blue
+1,75mm TPE (flexible) Filament - Dark Blue
+1,75mm TPE (flexible) Filament - Purple
+1,75mm TPE (flexible) Filament - Pink
+1,75mm Nylon (PA) Filament - White
+1,75mm Nylon (PA) Filament - Gray
+1,75mm Nylon (PA) Filament - Black
+1,75mm Nylon (PA) Filament - Brown
+1,75mm Nylon (PA) Filament - Red
+1,75mm Nylon (PA) Filament - Orange
+1,75mm Nylon (PA) Filament - Yellow
+1,75mm Nylon (PA) Filament - Green
+1,75mm Nylon (PA) Filament - Blue
+1,75mm Nylon (PA) Filament - Dark Blue
+1,75mm Nylon (PA) Filament - Purple
+1,75mm Nylon (PA) Filament - Pink
+1,75mm PC (Polycarbonate) Filament - White
+1,75mm PC (Polycarbonate) Filament - Gray
+1,75mm PC (Polycarbonate) Filament - Black
+1,75mm PC (Polycarbonate) Filament - Brown
+1,75mm PC (Polycarbonate) Filament - Red
+1,75mm PC (Polycarbonate) Filament - Orange
+1,75mm PC (Polycarbonate) Filament - Yellow
+1,75mm PC (Polycarbonate) Filament - Green
+1,75mm PC (Polycarbonate) Filament - Blue
+1,75mm PC (Polycarbonate) Filament - Dark Blue
+1,75mm PC (Polycarbonate) Filament - Purple
+1,75mm PC (Polycarbonate) Filament - Pink
+(pens:)
+3D Pen (pink)
+3D Pen (white)
+3D Pen (blue)
+3D Pen (black)
+3D Pen (red)
+(FDM/Filament printers:)
+Creality - Ender 3
+Creality - Ender 3 Pro
+Creality - Ender 3 V2
+Creality - Ender 3 S1
+(SLA/Resin Printers:)
+ELEGOO - Mars 2 Mono
+ELEGOO - Mars 3 MSLA
+ELEGOO - Saturn S Mono
+(Resins; Source: https://www.amazon.de/-/en/Washable-Hardening-Standard-Photopolymer-Printing/dp/B081Z1XM8X/ )
+1000g Water Washable Resin - White
+1000g Water Washable Resin - Ceramic Grey
+1000g Water Washable Resin - Black
+1000g Water Washable Resin - Smoky Black
+1000g Water Washable Resin - Mint Green
+1000g Water Washable Resin - Water Blue
+1000g Water Washable Resin - Clear Green
+1000g Water Washable Resin - Clear Red
+1000g Water Washable Resin - Yellow
+1000g Water Washable Resin - Beige

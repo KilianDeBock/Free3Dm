@@ -1,0 +1,21 @@
+Ender 3 V2
+Mars 3
+Black (1.75mm)
+Gray (1.75mm)
+Licht Gray (1.75mm)
+White (1.75mm)
+Transparent (1.75mm)
+Pink (1.75mm)
+Licht Blue (1.75mm)
+Dark Blue (1.75mm)
+Green (1.75mm)
+Red (1.75mm)
+Yellow (1.75mm)
+Yellow
+Light Green
+Green
+Red
+Black
+Smoky Black
+Gray
+White
