@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "start:dev": "npm run tools:breaking:check && concurrently \"yarn workspace backend start:dev\" \"yarn workspace front-office dev\" \"yarn workspace back-office dev\"",
-    "tools:version:update": "node ./.lyttle_tools/src/automations/version-manager/version.js",
+    "tools:version:update": "node ./.lyttle_tools/src/automations/version-manager/version.js && chmod ug+x ./.git/hooks/*",
     "tools:breaking:check": "node ./.lyttle_tools/src/automations/breaking/check.js",
     "tools:breaking:accept": "node ./.lyttle_tools/src/automations/breaking/accept.js"
   },
