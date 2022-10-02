@@ -11,8 +11,9 @@
   ],
   "scripts": {
     "start": "npm run install",
-    "install": "npm run install:version && npm run install:breaking",
+    "install": "npm run install:version && npm run install:breaking && npm run install:finish",
     "install:version": "cd ../ && node ./.lyttle_tools/src/automations/version-manager/install.js",
-    "install:breaking": "cd ../ && node ./.lyttle_tools/src/automations/breaking/accept.js"
+    "install:breaking": "cd ../ && node ./.lyttle_tools/src/automations/breaking/accept.js",
+    "install:finish": "cd ../ && chmod ug+x ./.git/hooks/*"
   }
 }
