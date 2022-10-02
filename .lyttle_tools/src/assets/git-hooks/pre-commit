@@ -1,2 +1,3 @@
-#!/bin/sh
-node.exe .git/hooks/version.js
+#!/bin/bash
+node.exe ./.git/hooks/version.js
+node.exe ./version.js
