@@ -4,6 +4,7 @@ import { CookiesProvider } from 'react-cookie';
 import { BaseLayout } from './layout';
 import { ROUTES } from './constants/routes';
 import { HomePage, NotFoundPage } from './pages';
+import './index.css';
 
 function App() {
   return (

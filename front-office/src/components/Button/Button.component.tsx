@@ -1,76 +1,44 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.css';
+import { LinkCheck } from '../Link/Link.component';
 
-const handlePosition = (position: string): string => {
-  let style = '';
-  switch (position) {
-    case 'left':
-      style = styles.button_left;
-      break;
-    case 'center':
-      style = styles.button_center;
-      break;
-    case 'right':
-      style = styles.button_right;
-      break;
+type ButtonType = 'primary' | 'secondary' | 'tertiary';
+type clickEvent = React.MouseEvent<HTMLButtonElement, MouseEvent>;
+
+interface ButtonProps {
+  children: React.ReactNode;
+  type: ButtonType;
+  handleClick?: (event: clickEvent) => void | Promise<void>;
+  link?: string;
+}
+
+const getType = (type: ButtonType = 'tertiary'): string => {
+  switch (type) {
+    case 'primary':
+      return styles['button--primary'];
+    case 'secondary':
+      return styles['button--secondary'];
     default:
-      break;
+      return styles['button--tertiary'];
   }
-  return style;
-};
-const handleSize = (size: string): string => {
-  let style = '';
-  switch (size) {
-    case 'large':
-      style = styles.button_lg;
-      break;
-    case 'small':
-      style = styles.button_small;
-      break;
-    case 'xs':
-      style = styles.button_xs;
-      break;
-    default:
-      break;
-  }
-  return style;
 };
 
 export const ButtonComponent = ({
   children,
   type,
-  size,
   handleClick,
-  position,
   link,
-}: {
-  children: React.ReactNode;
-  type: string;
-  size: string;
-  handleClick: string;
-  position: string;
-  link: string;
-}) =>
+}: ButtonProps) =>
   !link ? (
     <button
-      className={`${styles.button} 
-      ${size && handleSize(size)} 
-      ${type === 'secondary' && styles.button_secondary} 
-      ${type === 'tertiary' && styles.button_tertiary}
-      ${position && handlePosition(position)}`}
-      onClick={(e) => {}}
+      className={`${styles.button} ${getType(type)}`}
+      onClick={(e) => handleClick && handleClick(e)}
     >
       {children}
     </button>
   ) : (
-    <Link
-      to={`/${link}`}
-      className={`${styles.button} ${size && handleSize(size)} ${
-        type === 'secondary' && styles.button_secondary
-      } ${type === 'tertiary' && styles.button_tertiary}
-    ${position && handlePosition(position)}`}
-    >
+    <Link className={`${styles.button} ${getType(type)}`} to={LinkCheck(link)}>
       {children}
     </Link>
   );

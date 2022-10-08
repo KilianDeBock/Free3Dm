@@ -1,0 +1,53 @@
+.banner {
+    background: url("/media/images/heading_banner.jpg") /* image */ center 65% / cover /* position / size */ no-repeat /* repeat */ fixed /* attachment */ padding-box /* origin */ content-box /* clip */ var(--black-900); /* color */
+    z-index: -1;
+    min-height: 15rem;
+    height: 100%;
+    transform: rotate(-2deg);
+    position: absolute;
+    top: -5vw;
+    left: -5vw;
+    width: 110vw;
+    overflow: hidden;
+}
+
+@media (min-width: 60rem) {
+    .banner {
+        height: 22vw;
+    }
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 110vw;
+    min-height: 15rem;
+    height: 100%;
+    background: var(--black-900);
+    opacity: 0.98;
+}
+
+@media (min-width: 60rem) {
+    .banner::after {
+        height: 22vw;
+    }
+
+    .banner__text::after {
+        bottom: -3rem;
+        content: "3D";
+        position: relative;
+        left: 50%;
+        font-size: 21rem;
+        color: var(--black-700);
+        opacity: .5;
+    }
+}
+
+@media (min-width: 60rem) {
+    .banner__text::after {
+        font-size: 35vw;
+    }
+}

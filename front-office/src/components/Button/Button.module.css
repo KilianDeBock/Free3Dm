@@ -1,61 +1,12 @@
 .button {
-    font-family: var(--primary-ff);
-    font-weight: var(--regular-fw);
-    background-color: var(--dark-clr);
-    color: var(--light-clr);
-    padding: 0.5rem 0.5rem;
-    border-radius: 2rem;
-    border: none;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 25rem;
-    align-items: center;
-    box-shadow: 9px 9px 38px -14px rgba(0, 0, 0, 0.63);
+    padding: .5rem .7rem
 }
 
-.button:hover {
-    cursor: pointer;
+.button--secondary {
+    color: var(--blue-500);
+    background: var(--white-300);
 }
 
-.button span {
-    margin: 0 auto;
-}
-
-.button_lg {
-    min-width: 15rem;
-    max-width: 100%;
-}
-
-.button_small {
-    width: 6rem;
-    max-width: 100%;
-}
-
-.button_xs {
-    width: fit-content;
-    aspect-ratio: 1/1;
-    max-width: 100%;
-}
-
-.button_secondary {
-    background-color: var(--green-clr);
-}
-
-.button_tertiary,
-.button[data-type="tertiary"] {
-    background-color: var(--white-clr);
-    color: var(--green-clr);
-}
-
-.button_left {
-    margin: 0 auto 0 0;
-}
-
-.button_center {
-    margin: 0 auto;
-}
-
-.button_right {
-    margin: 0 0 0 auto;
+.button--tertiary {
+    background: var(--white-300);
 }

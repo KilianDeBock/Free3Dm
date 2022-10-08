@@ -1,0 +1,37 @@
+.navigation {
+    bottom: 2.5vw;
+    position: relative;
+    background: var(--blue-500);
+}
+
+@media (min-width: 60rem) {
+    .navigation {
+        left: 40%;
+        width: 70%;
+    }
+}
+
+.navigation .navigation__container {
+    width: 85%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 60rem) {
+    .navigation .navigation__container {
+        margin-left: 0;
+    }
+}
+
+.navigation__container * {
+    padding: 1.2rem .3rem;
+}
+
+@media (min-width: 60rem) {
+    .navigation__container * {
+        padding: 2vw .5vw;
+    }
+}

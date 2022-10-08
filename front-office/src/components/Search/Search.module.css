@@ -1,0 +1,32 @@
+.search {
+    display: flex;
+    background-color: var(--white-300);
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.input {
+    padding: .5rem 1rem;
+    color: var(--black-900);
+    flex-grow: 1;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: var(--black-300);
+}
+
+.submit {
+    position: absolute;
+    right: 0;
+    background: var(--blue-500);
+    padding: .6rem 1rem;
+    min-width: 10%;
+    transition: min-width .5s ease-in-out;
+}
+
+.submit:active,
+.submit:focus {
+    min-width: 100%;
+}

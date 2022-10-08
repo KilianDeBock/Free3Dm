@@ -1,0 +1,18 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.navigation__home {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.navigation__sub-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
