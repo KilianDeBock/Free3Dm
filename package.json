@@ -10,7 +10,7 @@
     "backend"
   ],
   "scripts": {
-    "start:dev": "npm -s run tools && echo heye",
+    "start:dev": "npm -s run tools && concurrently \"yarn workspace backend start:dev\" \"yarn workspace front-office dev\" \"yarn workspace back-office dev\"",
     "tools": "node ./.lyttle_tools/src/app/core/app.js",
     "tools:version:update": "node ./.lyttle_tools/src/app/version-manager/version.js && chmod ug+x ./.git/hooks/*",
     "tools:breaking:accept": "node ./.lyttle_tools/src/app/breaking/accept.js"
