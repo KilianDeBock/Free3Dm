@@ -5,7 +5,7 @@ https://github.com/Stualyttle/LyttleTools/blob/main/CSS/eggs.css
 
 @media (max-width: 200px) {
     #root {
-        display: none
+        display: none !important;
     }
 
     * {
