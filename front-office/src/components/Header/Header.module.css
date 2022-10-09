@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 15rem;
+    margin-bottom: 10rem;
     color: white;
     background: transparent;
     gap: 1rem;

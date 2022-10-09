@@ -1,13 +1,13 @@
 .page-info {
     position: relative;
     bottom: -1.1rem;
-    padding-top: 15rem;
+    padding-top: 10rem;
     color: var(--white-100);
 }
 
 .page-info__content {
     position: relative;
-    bottom: -1.5rem;
+    bottom: -6.5rem;
     max-width: 45rem;
     margin: 0 auto;
     text-align: center;
