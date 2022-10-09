@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { PageInfoComponent } from '../PageInfo/PageInfo.component';
-import { FooterSectionGroupComponent } from '../FooterLinksGroup/FooterSectionGroup.component';
-import { FooterSection } from '../FooterLinks/FooterSection.component';
+import { FooterSectionGroupComponent } from '../FooterSectionGroup/FooterSectionGroup.component';
+import { FooterSection } from '../FooterSection/FooterSection.component';
 
 const links: FooterSection[] = [
   {

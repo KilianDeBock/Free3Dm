@@ -34,6 +34,7 @@ export const FooterSectionComponent = ({ section }: FooterLinksProps) => (
             copy={link?.copy}
             newTab={link?.newTab}
             icon={link?.icon ? link.icon : null}
+            noText={true}
           >
             {link.label}
           </LinkComponent>
