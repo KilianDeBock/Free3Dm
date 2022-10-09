@@ -1,0 +1,11 @@
+.banner {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: -2%;
+    width: 110vw;
+    height: calc(100% - 7rem);
+    min-height: 15rem;
+    transform: rotate(2deg) translateY(-50%);
+    background: var(--white-300);
+}

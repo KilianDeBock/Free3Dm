@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import bannerStyles from './Banner.module.css';
 import { PageInfoComponent } from '../PageInfo/PageInfo.component';
 import { FooterSectionGroupComponent } from '../FooterSectionGroup/FooterSectionGroup.component';
 import { FooterSection } from '../FooterSection/FooterSection.component';
@@ -109,6 +110,17 @@ const links: FooterSection[] = [
 export const FooterComponent = () => (
   <footer className={styles.footer}>
     <PageInfoComponent />
-    <FooterSectionGroupComponent sectionGroup={links} />
+    <section className={styles['footer__main']}>
+      <div className={bannerStyles.banner}></div>
+      <div className={`container ${styles['footer__main__content']}`}>
+        <FooterSectionGroupComponent sectionGroup={links} />
+        <section>other stuff</section>
+      </div>
+    </section>
+    <ul className={`container ${styles['footer__last-links']}`}>
+      <li>terms & conditions</li>
+      <li>Privacy Policy</li>
+      <li>Sitemap</li>
+    </ul>
   </footer>
 );

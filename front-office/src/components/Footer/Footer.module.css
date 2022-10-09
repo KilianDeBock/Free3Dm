@@ -1,0 +1,29 @@
+.footer {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.footer__main {
+    position: relative;
+    padding: 7rem 0;
+}
+
+.footer__main__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__last-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 2.5rem;
+    gap: .8rem;
+}
+
+.footer__last-links li:not(:last-child):after {
+    font-weight: normal;
+    margin-left: .8rem;
+    content: "|";
+}
