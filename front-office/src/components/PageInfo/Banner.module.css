@@ -1,0 +1,11 @@
+.banner {
+    position: absolute;
+    z-index: -1;
+    bottom: -10rem;
+    left: -10rem;
+    width: calc(100vw + 20rem);
+    height: 100%;
+    padding: 14rem 0;
+    transform: rotate(-2deg);
+    background: var(--blue-500);
+}

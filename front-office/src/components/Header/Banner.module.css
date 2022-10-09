@@ -5,7 +5,7 @@
     left: 0;
     width: 100vw;
     height: 100%;
-    background: url("/media/images/heading_banner.jpg") /* image */ center 65% / cover /* position / size */ no-repeat /* repeat */ fixed /* attachment */ padding-box /* origin */ content-box /* clip */ var(--black-900); /* color */
+    background: url("/media/images/heading_banner.jpg") /* image */ center 130% / cover /* position / size */ no-repeat /* repeat */ fixed /* attachment */ padding-box /* origin */ content-box /* clip */ var(--black-900); /* color */
 }
 
 @media (min-width: 60rem) {

@@ -3,6 +3,7 @@ import {
   FooterSection,
   FooterSectionComponent,
 } from '../FooterSection/FooterSection.component';
+import styles from './FooterSectionGroup.module.css';
 
 export interface FooterSectionGroupProps {
   sectionGroup: FooterSection[];
@@ -11,11 +12,9 @@ export interface FooterSectionGroupProps {
 export const FooterSectionGroupComponent = ({
   sectionGroup,
 }: FooterSectionGroupProps) => (
-  <section>
-    <nav>
-      {sectionGroup.map((section) => (
-        <FooterSectionComponent section={section} />
-      ))}
-    </nav>
-  </section>
+  <ul className={styles.sections}>
+    {sectionGroup.map((section, i) => (
+      <FooterSectionComponent section={section} key={i} />
+    ))}
+  </ul>
 );

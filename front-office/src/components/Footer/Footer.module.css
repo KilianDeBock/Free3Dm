@@ -6,7 +6,7 @@
 
 .footer__main {
     position: relative;
-    padding: 7rem 0;
+    padding: 15rem 0 7rem;
 }
 
 .footer__main__content {
@@ -15,10 +15,11 @@
 }
 
 .footer__last-links {
+    position: relative;
+    top: -1.5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 2.5rem;
     gap: .8rem;
 }
 
