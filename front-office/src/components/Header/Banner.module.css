@@ -1,19 +1,24 @@
 .banner {
     position: absolute;
     z-index: -1;
-    top: -5vw;
-    left: -5vw;
-    overflow: hidden;
-    width: 110vw;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100%;
-    min-height: 15rem;
-    transform: rotate(-2deg);
     background: url("/media/images/heading_banner.jpg") /* image */ center 65% / cover /* position / size */ no-repeat /* repeat */ fixed /* attachment */ padding-box /* origin */ content-box /* clip */ var(--black-900); /* color */
 }
 
 @media (min-width: 60rem) {
-    .banner {
-        height: 22vw;
+    .banner::before {
+        position: absolute;
+        z-index: 1;
+        bottom: calc(-.8rem - 1.1vw);
+        left: 0;
+        width: 50vw;
+        height: calc(2rem + 1vw);
+        content: "";
+        transform: rotate(-2deg);
+        background: var(--white-100);
     }
 }
 
@@ -22,32 +27,9 @@
     z-index: -1;
     top: 0;
     left: 0;
-    width: 110vw;
+    width: 100vw;
     height: 100%;
-    min-height: 15rem;
     content: "";
     opacity: 0.98;
     background: var(--black-900);
-}
-
-@media (min-width: 60rem) {
-    .banner::after {
-        height: 22vw;
-    }
-
-    .banner__text::after {
-        font-size: 21rem;
-        position: relative;
-        bottom: -3rem;
-        left: 50%;
-        content: "3D";
-        opacity: .5;
-        color: var(--black-700);
-    }
-}
-
-@media (min-width: 60rem) {
-    .banner__text::after {
-        font-size: 35vw;
-    }
 }

@@ -1,6 +1,5 @@
 .navigation {
     position: relative;
-    bottom: 2.5vw;
     background: var(--blue-500);
 }
 
@@ -30,8 +29,8 @@
     padding: 1.2rem .3rem;
 }
 
-@media (min-width: 60rem) {
-    .navigation__container * {
-        padding: 2vw .5vw;
-    }
-}
+/* @media (min-width: 60rem) { */
+/*     .navigation__container * { */
+/*         padding: 1.4vw .5vw; */
+/*     } */
+/* } */

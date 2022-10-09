@@ -1,4 +1,4 @@
-import navigationStyles from '../Header/Navigation.module.css';
+import navigationStyles from './Navigation.module.css';
 import { LinkComponent } from '../Link/Link.component';
 import React from 'react';
 

@@ -1,6 +1,6 @@
 import { LinkComponent } from '../Link/Link.component';
 import React from 'react';
-import TertiaryNavigationStyles from '../Header/TertiaryNavigation.module.css';
+import TertiaryNavigationStyles from './TertiaryNavigation.module.css';
 
 export interface TertiaryNavigationLink {
   link: string;
