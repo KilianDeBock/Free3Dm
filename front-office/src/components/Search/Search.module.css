@@ -1,4 +1,5 @@
 .search {
+    font-size: .8rem;
     position: relative;
     display: flex;
     overflow: hidden;
@@ -9,7 +10,7 @@
 .input {
     flex-grow: 1;
     width: 100%;
-    padding: .5rem 1rem;
+    padding: .44rem 1rem .22rem;
     color: var(--black-900);
 }
 
@@ -21,7 +22,7 @@
     position: absolute;
     right: 0;
     min-width: 10%;
-    padding: .6rem 1rem;
+    padding: .44rem 1rem .22rem;
     transition: min-width .5s ease-in-out;
     background: var(--blue-500);
 }
