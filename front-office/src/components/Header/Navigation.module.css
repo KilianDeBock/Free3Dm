@@ -1,6 +1,6 @@
 .navigation {
-    bottom: 2.5vw;
     position: relative;
+    bottom: 2.5vw;
     background: var(--blue-500);
 }
 
@@ -12,12 +12,12 @@
 }
 
 .navigation .navigation__container {
-    width: 85%;
     display: flex;
-    gap: 1rem;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    width: 85%;
+    gap: 1rem;
 }
 
 @media (min-width: 60rem) {

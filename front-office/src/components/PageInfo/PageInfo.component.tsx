@@ -5,5 +5,5 @@ interface PageInfoProps {
 }
 
 export const PageInfoComponent = ({ children }: PageInfoProps) => (
-  <section>TEST</section>
+  <section>This is a description of the current page!</section>
 );

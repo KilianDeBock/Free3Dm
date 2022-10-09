@@ -7,6 +7,7 @@ export interface SecondaryNavigationLink {
   link: string;
   label: string;
   button?: boolean;
+  icon?: string;
 }
 
 export interface SecondaryNavigationProps {
@@ -25,9 +26,13 @@ export const SecondaryNavigationComponent = ({
     <li>
       <ul className={secondaryNavigationStyles['navigation__sub-navigation']}>
         {links.map((link, i) => (
-          <li>
+          <li key={i}>
             {link?.button ? (
-              <ButtonComponent type="secondary" link={link.link}>
+              <ButtonComponent
+                type="secondary"
+                link={link.link}
+                icon={link?.icon ? link?.icon : null}
+              >
                 {link.label}
               </ButtonComponent>
             ) : (

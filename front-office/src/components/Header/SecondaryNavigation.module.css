@@ -1,8 +1,8 @@
 .navigation {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .navigation__home {
@@ -11,8 +11,10 @@
 }
 
 .navigation__sub-navigation {
+    font-size: 1.08rem;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.5rem;
 }

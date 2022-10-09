@@ -1,8 +1,10 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { PageInfoComponent } from '../PageInfo/PageInfo.component';
+import { FooterSectionGroupComponent } from '../FooterLinksGroup/FooterSectionGroup.component';
+import { FooterSection } from '../FooterLinks/FooterSection.component';
 
-const links = [
+const links: FooterSection[] = [
   {
     type: 'text',
     label: 'Customer Service',
@@ -69,30 +71,34 @@ const links = [
     ],
   },
   {
-    type: 'icons',
+    type: 'icon',
     label: 'Follow Us',
     links: [
       {
-        label: 'facebook',
+        label: 'Facebook',
         href: true,
+        newTab: true,
         link: 'https://www.facebook.com/',
         icon: '/media/icons/facebook.svg',
       },
       {
         label: 'Twitter',
         href: true,
+        newTab: true,
         link: 'https://www.twitter.com/',
         icon: '/media/icons/twitter.svg',
       },
       {
         label: 'Google',
         href: true,
+        newTab: true,
         link: 'https://www.google.com/',
         icon: '/media/icons/google.svg',
       },
       {
         label: 'LinkedIn',
         href: true,
+        newTab: true,
         link: 'https://www.linkedin.com/',
         icon: '/media/icons/linkedin.svg',
       },
@@ -103,6 +109,6 @@ const links = [
 export const FooterComponent = () => (
   <footer className={styles.footer}>
     <PageInfoComponent />
-    Footer
+    <FooterSectionGroupComponent sectionGroup={links} />
   </footer>
 );

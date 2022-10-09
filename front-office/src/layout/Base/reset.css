@@ -8,10 +8,10 @@ https://github.com/Stualyttle/LyttleTools/blob/main/CSS/defaults.css
 *::after {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    content: "";
-    content: none;
     margin: 0;
     padding: 0;
+    content: "";
+    content: none;
     /* word-wrap: break-word; */
 }
 
@@ -23,14 +23,14 @@ html:focus-within {
     *,
     *::before,
     *::after {
+        -o-transition-duration: .01ms !important;
+        -webkit-transition-duration: .01ms !important;
+        transition-duration: .01ms !important;
         -webkit-animation-duration: .01ms !important;
         animation-duration: .01ms !important;
         -webkit-animation-iteration-count: 1 !important;
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
-        -webkit-transition-duration: .01ms !important;
-        -o-transition-duration: .01ms !important;
-        transition-duration: .01ms !important;
     }
 
     html:focus-within {
@@ -62,50 +62,50 @@ button,
 
 img,
 picture {
-    border-style: none;
     display: block;
     max-width: 100%;
     max-height: 100%;
+    border-style: none;
 }
 
 ::-webkit-input-placeholder {
-    background: none;
-    border: none;
-    color: inherit;
     font: inherit;
-    opacity: 1;
     overflow: visible;
     text-transform: inherit;
+    opacity: 1;
+    color: inherit;
+    border: none;
+    background: none;
 }
 
 ::-moz-placeholder {
-    background: none;
-    border: none;
-    color: inherit;
     font: inherit;
-    opacity: 1;
     overflow: visible;
     text-transform: inherit;
+    opacity: 1;
+    color: inherit;
+    border: none;
+    background: none;
 }
 
 :-ms-input-placeholder {
-    background: none;
-    border: none;
-    color: inherit;
     font: inherit;
-    opacity: 1;
     overflow: visible;
     text-transform: inherit;
+    opacity: 1;
+    color: inherit;
+    border: none;
+    background: none;
 }
 
 ::-ms-input-placeholder {
-    background: none;
-    border: none;
-    color: inherit;
     font: inherit;
-    opacity: 1;
     overflow: visible;
     text-transform: inherit;
+    opacity: 1;
+    color: inherit;
+    border: none;
+    background: none;
 }
 
 button,
@@ -114,13 +114,13 @@ optgroup,
 select,
 textarea,
 ::placeholder {
-    background: none;
-    border: none;
-    color: inherit;
     font: inherit;
-    opacity: 1;
     overflow: visible;
     text-transform: inherit;
+    opacity: 1;
+    color: inherit;
+    border: none;
+    background: none;
 }
 
 article,
@@ -224,12 +224,12 @@ u,
 ul,
 var,
 video {
-    border: 0;
-    color: inherit;
     font: inherit;
     font-size: 100%;
     margin: 0;
     padding: 0;
-    text-decoration: inherit;
     vertical-align: baseline;
+    text-decoration: inherit;
+    color: inherit;
+    border: 0;
 }

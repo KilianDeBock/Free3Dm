@@ -32,8 +32,9 @@ const secondaryNavLinks: SecondaryNavigationLink[] = [
   },
   {
     link: 'cart',
-    label: 'my Cart',
+    label: 'my cart',
     button: true,
+    icon: '/media/icons/cart.svg',
   },
 ];
 

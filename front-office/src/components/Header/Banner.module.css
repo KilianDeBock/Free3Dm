@@ -1,14 +1,14 @@
 .banner {
-    background: url("/media/images/heading_banner.jpg") /* image */ center 65% / cover /* position / size */ no-repeat /* repeat */ fixed /* attachment */ padding-box /* origin */ content-box /* clip */ var(--black-900); /* color */
-    z-index: -1;
-    min-height: 15rem;
-    height: 100%;
-    transform: rotate(-2deg);
     position: absolute;
+    z-index: -1;
     top: -5vw;
     left: -5vw;
-    width: 110vw;
     overflow: hidden;
+    width: 110vw;
+    height: 100%;
+    min-height: 15rem;
+    transform: rotate(-2deg);
+    background: url("/media/images/heading_banner.jpg") /* image */ center 65% / cover /* position / size */ no-repeat /* repeat */ fixed /* attachment */ padding-box /* origin */ content-box /* clip */ var(--black-900); /* color */
 }
 
 @media (min-width: 60rem) {
@@ -18,16 +18,16 @@
 }
 
 .banner::after {
-    content: "";
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
     width: 110vw;
-    min-height: 15rem;
     height: 100%;
-    background: var(--black-900);
+    min-height: 15rem;
+    content: "";
     opacity: 0.98;
+    background: var(--black-900);
 }
 
 @media (min-width: 60rem) {
@@ -36,13 +36,13 @@
     }
 
     .banner__text::after {
-        bottom: -3rem;
-        content: "3D";
-        position: relative;
-        left: 50%;
         font-size: 21rem;
-        color: var(--black-700);
+        position: relative;
+        bottom: -3rem;
+        left: 50%;
+        content: "3D";
         opacity: .5;
+        color: var(--black-700);
     }
 }
 

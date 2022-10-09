@@ -13,18 +13,18 @@ https://github.com/Stualyttle/LyttleTools/blob/main/CSS/eggs.css
     }
 
     body:before {
-        left: 50%;
-        top: 0;
-        padding-left: 20%;
-        width: 90vh;
-        color: white;
-        display: block;
-        position: absolute;
-        white-space: nowrap;
-        transform-origin: 0 60%;
-        content: "You tried! 😌";
         font-size: 4vh;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 90vh;
+        padding-left: 20%;
+        content: "You tried! 😌";
         transform: rotate(90deg) translateY(50%);
+        transform-origin: 0 60%;
+        white-space: nowrap;
+        color: white;
     }
 }
 

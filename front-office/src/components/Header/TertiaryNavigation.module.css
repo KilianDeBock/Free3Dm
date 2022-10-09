@@ -1,14 +1,14 @@
 ul.navigation {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding-top: 1.5rem;
     justify-content: flex-end;
+    padding-top: 1.5rem;
+    gap: 1rem;
 }
 
 ul.navigation * {
-    color: var(--black-300);
     display: none;
+    color: var(--black-300);
 }
 
 @media (min-width: 60rem) {
