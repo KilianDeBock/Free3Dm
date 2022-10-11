@@ -1,0 +1,8 @@
+.image {
+    position: relative;
+}
+
+img.image--nice {
+    padding: 0;
+    box-shadow: .2rem .2rem .5rem rgba(0, 0, 0, .2);
+}

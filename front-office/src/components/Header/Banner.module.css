@@ -12,12 +12,13 @@
     .banner::before {
         position: absolute;
         z-index: 1;
-        bottom: calc(-.8rem - 1.1vw);
-        left: 0;
+        bottom: -8rem;
+        left: -10%;
         width: 50vw;
-        height: calc(2rem + 1vw);
+        height: 10rem;
         content: "";
         transform: rotate(-2deg);
+        transform-origin: top right;
         background: var(--white-100);
     }
 }
