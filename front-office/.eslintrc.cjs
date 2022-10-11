@@ -28,10 +28,10 @@ module.exports = {
     'import/no-absolute-path': 'off',
     'react/react-in-tsx-scope': 'off',
     'import/prefer-default-export': 'off',
-    'prettier/prettier': ['error', {endOfLine: 'auto'}],
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'react/tsx-filename-extension': [
       'warn',
-      {extensions: ['.ts', '.tsx', 'ts', 'tsx']},
+      { extensions: ['.ts', '.tsx', 'ts', 'tsx'] },
     ],
   },
 };

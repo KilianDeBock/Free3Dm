@@ -2,7 +2,7 @@ import React from 'react';
 import {
   FooterSection,
   FooterSectionComponent,
-} from '../FooterSection/FooterSection.component';
+} from './FooterSection.component';
 import styles from './FooterSectionGroup.module.css';
 
 export interface FooterSectionGroupProps {

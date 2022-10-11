@@ -1,4 +1,4 @@
-import { LinkComponent } from '../Link/Link.component';
+import { LinkComponent } from '../';
 import React from 'react';
 import TertiaryNavigationStyles from './TertiaryNavigation.module.css';
 

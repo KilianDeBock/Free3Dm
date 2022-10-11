@@ -1,11 +1,13 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import bannerStyles from './Banner.module.css';
-import { PageInfoComponent } from '../PageInfo/PageInfo.component';
-import { FooterSectionGroupComponent } from '../FooterSectionGroup/FooterSectionGroup.component';
-import { FooterSection } from '../FooterSection/FooterSection.component';
-import { SearchComponent } from '../Search/Search.component';
-import { PaymentMethodsComponent } from '../PaymentMethods/PaymentMethods.component';
+import {
+  FooterSection,
+  FooterSectionGroupComponent,
+  PageInfoComponent,
+  PaymentMethodsComponent,
+  SearchComponent,
+} from '../';
 
 const links: FooterSection[] = [
   {

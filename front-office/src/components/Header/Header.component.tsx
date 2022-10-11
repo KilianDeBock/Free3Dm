@@ -1,24 +1,22 @@
 import React from 'react';
-import { SearchComponent } from '../../components';
-import styles from './Header.module.css';
-import bannerStyles from './Banner.module.css';
-import { NavigationComponent } from '../';
 import {
-  TertiaryNavigationComponent,
-  TertiaryNavigationLink,
-} from '../Navigation/TertiaryNavigation.component';
-import {
+  NavigationComponent,
+  SearchComponent,
   SecondaryNavigationComponent,
   SecondaryNavigationLink,
-} from '../Navigation/SecondaryNavigation.component';
-import { CONSTS } from '../../constants/consts';
+  TertiaryNavigationComponent,
+  TertiaryNavigationLink,
+} from '../';
+import styles from './Header.module.css';
+import bannerStyles from './Banner.module.css';
+import { CONSTS } from '../../constants';
 
 const primaryNavCategories: string[] = [
   'Printers',
   'Filament',
   'Resin',
   'Toys',
-  'Upgrades',
+  'Accessories',
 ];
 
 const secondaryNavLinks: SecondaryNavigationLink[] = [

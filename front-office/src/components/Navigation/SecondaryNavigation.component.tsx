@@ -1,7 +1,6 @@
-import { LinkComponent } from '../Link/Link.component';
+import { ButtonComponent, LinkComponent } from '../';
 import React from 'react';
 import secondaryNavigationStyles from './SecondaryNavigation.module.css';
-import { ButtonComponent } from '../Button/Button.component';
 
 export interface SecondaryNavigationLink {
   link: string;
