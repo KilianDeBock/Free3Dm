@@ -1,6 +1,7 @@
 .section {
     display: block;
-    width: 45%;
+    width: 100%;
+    max-width: 15rem;
 }
 
 .section__label {
@@ -11,6 +12,7 @@
 .section__link {
     font-size: 1rem;
     font-weight: 300;
+    text-shadow: .1rem .1rem var(--white-300);
 }
 
 .section__links--icons {

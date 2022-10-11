@@ -4,6 +4,8 @@ import bannerStyles from './Banner.module.css';
 import { PageInfoComponent } from '../PageInfo/PageInfo.component';
 import { FooterSectionGroupComponent } from '../FooterSectionGroup/FooterSectionGroup.component';
 import { FooterSection } from '../FooterSection/FooterSection.component';
+import { SearchComponent } from '../Search/Search.component';
+import { PaymentMethodsComponent } from '../PaymentMethods/PaymentMethods.component';
 
 const links: FooterSection[] = [
   {
@@ -114,7 +116,21 @@ export const FooterComponent = () => (
       <div className={bannerStyles.banner}></div>
       <div className={`container ${styles['footer__main__content']}`}>
         <FooterSectionGroupComponent sectionGroup={links} />
-        <section>other stuff</section>
+        <section className={styles['footer__payments']}>
+          <article>
+            <span className={styles['footer__subscribe__title']}>
+              Save up to -10%
+            </span>
+            <span className={styles['footer__subscribe__text']}>
+              Subscribe to our newsletter
+            </span>
+            <SearchComponent placeholderTxt={'Ender email'} submitTxt={'Go!'} />
+          </article>
+          <article>
+            <span>100% save transactions</span>
+            <PaymentMethodsComponent />
+          </article>
+        </section>
       </div>
     </section>
     <ul className={`container ${styles['footer__last-links']}`}>

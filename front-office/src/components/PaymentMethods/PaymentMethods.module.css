@@ -1,0 +1,9 @@
+.payments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+}
+
+.payment {
+    font-size: 0;
+}

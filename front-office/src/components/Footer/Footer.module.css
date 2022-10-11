@@ -12,6 +12,19 @@
 .footer__main__content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.footer__main__content > *:first-child {
+    width: 100%;
+    max-width: 35rem;
+    margin-bottom: 2rem;
+}
+
+.footer__main__content > *:last-child {
+    width: 100%;
+    max-width: 20rem;
 }
 
 .footer__last-links {
@@ -27,4 +40,27 @@
     font-weight: normal;
     margin-left: .8rem;
     content: "|";
+}
+
+.footer__subscribe__title,
+.footer__subscribe__text {
+    font-weight: 600;
+    display: block;
+}
+
+.footer__subscribe__title {
+    font-size: 1.8rem;
+    margin-bottom: -.7rem;
+    color: var(--blue-500);
+}
+
+.footer__subscribe__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer__payments {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
