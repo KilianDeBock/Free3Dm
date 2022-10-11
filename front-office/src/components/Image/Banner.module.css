@@ -4,8 +4,8 @@
     top: 50%;
     left: -10rem;
     width: calc(100vw + 20rem);
-    height: calc(93%);
+    height: calc(95% - 10rem);
     min-height: 15rem;
-    transform: rotate(2deg) translateY(-35%);
+    transform: rotate(2deg) translateY(-50%);
     background: var(--white-300);
 }

@@ -1,0 +1,14 @@
+ul.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+    gap: 1rem;
+}
+
+.cards__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 1rem;
+}

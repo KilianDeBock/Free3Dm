@@ -11,10 +11,10 @@ interface ImageProps {
 
 export const ImageComponent = ({ image, alt, nice = false }: ImageProps) =>
   nice ? (
-    <article className={styles.image}>
+    <article className={`${styles.image} ${styles['image--nice']}`}>
       <div className={bannerStyles.banner}></div>
       <img
-        className={`container ${styles['image--nice']}`}
+        className={`container ${styles['image--nice__image']}`}
         src={image}
         alt={alt}
       />
