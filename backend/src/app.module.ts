@@ -2,7 +2,6 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CustomersModule } from './customers/customers.module';
-import { AdressesModule } from './adresses/adresses.module';
 import { OrdersModule } from './orders/orders.module';
 import { ArticleOrderModule } from './article_order/article_order.module';
 import { ReviewsModule } from './reviews/reviews.module';
@@ -15,11 +14,11 @@ import { join } from 'path';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { AddressesModule } from './addresses/addresses.module';
 
 @Module({
   imports: [
     CustomersModule,
-    AdressesModule,
     OrdersModule,
     ArticleOrderModule,
     ReviewsModule,
@@ -54,6 +53,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       synchronize: true,
       entities: ['dist/**/*.entity{.ts,.js}'],
     }),
+    AddressesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
