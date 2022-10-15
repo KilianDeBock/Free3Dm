@@ -13,6 +13,14 @@ export class Customer {
 
   @Column()
   @Field()
+  email: string;
+
+  @Column()
+  @Field()
+  password: string;
+
+  @Column()
+  @Field()
   firstName: string;
 
   @Column({ nullable: true })

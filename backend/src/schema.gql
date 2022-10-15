@@ -88,6 +88,8 @@ type Address {
 
 type Customer {
   id: Int!
+  email: String!
+  password: String!
   firstName: String!
   lastName: String
   birthDate: Timestamp!
