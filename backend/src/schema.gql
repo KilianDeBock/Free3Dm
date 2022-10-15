@@ -2,61 +2,108 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type Customer {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-type Adress {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-type Order {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-type ArticleOrder {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-type Review {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-type Article {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-type Product {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
 type Category {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  id: Int!
+  name: String!
+  products: [Product!]
+  category: [Category!]
 }
 
 type Brand {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  id: Int!
+  name: String!
+  contactNumber: Int!
+  btwNumber: String!
+  products: [Product!]
+}
+
+type Product {
+  id: Int!
+  categoryId: Int!
+  category: Category!
+  brandId: Int!
+  brand: Brand!
+  articles: [Article!]
 }
 
 type Detail {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  id: Int!
+  key: String!
+  value: String!
+  articleId: Int!
+  article: Article!
 }
+
+type Review {
+  id: Int!
+  stars: Int!
+  title: String!
+  review: String!
+  articleId: Int!
+  article: Article!
+  customerId: Int!
+  customer: Customer!
+}
+
+type Article {
+  id: Int!
+  price: Float!
+  productId: Int!
+  product: Product!
+  orders: [ArticleOrder!]
+  details: [Detail!]
+  reviews: [Review!]
+}
+
+type ArticleOrder {
+  orderId: Int!
+  order: Order!
+  articleId: Int!
+  article: Article!
+  amount: Int!
+}
+
+type Order {
+  id: Int!
+  totalPrice: Float!
+  addressId: Int!
+  address: Address!
+  customerId: Int!
+  customer: Customer!
+  articles: [ArticleOrder!]
+}
+
+type Address {
+  id: Int!
+  country: String!
+  city: String!
+  postalCode: String!
+  state: String!
+  streetName: String!
+  streetNumber: String!
+  customerId: Int!
+  customer: Customer!
+  orders: [Order!]
+}
+
+type Customer {
+  id: Int!
+  firstName: String!
+  lastName: String
+  birthDate: Timestamp!
+  addresses: [Address!]
+  orders: [Order!]
+  reviews: [Review!]
+}
+
+"""
+`Date` type as integer. Type represents date and time as number of milliseconds from start of UNIX epoch.
+"""
+scalar Timestamp
 
 type Query {
   customers: [Customer!]!
   customer(id: Int!): Customer!
-  adresses: [Adress!]!
-  adress(id: Int!): Adress!
   orders: [Order!]!
   order(id: Int!): Order!
   articleOrder(id: Int!): ArticleOrder!
@@ -72,15 +119,14 @@ type Query {
   brand(id: Int!): Brand!
   details: [Detail!]!
   detail(id: Int!): Detail!
+  addresses: [Address!]!
+  address(id: Int!): Address!
 }
 
 type Mutation {
   createCustomer(createCustomerInput: CreateCustomerInput!): Customer!
   updateCustomer(updateCustomerInput: UpdateCustomerInput!): Customer!
   removeCustomer(id: Int!): Customer!
-  createAdress(createAdressInput: CreateAdressInput!): Adress!
-  updateAdress(updateAdressInput: UpdateAdressInput!): Adress!
-  removeAdress(id: Int!): Adress!
   createOrder(createOrderInput: CreateOrderInput!): Order!
   updateOrder(updateOrderInput: UpdateOrderInput!): Order!
   removeOrder(id: Int!): Order!
@@ -105,6 +151,9 @@ type Mutation {
   createDetail(createDetailInput: CreateDetailInput!): Detail!
   updateDetail(updateDetailInput: UpdateDetailInput!): Detail!
   removeDetail(id: Int!): Detail!
+  createAddress(createAddressInput: CreateAddressInput!): Address!
+  updateAddress(updateAddressInput: UpdateAddressInput!): Address!
+  removeAddress(id: Int!): Address!
 }
 
 input CreateCustomerInput {
@@ -113,17 +162,6 @@ input CreateCustomerInput {
 }
 
 input UpdateCustomerInput {
-  """Example field (placeholder)"""
-  exampleField: Int
-  id: Int!
-}
-
-input CreateAdressInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-input UpdateAdressInput {
   """Example field (placeholder)"""
   exampleField: Int
   id: Int!
@@ -212,6 +250,17 @@ input CreateDetailInput {
 }
 
 input UpdateDetailInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateAddressInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateAddressInput {
   """Example field (placeholder)"""
   exampleField: Int
   id: Int!
