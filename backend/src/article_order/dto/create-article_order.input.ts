@@ -1,7 +1,13 @@
-import { InputType, Int, Field } from '@nestjs/graphql';
+import { Field, InputType, Int } from '@nestjs/graphql';
 
 @InputType()
 export class CreateArticleOrderInput {
-  @Field(() => Int, { description: 'Example field (placeholder)' })
-  exampleField: number;
+  @Field(() => Int)
+  orderId: number;
+
+  @Field(() => Int)
+  articleId: number;
+
+  @Field(() => Int)
+  amount: number;
 }
