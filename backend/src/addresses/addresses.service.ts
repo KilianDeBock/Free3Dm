@@ -1,26 +1,36 @@
 import { Injectable } from '@nestjs/common';
 import { CreateAddressInput } from './dto/create-address.input';
 import { UpdateAddressInput } from './dto/update-address.input';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Address } from './entities/address.entity';
+import { DeleteResult, Repository } from 'typeorm';
 
 @Injectable()
 export class AddressesService {
-  create(createAddressInput: CreateAddressInput) {
-    return 'This action adds a new address';
+  constructor(
+    @InjectRepository(Address) private addressRepository: Repository<Address>,
+  ) {}
+
+  create(createAddressInput: CreateAddressInput): Promise<Address> {
+    const newAddress = this.addressRepository.create(createAddressInput);
+    return this.addressRepository.save(newAddress);
   }
 
-  findAll() {
-    return `This action returns all addresses`;
+  findAll(): Promise<Address[]> {
+    return this.addressRepository.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} address`;
+  findOne(id: number): Promise<Address> {
+    return this.addressRepository.findOneByOrFail({ id });
   }
 
-  update(id: number, updateAddressInput: UpdateAddressInput) {
-    return `This action updates a #${id} address`;
+  update(id: number, updateAddressInput: UpdateAddressInput): Promise<Address> {
+    const oldAddress = this.addressRepository.findOneByOrFail({ id });
+    const newAddress = { ...oldAddress, ...updateAddressInput };
+    return this.addressRepository.save(newAddress);
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} address`;
+  remove(id: number): Promise<DeleteResult> {
+    return this.addressRepository.delete({ id });
   }
 }

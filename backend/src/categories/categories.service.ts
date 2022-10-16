@@ -1,26 +1,40 @@
 import { Injectable } from '@nestjs/common';
 import { CreateCategoryInput } from './dto/create-category.input';
 import { UpdateCategoryInput } from './dto/update-category.input';
+import { InjectRepository } from '@nestjs/typeorm';
+import { DeleteResult, Repository } from 'typeorm';
+import { Category } from './entities/category.entity';
 
 @Injectable()
 export class CategoriesService {
-  create(createCategoryInput: CreateCategoryInput) {
-    return 'This action adds a new category';
+  constructor(
+    @InjectRepository(Category)
+    private categoryRepository: Repository<Category>,
+  ) {}
+
+  create(createCategoryInput: CreateCategoryInput): Promise<Category> {
+    const newCategory = this.categoryRepository.create(createCategoryInput);
+    return this.categoryRepository.save(newCategory);
   }
 
-  findAll() {
-    return `This action returns all categories`;
+  findAll(): Promise<Category[]> {
+    return this.categoryRepository.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} category`;
+  findOne(id: number): Promise<Category> {
+    return this.categoryRepository.findOneByOrFail({ id });
   }
 
-  update(id: number, updateCategoryInput: UpdateCategoryInput) {
-    return `This action updates a #${id} category`;
+  update(
+    id: number,
+    updateCategoryInput: UpdateCategoryInput,
+  ): Promise<Category> {
+    const oldCategory = this.categoryRepository.findOneByOrFail({ id });
+    const newCategory = { ...oldCategory, ...updateCategoryInput };
+    return this.categoryRepository.save(newCategory);
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} category`;
+  remove(id: number): Promise<DeleteResult> {
+    return this.categoryRepository.delete({ id });
   }
 }

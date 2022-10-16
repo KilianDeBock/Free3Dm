@@ -26,23 +26,30 @@ type Product {
   articles: [Article!]
 }
 
+type Order {
+  id: Int!
+  totalPrice: Float!
+  addressId: Int!
+  address: Address!
+  customerId: Int!
+  customer: Customer!
+  articles: [ArticleOrder!]
+}
+
+type ArticleOrder {
+  orderId: Int!
+  order: Order!
+  articleId: Int!
+  article: Article!
+  amount: Int!
+}
+
 type Detail {
   id: Int!
   key: String!
   value: String!
   articleId: Int!
   article: Article!
-}
-
-type Review {
-  id: Int!
-  stars: Int!
-  title: String!
-  review: String!
-  articleId: Int!
-  article: Article!
-  customerId: Int!
-  customer: Customer!
 }
 
 type Article {
@@ -55,35 +62,15 @@ type Article {
   reviews: [Review!]
 }
 
-type ArticleOrder {
-  orderId: Int!
-  order: Order!
+type Review {
+  id: Int!
+  stars: Int!
+  title: String!
+  review: String!
   articleId: Int!
   article: Article!
-  amount: Int!
-}
-
-type Order {
-  id: Int!
-  totalPrice: Float!
-  addressId: Int!
-  address: Address!
   customerId: Int!
   customer: Customer!
-  articles: [ArticleOrder!]
-}
-
-type Address {
-  id: Int!
-  country: String!
-  city: String!
-  postalCode: String!
-  state: String!
-  streetName: String!
-  streetNumber: String!
-  customerId: Int!
-  customer: Customer!
-  orders: [Order!]
 }
 
 type Customer {
@@ -103,167 +90,209 @@ type Customer {
 """
 scalar Timestamp
 
+type Address {
+  id: Int!
+  country: String!
+  city: String!
+  postalCode: String!
+  state: String!
+  streetName: String!
+  streetNumber: String!
+  customerId: Int!
+  customer: Customer!
+  orders: [Order!]
+}
+
 type Query {
-  customers: [Customer!]!
-  customer(id: Int!): Customer!
-  orders: [Order!]!
-  order(id: Int!): Order!
-  articleOrder(id: Int!): ArticleOrder!
-  reviews: [Review!]!
-  review(id: Int!): Review!
-  articles: [Article!]!
-  article(id: Int!): Article!
-  products: [Product!]!
-  product(id: Int!): Product!
-  categories: [Category!]!
-  category(id: Int!): Category!
-  brands: [Brand!]!
-  brand(id: Int!): Brand!
-  details: [Detail!]!
-  detail(id: Int!): Detail!
   addresses: [Address!]!
   address(id: Int!): Address!
+  articleOrder(orderId: Int!, articleId: Int!): ArticleOrder!
+  articles: [Article!]!
+  article(id: Int!): Article!
+  brands: [Brand!]!
+  brand(id: Int!): Brand!
+  categories: [Category!]!
+  category(id: Int!): Category!
+  customers: [Customer!]!
+  customer(id: Int!): Customer!
+  details: [Detail!]!
+  detail(id: Int!): Detail!
+  orders: [Order!]!
+  order(id: Int!): Order!
+  products: [Product!]!
+  product(id: Int!): Product!
+  reviews: [Review!]!
+  review(id: Int!): Review!
 }
 
 type Mutation {
-  createCustomer(createCustomerInput: CreateCustomerInput!): Customer!
-  updateCustomer(updateCustomerInput: UpdateCustomerInput!): Customer!
-  removeCustomer(id: Int!): Customer!
-  createOrder(createOrderInput: CreateOrderInput!): Order!
-  updateOrder(updateOrderInput: UpdateOrderInput!): Order!
-  removeOrder(id: Int!): Order!
-  createArticleOrder(createArticleOrderInput: CreateArticleOrderInput!): ArticleOrder!
-  updateArticleOrder(updateArticleOrderInput: UpdateArticleOrderInput!): ArticleOrder!
-  removeArticleOrder(id: Int!): ArticleOrder!
-  createReview(createReviewInput: CreateReviewInput!): Review!
-  updateReview(updateReviewInput: UpdateReviewInput!): Review!
-  removeReview(id: Int!): Review!
-  createArticle(createArticleInput: CreateArticleInput!): Article!
-  updateArticle(updateArticleInput: UpdateArticleInput!): Article!
-  removeArticle(id: Int!): Article!
-  createProduct(createProductInput: CreateProductInput!): Product!
-  updateProduct(updateProductInput: UpdateProductInput!): Product!
-  removeProduct(id: Int!): Product!
-  createCategory(createCategoryInput: CreateCategoryInput!): Category!
-  updateCategory(updateCategoryInput: UpdateCategoryInput!): Category!
-  removeCategory(id: Int!): Category!
-  createBrand(createBrandInput: CreateBrandInput!): Brand!
-  updateBrand(updateBrandInput: UpdateBrandInput!): Brand!
-  removeBrand(id: Int!): Brand!
-  createDetail(createDetailInput: CreateDetailInput!): Detail!
-  updateDetail(updateDetailInput: UpdateDetailInput!): Detail!
-  removeDetail(id: Int!): Detail!
   createAddress(createAddressInput: CreateAddressInput!): Address!
   updateAddress(updateAddressInput: UpdateAddressInput!): Address!
   removeAddress(id: Int!): Address!
+  createArticleOrder(createArticleOrderInput: CreateArticleOrderInput!): ArticleOrder!
+  updateArticleOrder(updateArticleOrderInput: UpdateArticleOrderInput!): ArticleOrder!
+  removeArticleOrder(orderId: Int!, articleId: Int!): ArticleOrder!
+  createArticle(createArticleInput: CreateArticleInput!): Article!
+  updateArticle(updateArticleInput: UpdateArticleInput!): Article!
+  removeArticle(id: Int!): Article!
+  createBrand(createBrandInput: CreateBrandInput!): Brand!
+  updateBrand(updateBrandInput: UpdateBrandInput!): Brand!
+  removeBrand(id: Int!): Brand!
+  createCategory(createCategoryInput: CreateCategoryInput!): Category!
+  updateCategory(updateCategoryInput: UpdateCategoryInput!): Category!
+  removeCategory(id: Int!): Category!
+  createCustomer(createCustomerInput: CreateCustomerInput!): Customer!
+  updateCustomer(updateCustomerInput: UpdateCustomerInput!): Customer!
+  removeCustomer(id: Int!): Customer!
+  createDetail(createDetailInput: CreateDetailInput!): Detail!
+  updateDetail(updateDetailInput: UpdateDetailInput!): Detail!
+  removeDetail(id: Int!): Detail!
+  createOrder(createOrderInput: CreateOrderInput!): Order!
+  updateOrder(updateOrderInput: UpdateOrderInput!): Order!
+  removeOrder(id: Int!): Order!
+  createProduct(createProductInput: CreateProductInput!): Product!
+  updateProduct(updateProductInput: UpdateProductInput!): Product!
+  removeProduct(id: Int!): Product!
+  createReview(createReviewInput: CreateReviewInput!): Review!
+  updateReview(updateReviewInput: UpdateReviewInput!): Review!
+  removeReview(id: Int!): Review!
 }
 
-input CreateCustomerInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-input UpdateCustomerInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+input CreateAddressInput {
   id: Int!
+  country: String!
+  city: String!
+  postalCode: String!
+  state: String!
+  streetName: String!
+  streetNumber: String!
+  customerId: Int!
 }
 
-input CreateOrderInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-input UpdateOrderInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+input UpdateAddressInput {
   id: Int!
+  country: String
+  city: String
+  postalCode: String
+  state: String
+  streetName: String
+  streetNumber: String
+  customerId: Int
 }
 
 input CreateArticleOrderInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  orderId: Int!
+  articleId: Int!
+  amount: Int!
 }
 
 input UpdateArticleOrderInput {
-  """Example field (placeholder)"""
-  exampleField: Int
-  id: Int!
-}
-
-input CreateReviewInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-input UpdateReviewInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+  orderId: Int
+  articleId: Int
+  amount: Int
   id: Int!
 }
 
 input CreateArticleInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  price: Float!
+  productId: Int!
 }
 
 input UpdateArticleInput {
-  """Example field (placeholder)"""
-  exampleField: Int
-  id: Int!
-}
-
-input CreateProductInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-input UpdateProductInput {
-  """Example field (placeholder)"""
-  exampleField: Int
-  id: Int!
-}
-
-input CreateCategoryInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
-}
-
-input UpdateCategoryInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+  price: Float
+  productId: Int
   id: Int!
 }
 
 input CreateBrandInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  name: String!
+  contactNumber: Int!
+  btwNumber: String!
 }
 
 input UpdateBrandInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+  name: String
+  contactNumber: Int
+  btwNumber: String
+  id: Int!
+}
+
+input CreateCategoryInput {
+  name: String!
+}
+
+input UpdateCategoryInput {
+  name: String
+  id: Int!
+}
+
+input CreateCustomerInput {
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String
+  birthDate: Timestamp!
+}
+
+input UpdateCustomerInput {
+  email: String
+  password: String
+  firstName: String
+  lastName: String
+  birthDate: Timestamp
   id: Int!
 }
 
 input CreateDetailInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
+  key: String!
+  value: String!
+  articleId: Int!
 }
 
 input UpdateDetailInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+  key: String
+  value: String
+  articleId: Int
   id: Int!
 }
 
-input CreateAddressInput {
-  """Example field (placeholder)"""
-  exampleField: Int!
+input CreateOrderInput {
+  totalPrice: Float!
+  addressId: Int!
+  customerId: Int!
 }
 
-input UpdateAddressInput {
-  """Example field (placeholder)"""
-  exampleField: Int
+input UpdateOrderInput {
+  totalPrice: Float
+  addressId: Int
+  customerId: Int
+  id: Int!
+}
+
+input CreateProductInput {
+  categoryId: Int!
+  brandId: Int!
+}
+
+input UpdateProductInput {
+  categoryId: Int
+  brandId: Int
+  id: Int!
+}
+
+input CreateReviewInput {
+  stars: Int!
+  title: String!
+  review: String!
+  articleId: Int!
+  customerId: Int!
+}
+
+input UpdateReviewInput {
+  stars: Int
+  title: String
+  review: String
+  articleId: Int
+  customerId: Int
   id: Int!
 }

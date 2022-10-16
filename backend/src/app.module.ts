@@ -1,32 +1,33 @@
+import { AddressesModule } from './addresses/addresses.module';
+import { ArticleOrderModule } from './article_order/article_order.module';
+import { ArticlesModule } from './articles/articles.module';
+import { BrandsModule } from './brands/brands.module';
+import { CategoriesModule } from './categories/categories.module';
+import { CustomersModule } from './customers/customers.module';
+import { DetailsModule } from './details/details.module';
+import { OrdersModule } from './orders/orders.module';
+import { ProductsModule } from './products/products.module';
+import { ReviewsModule } from './reviews/reviews.module';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { CustomersModule } from './customers/customers.module';
-import { OrdersModule } from './orders/orders.module';
-import { ArticleOrderModule } from './article_order/article_order.module';
-import { ReviewsModule } from './reviews/reviews.module';
-import { ArticlesModule } from './articles/articles.module';
-import { ProductsModule } from './products/products.module';
-import { CategoriesModule } from './categories/categories.module';
-import { BrandsModule } from './brands/brands.module';
-import { DetailsModule } from './details/details.module';
 import { join } from 'path';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AddressesModule } from './addresses/addresses.module';
 
 @Module({
   imports: [
-    CustomersModule,
-    OrdersModule,
+    AddressesModule,
     ArticleOrderModule,
-    ReviewsModule,
     ArticlesModule,
-    ProductsModule,
-    CategoriesModule,
     BrandsModule,
+    CategoriesModule,
+    CustomersModule,
     DetailsModule,
+    OrdersModule,
+    ProductsModule,
+    ReviewsModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       debug: true,
@@ -53,7 +54,6 @@ import { AddressesModule } from './addresses/addresses.module';
       synchronize: true,
       entities: ['dist/**/*.entity{.ts,.js}'],
     }),
-    AddressesModule,
   ],
   controllers: [AppController],
   providers: [AppService],

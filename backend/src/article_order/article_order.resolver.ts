@@ -1,4 +1,4 @@
-import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
+import { Args, Int, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { ArticleOrderService } from './article_order.service';
 import { ArticleOrder } from './entities/article_order.entity';
 import { CreateArticleOrderInput } from './dto/create-article_order.input';
@@ -9,7 +9,10 @@ export class ArticleOrderResolver {
   constructor(private readonly articleOrderService: ArticleOrderService) {}
 
   @Mutation(() => ArticleOrder)
-  createArticleOrder(@Args('createArticleOrderInput') createArticleOrderInput: CreateArticleOrderInput) {
+  createArticleOrder(
+    @Args('createArticleOrderInput')
+    createArticleOrderInput: CreateArticleOrderInput,
+  ) {
     return this.articleOrderService.create(createArticleOrderInput);
   }
 
@@ -19,17 +22,30 @@ export class ArticleOrderResolver {
   }
 
   @Query(() => ArticleOrder, { name: 'articleOrder' })
-  findOne(@Args('id', { type: () => Int }) id: number) {
-    return this.articleOrderService.findOne(id);
+  findOne(
+    @Args('orderId', { type: () => Int }) orderId: number,
+    @Args('articleId', { type: () => Int }) articleId: number,
+  ) {
+    return this.articleOrderService.findOne(orderId, articleId);
   }
 
   @Mutation(() => ArticleOrder)
-  updateArticleOrder(@Args('updateArticleOrderInput') updateArticleOrderInput: UpdateArticleOrderInput) {
-    return this.articleOrderService.update(updateArticleOrderInput.id, updateArticleOrderInput);
+  updateArticleOrder(
+    @Args('updateArticleOrderInput')
+    updateArticleOrderInput: UpdateArticleOrderInput,
+  ) {
+    return this.articleOrderService.update(
+      updateArticleOrderInput.orderId,
+      updateArticleOrderInput.articleId,
+      updateArticleOrderInput,
+    );
   }
 
   @Mutation(() => ArticleOrder)
-  removeArticleOrder(@Args('id', { type: () => Int }) id: number) {
-    return this.articleOrderService.remove(id);
+  removeArticleOrder(
+    @Args('orderId', { type: () => Int }) orderId: number,
+    @Args('articleId', { type: () => Int }) articleId: number,
+  ) {
+    return this.articleOrderService.remove(orderId, articleId);
   }
 }
