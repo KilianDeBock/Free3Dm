@@ -1,10 +1,12 @@
 import { Field, Float, Int, ObjectType } from '@nestjs/graphql';
 import {
   Column,
+  CreateDateColumn,
   Entity,
   ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from 'typeorm';
 import { Product } from '../../products/entities/product.entity';
 import { ArticleOrder } from '../../article_order/entities/article_order.entity';
@@ -41,4 +43,10 @@ export class Article {
   @OneToMany(() => Review, (detail) => detail.article)
   @Field(() => [Review], { nullable: true })
   reviews?: Review[];
+
+  @CreateDateColumn({ type: 'timestamp' })
+  createdAt: Date;
+
+  @UpdateDateColumn({ type: 'timestamp' })
+  updatedAt: Date;
 }

@@ -159,7 +159,6 @@ type Mutation {
 }
 
 input CreateAddressInput {
-  id: Int!
   country: String!
   city: String!
   postalCode: String!
@@ -170,7 +169,6 @@ input CreateAddressInput {
 }
 
 input UpdateAddressInput {
-  id: Int!
   country: String
   city: String
   postalCode: String
@@ -178,6 +176,7 @@ input UpdateAddressInput {
   streetName: String
   streetNumber: String
   customerId: Int
+  id: Int!
 }
 
 input CreateArticleOrderInput {
