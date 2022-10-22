@@ -20,6 +20,10 @@ export class AddressesService {
     return this.addressRepository.find();
   }
 
+  findAllByCustomerId(id: number): Promise<Address[]> {
+    return this.addressRepository.find({ where: { customerId: id } });
+  }
+
   findOne(id: number): Promise<Address> {
     return this.addressRepository.findOneByOrFail({ id });
   }

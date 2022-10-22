@@ -4,12 +4,15 @@ import { UpdateArticleOrderInput } from './dto/update-article_order.input';
 import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, Repository } from 'typeorm';
 import { ArticleOrder } from './entities/article_order.entity';
+import { ArticlesService } from '../articles/articles.service';
+import { Article } from 'src/articles/entities/article.entity';
 
 @Injectable()
 export class ArticleOrderService {
   constructor(
     @InjectRepository(ArticleOrder)
     private articleOrderRepository: Repository<ArticleOrder>,
+    private articlesService: ArticlesService,
   ) {}
 
   create(
@@ -27,6 +30,14 @@ export class ArticleOrderService {
 
   findOne(orderId: number, articleId: number): Promise<ArticleOrder> {
     return this.articleOrderRepository.findOneByOrFail({ orderId, articleId });
+  }
+
+  findAllByOrderId(id: number): Promise<ArticleOrder[]> {
+    return this.articleOrderRepository.find({ where: { orderId: id } });
+  }
+
+  getArticle(id: number): Promise<Article> {
+    return this.articlesService.findOne(id);
   }
 
   update(

@@ -19,7 +19,7 @@ export class Order {
   @Field(() => Int)
   id: number;
 
-  @Column()
+  @Column({ type: 'float' })
   @Field(() => Float)
   totalPrice: number;
 

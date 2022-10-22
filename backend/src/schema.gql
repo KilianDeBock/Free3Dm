@@ -115,10 +115,10 @@ type Query {
   category(id: Int!): Category!
   customers: [Customer!]!
   customer(id: Int!): Customer!
-  details: [Detail!]!
-  detail(id: Int!): Detail!
   orders: [Order!]!
   order(id: Int!): Order!
+  details: [Detail!]!
+  detail(id: Int!): Detail!
   products: [Product!]!
   product(id: Int!): Product!
   reviews: [Review!]!
@@ -144,12 +144,12 @@ type Mutation {
   createCustomer(createCustomerInput: CreateCustomerInput!): Customer!
   updateCustomer(updateCustomerInput: UpdateCustomerInput!): Customer!
   removeCustomer(id: Int!): Customer!
-  createDetail(createDetailInput: CreateDetailInput!): Detail!
-  updateDetail(updateDetailInput: UpdateDetailInput!): Detail!
-  removeDetail(id: Int!): Detail!
   createOrder(createOrderInput: CreateOrderInput!): Order!
   updateOrder(updateOrderInput: UpdateOrderInput!): Order!
   removeOrder(id: Int!): Order!
+  createDetail(createDetailInput: CreateDetailInput!): Detail!
+  updateDetail(updateDetailInput: UpdateDetailInput!): Detail!
+  removeDetail(id: Int!): Detail!
   createProduct(createProductInput: CreateProductInput!): Product!
   updateProduct(updateProductInput: UpdateProductInput!): Product!
   removeProduct(id: Int!): Product!
@@ -242,19 +242,6 @@ input UpdateCustomerInput {
   id: Int!
 }
 
-input CreateDetailInput {
-  key: String!
-  value: String!
-  articleId: Int!
-}
-
-input UpdateDetailInput {
-  key: String
-  value: String
-  articleId: Int
-  id: Int!
-}
-
 input CreateOrderInput {
   totalPrice: Float!
   addressId: Int!
@@ -265,6 +252,19 @@ input UpdateOrderInput {
   totalPrice: Float
   addressId: Int
   customerId: Int
+  id: Int!
+}
+
+input CreateDetailInput {
+  key: String!
+  value: String!
+  articleId: Int!
+}
+
+input UpdateDetailInput {
+  key: String
+  value: String
+  articleId: Int
   id: Int!
 }
 

@@ -20,7 +20,7 @@ export class Article {
   @Field(() => Int)
   id: number;
 
-  @Column()
+  @Column({ type: 'float' })
   @Field(() => Float)
   price: number;
 
