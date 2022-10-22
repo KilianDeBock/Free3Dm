@@ -5,7 +5,7 @@ import {
   CenterBoxComponent,
   ImageComponent,
 } from '../../components';
-import { useApp } from '../../contexts/App.context';
+import { useApp } from '../../contexts';
 
 const heading = {
   text: {
@@ -62,7 +62,7 @@ const recommendedArticles: CardProps[] = [
 
 export const HomePage = (): JSX.Element => {
   useApp()?.setTitle('Home');
-  
+
   return (
     <>
       <CenterBoxComponent title={heading.text.title} text={heading.text.text} />

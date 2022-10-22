@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { useApp } from '../../contexts';
 
 export const NotFoundPage = (): JSX.Element => {
-  useEffect(() => {
-    document.title = 'Page Not Found - Free3Dm';
-  });
+  useApp()?.setTitle('Page Not Found');
 
   return (
     <section>

@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { AuthProvider } from './Auth.context';
+import { AuthProvider } from './';
 
 export interface AppContextInterface {
   title: string;
