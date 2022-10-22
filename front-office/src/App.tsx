@@ -1,27 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { CookiesProvider } from 'react-cookie';
-import { BaseLayout } from './layouts';
-import { ROUTES } from './constants/routes';
-import { HomePage, NotFoundPage } from './pages';
 import './index.css';
-import { AppProvider } from './contexts/App.context';
+import { AppProvider } from './contexts';
+import { pages } from './pages';
 
 function App() {
   return (
-    <CookiesProvider>
-      <AppProvider>
-        <Router>
-          <Routes>
-            <Route element={<BaseLayout />}>
-              <Route index path={ROUTES.HOME} element={<HomePage />} />
-              {/*<Route path={ROUTES.LANDING_PAGE} element={<NotFoundPage />} />*/}
-              <Route path="*" element={<NotFoundPage />} />
-            </Route>
-          </Routes>
-        </Router>
-      </AppProvider>
-    </CookiesProvider>
+    <AppProvider>
+      {pages({
+        layout: 'base',
+        notFoundPage: true,
+      })}
+    </AppProvider>
   );
 }
 

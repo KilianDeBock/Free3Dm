@@ -4,11 +4,10 @@ import './reset.css';
 import './fonts.css';
 import './defaults.css';
 import './eggs.css';
-import { HeaderComponent } from '../../components';
-import { FooterComponent } from '../../components/Footer/Footer.component';
+import { FooterComponent, HeaderComponent } from '../../components';
 import styles from './Base.module.css';
 
-const BaseLayout = () => (
+export const BaseLayout = () => (
   <>
     <HeaderComponent />
     <main className={styles.main}>
@@ -17,5 +16,3 @@ const BaseLayout = () => (
     <FooterComponent />
   </>
 );
-
-export default BaseLayout;

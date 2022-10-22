@@ -1,4 +1,5 @@
-export const ROUTES = Object.freeze({
-  HOME: '',
-  LANDING_PAGE: 'welcome',
-});
+export enum ROUTES {
+  HOME = '',
+  LANDING_PAGE = 'welcome',
+  CATEGORIES = 'category/:name',
+}

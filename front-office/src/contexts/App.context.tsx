@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { AuthProvider } from './';
+import { BrowserRouter as Router, Routes } from 'react-router-dom';
+import { CookiesProvider } from 'react-cookie';
 
 export interface AppContextInterface {
   title: string;
@@ -27,7 +29,13 @@ export const AppProvider = ({ children }: AppContextProps) => {
         setTitle,
       }}
     >
-      <AuthProvider>{children}</AuthProvider>
+      <CookiesProvider>
+        <AuthProvider>
+          <Router>
+            <Routes>{children}</Routes>
+          </Router>
+        </AuthProvider>
+      </CookiesProvider>
     </AppContext.Provider>
   );
 };
