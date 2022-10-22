@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   CardGroupComponent,
   CardProps,
   CenterBoxComponent,
   ImageComponent,
 } from '../../components';
+import { useApp } from '../../contexts/App.context';
 
 const heading = {
   text: {
@@ -60,10 +61,8 @@ const recommendedArticles: CardProps[] = [
 ];
 
 export const HomePage = (): JSX.Element => {
-  useEffect(() => {
-    document.title = 'Home - Free3Dm';
-  });
-
+  useApp()?.setTitle('Home');
+  
   return (
     <>
       <CenterBoxComponent title={heading.text.title} text={heading.text.text} />

@@ -5,19 +5,22 @@ import { BaseLayout } from './layouts';
 import { ROUTES } from './constants/routes';
 import { HomePage, NotFoundPage } from './pages';
 import './index.css';
+import { AppProvider } from './contexts/App.context';
 
 function App() {
   return (
     <CookiesProvider>
-      <Router>
-        <Routes>
-          <Route element={<BaseLayout />}>
-            <Route index path={ROUTES.HOME} element={<HomePage />} />
-            {/*<Route path={ROUTES.LANDING_PAGE} element={<NotFoundPage />} />*/}
-            <Route path="*" element={<NotFoundPage />} />
-          </Route>
-        </Routes>
-      </Router>
+      <AppProvider>
+        <Router>
+          <Routes>
+            <Route element={<BaseLayout />}>
+              <Route index path={ROUTES.HOME} element={<HomePage />} />
+              {/*<Route path={ROUTES.LANDING_PAGE} element={<NotFoundPage />} />*/}
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
+          </Routes>
+        </Router>
+      </AppProvider>
     </CookiesProvider>
   );
 }
