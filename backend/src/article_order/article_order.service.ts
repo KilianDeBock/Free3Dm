@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import { CreateArticleOrderInput } from './dto/create-article_order.input';
 import { UpdateArticleOrderInput } from './dto/update-article_order.input';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -12,6 +12,7 @@ export class ArticleOrderService {
   constructor(
     @InjectRepository(ArticleOrder)
     private articleOrderRepository: Repository<ArticleOrder>,
+    @Inject(forwardRef(() => ArticlesService))
     private articlesService: ArticlesService,
   ) {}
 

@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import { CreateOrderInput } from './dto/create-order.input';
 import { UpdateOrderInput } from './dto/update-order.input';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -13,7 +13,9 @@ import { Address } from '../addresses/entities/address.entity';
 export class OrdersService {
   constructor(
     @InjectRepository(Order) private orderRepository: Repository<Order>,
+    @Inject(forwardRef(() => ArticleOrderService))
     private articleOrderService: ArticleOrderService,
+    @Inject(forwardRef(() => AddressesService))
     private addressesService: AddressesService,
   ) {}
 
@@ -32,6 +34,10 @@ export class OrdersService {
 
   findAllByCustomerId(id: number): Promise<Order[]> {
     return this.orderRepository.find({ where: { customerId: id } });
+  }
+
+  findAllByAddressId(id: number): Promise<Order[]> {
+    return this.orderRepository.find({ where: { addressId: id } });
   }
 
   findAllArticles(id: number): Promise<ArticleOrder[]> {

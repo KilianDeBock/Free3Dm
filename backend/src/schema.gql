@@ -106,6 +106,10 @@ type Address {
 type Query {
   addresses: [Address!]!
   address(id: Int!): Address!
+  customers: [Customer!]!
+  customer(id: Int!): Customer!
+  orders: [Order!]!
+  order(id: Int!): Order!
   articleOrder(orderId: Int!, articleId: Int!): ArticleOrder!
   articles: [Article!]!
   article(id: Int!): Article!
@@ -115,10 +119,6 @@ type Query {
   category(id: Int!): Category!
   products: [Product!]!
   product(id: Int!): Product!
-  customers: [Customer!]!
-  customer(id: Int!): Customer!
-  orders: [Order!]!
-  order(id: Int!): Order!
   details: [Detail!]!
   detail(id: Int!): Detail!
   reviews: [Review!]!
@@ -129,6 +129,12 @@ type Mutation {
   createAddress(createAddressInput: CreateAddressInput!): Address!
   updateAddress(updateAddressInput: UpdateAddressInput!): Address!
   removeAddress(id: Int!): Address!
+  createCustomer(createCustomerInput: CreateCustomerInput!): Customer!
+  updateCustomer(updateCustomerInput: UpdateCustomerInput!): Customer!
+  removeCustomer(id: Int!): Customer!
+  createOrder(createOrderInput: CreateOrderInput!): Order!
+  updateOrder(updateOrderInput: UpdateOrderInput!): Order!
+  removeOrder(id: Int!): Order!
   createArticleOrder(createArticleOrderInput: CreateArticleOrderInput!): ArticleOrder!
   updateArticleOrder(updateArticleOrderInput: UpdateArticleOrderInput!): ArticleOrder!
   removeArticleOrder(orderId: Int!, articleId: Int!): ArticleOrder!
@@ -144,12 +150,6 @@ type Mutation {
   createProduct(createProductInput: CreateProductInput!): Product!
   updateProduct(updateProductInput: UpdateProductInput!): Product!
   removeProduct(id: Int!): Product!
-  createCustomer(createCustomerInput: CreateCustomerInput!): Customer!
-  updateCustomer(updateCustomerInput: UpdateCustomerInput!): Customer!
-  removeCustomer(id: Int!): Customer!
-  createOrder(createOrderInput: CreateOrderInput!): Order!
-  updateOrder(updateOrderInput: UpdateOrderInput!): Order!
-  removeOrder(id: Int!): Order!
   createDetail(createDetailInput: CreateDetailInput!): Detail!
   updateDetail(updateDetailInput: UpdateDetailInput!): Detail!
   removeDetail(id: Int!): Detail!
@@ -175,6 +175,36 @@ input UpdateAddressInput {
   state: String
   streetName: String
   streetNumber: String
+  customerId: Int
+  id: Int!
+}
+
+input CreateCustomerInput {
+  email: String!
+  password: String!
+  firstName: String!
+  lastName: String
+  birthDate: Timestamp!
+}
+
+input UpdateCustomerInput {
+  email: String
+  password: String
+  firstName: String
+  lastName: String
+  birthDate: Timestamp
+  id: Int!
+}
+
+input CreateOrderInput {
+  totalPrice: Float!
+  addressId: Int!
+  customerId: Int!
+}
+
+input UpdateOrderInput {
+  totalPrice: Float
+  addressId: Int
   customerId: Int
   id: Int!
 }
@@ -233,36 +263,6 @@ input CreateProductInput {
 input UpdateProductInput {
   categoryId: Int
   brandId: Int
-  id: Int!
-}
-
-input CreateCustomerInput {
-  email: String!
-  password: String!
-  firstName: String!
-  lastName: String
-  birthDate: Timestamp!
-}
-
-input UpdateCustomerInput {
-  email: String
-  password: String
-  firstName: String
-  lastName: String
-  birthDate: Timestamp
-  id: Int!
-}
-
-input CreateOrderInput {
-  totalPrice: Float!
-  addressId: Int!
-  customerId: Int!
-}
-
-input UpdateOrderInput {
-  totalPrice: Float
-  addressId: Int
-  customerId: Int
   id: Int!
 }
 

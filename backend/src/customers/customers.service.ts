@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import { CreateCustomerInput } from './dto/create-customer.input';
 import { UpdateCustomerInput } from './dto/update-customer.input';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -14,7 +14,9 @@ export class CustomersService {
   constructor(
     @InjectRepository(Customer)
     private customerRepository: Repository<Customer>,
+    @Inject(forwardRef(() => AddressesService))
     private addressesService: AddressesService,
+    @Inject(forwardRef(() => OrdersService))
     private ordersService: OrdersService,
   ) {}
 
