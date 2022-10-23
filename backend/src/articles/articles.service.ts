@@ -20,6 +20,10 @@ export class ArticlesService {
     return this.articleRepository.find();
   }
 
+  findAllByProductId(id: number): Promise<Article[]> {
+    return this.articleRepository.find({ where: { productId: id } });
+  }
+
   findOne(id: number): Promise<Article> {
     return this.articleRepository.findOneByOrFail({ id });
   }

@@ -4,11 +4,14 @@ import { UpdateProductInput } from './dto/update-product.input';
 import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, Repository } from 'typeorm';
 import { Product } from './entities/product.entity';
+import { Article } from 'src/articles/entities/article.entity';
+import { ArticlesService } from '../articles/articles.service';
 
 @Injectable()
 export class ProductsService {
   constructor(
     @InjectRepository(Product) private productRepository: Repository<Product>,
+    private articlesService: ArticlesService,
   ) {}
 
   create(createProductInput: CreateProductInput): Promise<Product> {
@@ -18,6 +21,14 @@ export class ProductsService {
 
   findAll(): Promise<Product[]> {
     return this.productRepository.find();
+  }
+
+  findAllByCustomerId(id: number): Promise<Product[]> {
+    return this.productRepository.find({ where: { categoryId: id } });
+  }
+
+  getArticles(id: number): Promise<Article[]> {
+    return this.articlesService.findAllByProductId(id);
   }
 
   findOne(id: number): Promise<Product> {

@@ -113,14 +113,14 @@ type Query {
   brand(id: Int!): Brand!
   categories: [Category!]!
   category(id: Int!): Category!
+  products: [Product!]!
+  product(id: Int!): Product!
   customers: [Customer!]!
   customer(id: Int!): Customer!
   orders: [Order!]!
   order(id: Int!): Order!
   details: [Detail!]!
   detail(id: Int!): Detail!
-  products: [Product!]!
-  product(id: Int!): Product!
   reviews: [Review!]!
   review(id: Int!): Review!
 }
@@ -141,6 +141,9 @@ type Mutation {
   createCategory(createCategoryInput: CreateCategoryInput!): Category!
   updateCategory(updateCategoryInput: UpdateCategoryInput!): Category!
   removeCategory(id: Int!): Category!
+  createProduct(createProductInput: CreateProductInput!): Product!
+  updateProduct(updateProductInput: UpdateProductInput!): Product!
+  removeProduct(id: Int!): Product!
   createCustomer(createCustomerInput: CreateCustomerInput!): Customer!
   updateCustomer(updateCustomerInput: UpdateCustomerInput!): Customer!
   removeCustomer(id: Int!): Customer!
@@ -150,9 +153,6 @@ type Mutation {
   createDetail(createDetailInput: CreateDetailInput!): Detail!
   updateDetail(updateDetailInput: UpdateDetailInput!): Detail!
   removeDetail(id: Int!): Detail!
-  createProduct(createProductInput: CreateProductInput!): Product!
-  updateProduct(updateProductInput: UpdateProductInput!): Product!
-  removeProduct(id: Int!): Product!
   createReview(createReviewInput: CreateReviewInput!): Review!
   updateReview(updateReviewInput: UpdateReviewInput!): Review!
   removeReview(id: Int!): Review!
@@ -225,6 +225,17 @@ input UpdateCategoryInput {
   id: Int!
 }
 
+input CreateProductInput {
+  categoryId: Int!
+  brandId: Int!
+}
+
+input UpdateProductInput {
+  categoryId: Int
+  brandId: Int
+  id: Int!
+}
+
 input CreateCustomerInput {
   email: String!
   password: String!
@@ -265,17 +276,6 @@ input UpdateDetailInput {
   key: String
   value: String
   articleId: Int
-  id: Int!
-}
-
-input CreateProductInput {
-  categoryId: Int!
-  brandId: Int!
-}
-
-input UpdateProductInput {
-  categoryId: Int
-  brandId: Int
   id: Int!
 }
 
