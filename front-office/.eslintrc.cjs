@@ -16,7 +16,10 @@ module.exports = {
       tsx: true,
     },
   },
-  plugins: ['react', 'prettier'],
+  plugins: [
+    'react',
+    'prettier',
+  ],
   rules: {
     'no-unused-vars': 'off',
     'linebreak-style': 'off',
