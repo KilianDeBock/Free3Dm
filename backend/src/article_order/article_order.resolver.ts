@@ -12,6 +12,7 @@ import { ArticleOrder } from './entities/article_order.entity';
 import { CreateArticleOrderInput } from './dto/create-article_order.input';
 import { UpdateArticleOrderInput } from './dto/update-article_order.input';
 import { Article } from 'src/articles/entities/article.entity';
+import { Order } from '../orders/entities/order.entity';
 
 @Resolver(() => ArticleOrder)
 export class ArticleOrderResolver {
@@ -41,6 +42,11 @@ export class ArticleOrderResolver {
   @ResolveField(() => Article)
   article(@Parent() articleOrder: ArticleOrder): Promise<Article> {
     return this.articleOrderService.getArticle(articleOrder.articleId);
+  }
+
+  @ResolveField(() => Order)
+  order(@Parent() articleOrder: ArticleOrder): Promise<Order> {
+    return this.articleOrderService.getOrder(articleOrder.orderId);
   }
 
   @Mutation(() => ArticleOrder)

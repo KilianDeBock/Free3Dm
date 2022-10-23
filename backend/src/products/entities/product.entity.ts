@@ -20,6 +20,10 @@ export class Product {
   id: number;
 
   @Column()
+  @Field()
+  name: string;
+
+  @Column()
   @Field(() => Int)
   categoryId: number;
 

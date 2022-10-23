@@ -7,4 +7,7 @@ export class CreateProductInput {
 
   @Field(() => Int)
   brandId: number;
+
+  @Field()
+  name: string;
 }

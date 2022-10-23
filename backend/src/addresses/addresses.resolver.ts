@@ -37,12 +37,12 @@ export class AddressesResolver {
 
   @ResolveField(() => Customer)
   customer(@Parent() address: Address): Promise<Customer> {
-    return this.addressesService.findCustomer(address.customerId);
+    return this.addressesService.getCustomer(address.customerId);
   }
 
   @ResolveField(() => [Order])
   orders(@Parent() address: Address): Promise<Order[]> {
-    return this.addressesService.findAllOrders(address.id);
+    return this.addressesService.getAllOrders(address.id);
   }
 
   @Mutation(() => Address)

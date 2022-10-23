@@ -5,8 +5,10 @@
 type Category {
   id: Int!
   name: String!
+  categoryId: Int
+  category: Category
+  categories: [Category!]
   products: [Product!]
-  category: [Category!]
 }
 
 type Brand {
@@ -19,6 +21,7 @@ type Brand {
 
 type Product {
   id: Int!
+  name: String!
   categoryId: Int!
   category: Category!
   brandId: Int!
@@ -113,16 +116,16 @@ type Query {
   articleOrder(orderId: Int!, articleId: Int!): ArticleOrder!
   articles: [Article!]!
   article(id: Int!): Article!
-  brands: [Brand!]!
-  brand(id: Int!): Brand!
-  categories: [Category!]!
-  category(id: Int!): Category!
+  reviews: [Review!]!
+  review(id: Int!): Review!
   products: [Product!]!
   product(id: Int!): Product!
   details: [Detail!]!
   detail(id: Int!): Detail!
-  reviews: [Review!]!
-  review(id: Int!): Review!
+  brands: [Brand!]!
+  brand(id: Int!): Brand!
+  categories: [Category!]!
+  category(id: Int!): Category!
 }
 
 type Mutation {
@@ -141,21 +144,21 @@ type Mutation {
   createArticle(createArticleInput: CreateArticleInput!): Article!
   updateArticle(updateArticleInput: UpdateArticleInput!): Article!
   removeArticle(id: Int!): Article!
-  createBrand(createBrandInput: CreateBrandInput!): Brand!
-  updateBrand(updateBrandInput: UpdateBrandInput!): Brand!
-  removeBrand(id: Int!): Brand!
-  createCategory(createCategoryInput: CreateCategoryInput!): Category!
-  updateCategory(updateCategoryInput: UpdateCategoryInput!): Category!
-  removeCategory(id: Int!): Category!
+  createReview(createReviewInput: CreateReviewInput!): Review!
+  updateReview(updateReviewInput: UpdateReviewInput!): Review!
+  removeReview(id: Int!): Review!
   createProduct(createProductInput: CreateProductInput!): Product!
   updateProduct(updateProductInput: UpdateProductInput!): Product!
   removeProduct(id: Int!): Product!
   createDetail(createDetailInput: CreateDetailInput!): Detail!
   updateDetail(updateDetailInput: UpdateDetailInput!): Detail!
   removeDetail(id: Int!): Detail!
-  createReview(createReviewInput: CreateReviewInput!): Review!
-  updateReview(updateReviewInput: UpdateReviewInput!): Review!
-  removeReview(id: Int!): Review!
+  createBrand(createBrandInput: CreateBrandInput!): Brand!
+  updateBrand(updateBrandInput: UpdateBrandInput!): Brand!
+  removeBrand(id: Int!): Brand!
+  createCategory(createCategoryInput: CreateCategoryInput!): Category!
+  updateCategory(updateCategoryInput: UpdateCategoryInput!): Category!
+  removeCategory(id: Int!): Category!
 }
 
 input CreateAddressInput {
@@ -233,36 +236,33 @@ input UpdateArticleInput {
   id: Int!
 }
 
-input CreateBrandInput {
-  name: String!
-  contactNumber: Int!
-  btwNumber: String!
+input CreateReviewInput {
+  stars: Int!
+  title: String!
+  review: String!
+  articleId: Int!
+  customerId: Int!
 }
 
-input UpdateBrandInput {
-  name: String
-  contactNumber: Int
-  btwNumber: String
-  id: Int!
-}
-
-input CreateCategoryInput {
-  name: String!
-}
-
-input UpdateCategoryInput {
-  name: String
+input UpdateReviewInput {
+  stars: Int
+  title: String
+  review: String
+  articleId: Int
+  customerId: Int
   id: Int!
 }
 
 input CreateProductInput {
   categoryId: Int!
   brandId: Int!
+  name: String!
 }
 
 input UpdateProductInput {
   categoryId: Int
   brandId: Int
+  name: String
   id: Int!
 }
 
@@ -279,19 +279,26 @@ input UpdateDetailInput {
   id: Int!
 }
 
-input CreateReviewInput {
-  stars: Int!
-  title: String!
-  review: String!
-  articleId: Int!
-  customerId: Int!
+input CreateBrandInput {
+  name: String!
+  contactNumber: Int!
+  btwNumber: String!
 }
 
-input UpdateReviewInput {
-  stars: Int
-  title: String
-  review: String
-  articleId: Int
-  customerId: Int
+input UpdateBrandInput {
+  name: String
+  contactNumber: Int
+  btwNumber: String
+  id: Int!
+}
+
+input CreateCategoryInput {
+  name: String!
+  categoryId: Int
+}
+
+input UpdateCategoryInput {
+  name: String
+  categoryId: Int
   id: Int!
 }

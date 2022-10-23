@@ -3,6 +3,7 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  ManyToOne,
   OneToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
@@ -20,13 +21,21 @@ export class Category {
   @Field()
   name: string;
 
+  @Column({ nullable: true })
+  @Field(() => Int, { nullable: true })
+  categoryId?: number;
+
+  @ManyToOne(() => Category, (category) => category.categories)
+  @Field(() => Category, { nullable: true })
+  category?: Category;
+
+  @OneToMany(() => Category, (category) => category.categories)
+  @Field(() => [Category], { nullable: true })
+  categories?: Category[];
+
   @OneToMany(() => Product, (product) => product.category)
   @Field(() => [Product], { nullable: true })
   products?: Product[];
-
-  @OneToMany(() => Category, (category) => category.category)
-  @Field(() => [Category], { nullable: true })
-  category?: Category[];
 
   @CreateDateColumn({ type: 'timestamp' })
   createdAt: Date;

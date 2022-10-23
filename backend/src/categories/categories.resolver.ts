@@ -34,9 +34,15 @@ export class CategoriesResolver {
     return this.categoriesService.findOne(id);
   }
 
+  @ResolveField(() => [Category])
+  categories(@Parent() category: Category): Promise<Category[]> {
+    // This is a special one, we use "find" here since we will be looking in the same repo & not a service of another entity.
+    return this.categoriesService.getAllCategories(category.id);
+  }
+
   @ResolveField(() => [Product])
   products(@Parent() category: Category): Promise<Product[]> {
-    return this.categoriesService.findAllProducts(category.id);
+    return this.categoriesService.getAllProducts(category.id);
   }
 
   @Mutation(() => Category)

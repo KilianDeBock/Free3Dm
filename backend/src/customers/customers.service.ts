@@ -8,6 +8,8 @@ import { Address } from '../addresses/entities/address.entity';
 import { AddressesService } from '../addresses/addresses.service';
 import { Order } from '../orders/entities/order.entity';
 import { OrdersService } from '../orders/orders.service';
+import { Review } from '../reviews/entities/review.entity';
+import { ReviewsService } from '../reviews/reviews.service';
 
 @Injectable()
 export class CustomersService {
@@ -18,6 +20,8 @@ export class CustomersService {
     private addressesService: AddressesService,
     @Inject(forwardRef(() => OrdersService))
     private ordersService: OrdersService,
+    @Inject(forwardRef(() => ReviewsService))
+    private reviewsService: ReviewsService,
   ) {}
 
   create(createCustomerInput: CreateCustomerInput): Promise<Customer> {
@@ -33,14 +37,6 @@ export class CustomersService {
     return this.customerRepository.findOneByOrFail({ id });
   }
 
-  findAllAddresses(id: number): Promise<Address[]> {
-    return this.addressesService.findAllByCustomerId(id);
-  }
-
-  findAllOrders(id: number): Promise<Order[]> {
-    return this.ordersService.findAllByCustomerId(id);
-  }
-
   update(
     id: number,
     updateCustomerInput: UpdateCustomerInput,
@@ -52,5 +48,18 @@ export class CustomersService {
 
   remove(id: number): Promise<DeleteResult> {
     return this.customerRepository.delete({ id });
+  }
+
+  // Gets: Functions that execute another entity's service function.
+  getAllAddresses(id: number): Promise<Address[]> {
+    return this.addressesService.findAllByCustomerId(id);
+  }
+
+  getAllOrders(id: number): Promise<Order[]> {
+    return this.ordersService.findAllByCustomerId(id);
+  }
+
+  getAllReviews(id: number): Promise<Review[]> {
+    return this.reviewsService.findAllByCustomerId(id);
   }
 }

@@ -12,7 +12,8 @@ import { Product } from './entities/product.entity';
 import { CreateProductInput } from './dto/create-product.input';
 import { UpdateProductInput } from './dto/update-product.input';
 import { Article } from '../articles/entities/article.entity';
-import { ArticleOrder } from '../article_order/entities/article_order.entity';
+import { Brand } from '../brands/entities/brand.entity';
+import { Category } from 'src/categories/entities/category.entity';
 
 @Resolver(() => Product)
 export class ProductsResolver {
@@ -35,9 +36,19 @@ export class ProductsResolver {
     return this.productsService.findOne(id);
   }
 
+  @ResolveField(() => Category)
+  category(@Parent() product: Product): Promise<Category> {
+    return this.productsService.getCategory(product.categoryId);
+  }
+
+  @ResolveField(() => Brand)
+  brand(@Parent() product: Product): Promise<Brand> {
+    return this.productsService.getBrand(product.brandId);
+  }
+
   @ResolveField(() => [Article])
-  articles(@Parent() articleOrder: ArticleOrder): Promise<Article[]> {
-    return this.productsService.getArticles(articleOrder.articleId);
+  articles(@Parent() product: Product): Promise<Article[]> {
+    return this.productsService.getArticles(product.id);
   }
 
   @Mutation(() => Product)

@@ -37,14 +37,6 @@ export class AddressesService {
     return this.addressRepository.findOneByOrFail({ id });
   }
 
-  findCustomer(id: number): Promise<Customer> {
-    return this.customersService.findOne(id);
-  }
-
-  findAllOrders(id: number): Promise<Order[]> {
-    return this.ordersService.findAllByAddressId(id);
-  }
-
   update(id: number, updateAddressInput: UpdateAddressInput): Promise<Address> {
     const oldAddress = this.addressRepository.findOneByOrFail({ id });
     const newAddress = { ...oldAddress, ...updateAddressInput };
@@ -53,5 +45,14 @@ export class AddressesService {
 
   remove(id: number): Promise<DeleteResult> {
     return this.addressRepository.delete({ id });
+  }
+
+  // Gets: Functions that execute another entity's service function.
+  getCustomer(id: number): Promise<Customer> {
+    return this.customersService.findOne(id);
+  }
+
+  getAllOrders(id: number): Promise<Order[]> {
+    return this.ordersService.findAllByAddressId(id);
   }
 }

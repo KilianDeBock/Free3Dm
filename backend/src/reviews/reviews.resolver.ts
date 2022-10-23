@@ -1,15 +1,27 @@
-import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
+import {
+  Args,
+  Int,
+  Mutation,
+  Parent,
+  Query,
+  ResolveField,
+  Resolver,
+} from '@nestjs/graphql';
 import { ReviewsService } from './reviews.service';
 import { Review } from './entities/review.entity';
 import { CreateReviewInput } from './dto/create-review.input';
 import { UpdateReviewInput } from './dto/update-review.input';
+import { Customer } from '../customers/entities/customer.entity';
+import { Article } from 'src/articles/entities/article.entity';
 
 @Resolver(() => Review)
 export class ReviewsResolver {
   constructor(private readonly reviewsService: ReviewsService) {}
 
   @Mutation(() => Review)
-  createReview(@Args('createReviewInput') createReviewInput: CreateReviewInput) {
+  createReview(
+    @Args('createReviewInput') createReviewInput: CreateReviewInput,
+  ) {
     return this.reviewsService.create(createReviewInput);
   }
 
@@ -23,8 +35,20 @@ export class ReviewsResolver {
     return this.reviewsService.findOne(id);
   }
 
+  @ResolveField(() => Article)
+  article(@Parent() review: Review): Promise<Article> {
+    return this.reviewsService.getArticle(review.articleId);
+  }
+
+  @ResolveField(() => Customer)
+  customer(@Parent() review: Review): Promise<Customer> {
+    return this.reviewsService.getCustomer(review.customerId);
+  }
+
   @Mutation(() => Review)
-  updateReview(@Args('updateReviewInput') updateReviewInput: UpdateReviewInput) {
+  updateReview(
+    @Args('updateReviewInput') updateReviewInput: UpdateReviewInput,
+  ) {
     return this.reviewsService.update(updateReviewInput.id, updateReviewInput);
   }
 

@@ -1,14 +1,18 @@
-import { Injectable } from '@nestjs/common';
+import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import { CreateBrandInput } from './dto/create-brand.input';
 import { UpdateBrandInput } from './dto/update-brand.input';
 import { InjectRepository } from '@nestjs/typeorm';
 import { DeleteResult, Repository } from 'typeorm';
 import { Brand } from './entities/brand.entity';
+import { ProductsService } from '../products/products.service';
+import { Product } from '../products/entities/product.entity';
 
 @Injectable()
 export class BrandsService {
   constructor(
     @InjectRepository(Brand) private brandRepository: Repository<Brand>,
+    @Inject(forwardRef(() => ProductsService))
+    private productsService: ProductsService,
   ) {}
 
   create(createBrandInput: CreateBrandInput): Promise<Brand> {
@@ -32,5 +36,10 @@ export class BrandsService {
 
   remove(id: number): Promise<DeleteResult> {
     return this.brandRepository.delete({ id });
+  }
+
+  // Gets: Functions that execute another entity's service function.
+  getAllProducts(id: number): Promise<Product[]> {
+    return this.productsService.findAllByBrandId(id);
   }
 }

@@ -13,6 +13,7 @@ import { CreateOrderInput } from './dto/create-order.input';
 import { UpdateOrderInput } from './dto/update-order.input';
 import { ArticleOrder } from '../article_order/entities/article_order.entity';
 import { Address } from '../addresses/entities/address.entity';
+import { Customer } from 'src/customers/entities/customer.entity';
 
 @Resolver(() => Order)
 export class OrdersResolver {
@@ -33,14 +34,19 @@ export class OrdersResolver {
     return this.ordersService.findOne(id);
   }
 
-  @ResolveField(() => [ArticleOrder])
-  articles(@Parent() order: Order): Promise<ArticleOrder[]> {
-    return this.ordersService.findAllArticles(order.id);
-  }
-
   @ResolveField(() => Address)
   address(@Parent() order: Order): Promise<Address> {
-    return this.ordersService.findAddress(order.addressId);
+    return this.ordersService.getAddress(order.addressId);
+  }
+
+  @ResolveField(() => Customer)
+  customer(@Parent() order: Order): Promise<Customer> {
+    return this.ordersService.getCustomer(order.customerId);
+  }
+
+  @ResolveField(() => [ArticleOrder])
+  articles(@Parent() order: Order): Promise<ArticleOrder[]> {
+    return this.ordersService.getAllArticles(order.id);
   }
 
   @Mutation(() => Order)

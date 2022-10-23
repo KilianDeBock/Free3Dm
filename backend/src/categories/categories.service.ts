@@ -29,10 +29,6 @@ export class CategoriesService {
     return this.categoryRepository.findOneByOrFail({ id });
   }
 
-  findAllProducts(id: number): Promise<Product[]> {
-    return this.productsService.findAllByCustomerId(id);
-  }
-
   update(
     id: number,
     updateCategoryInput: UpdateCategoryInput,
@@ -44,5 +40,14 @@ export class CategoriesService {
 
   remove(id: number): Promise<DeleteResult> {
     return this.categoryRepository.delete({ id });
+  }
+
+  // Gets: Functions that execute another entity's service function.
+  getAllCategories(id: number): Promise<Category[]> {
+    return this.categoryRepository.find({ where: { categoryId: id } });
+  }
+
+  getAllProducts(id: number): Promise<Product[]> {
+    return this.productsService.findAllByCustomerId(id);
   }
 }

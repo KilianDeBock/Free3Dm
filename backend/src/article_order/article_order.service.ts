@@ -6,6 +6,8 @@ import { DeleteResult, Repository } from 'typeorm';
 import { ArticleOrder } from './entities/article_order.entity';
 import { ArticlesService } from '../articles/articles.service';
 import { Article } from 'src/articles/entities/article.entity';
+import { OrdersService } from '../orders/orders.service';
+import { Order } from '../orders/entities/order.entity';
 
 @Injectable()
 export class ArticleOrderService {
@@ -14,6 +16,8 @@ export class ArticleOrderService {
     private articleOrderRepository: Repository<ArticleOrder>,
     @Inject(forwardRef(() => ArticlesService))
     private articlesService: ArticlesService,
+    @Inject(forwardRef(() => OrdersService))
+    private ordersService: OrdersService,
   ) {}
 
   create(
@@ -37,8 +41,8 @@ export class ArticleOrderService {
     return this.articleOrderRepository.find({ where: { orderId: id } });
   }
 
-  getArticle(id: number): Promise<Article> {
-    return this.articlesService.findOne(id);
+  findAllByArticleId(id: number): Promise<ArticleOrder[]> {
+    return this.articleOrderRepository.find({ where: { articleId: id } });
   }
 
   update(
@@ -56,5 +60,14 @@ export class ArticleOrderService {
 
   remove(orderId: number, articleId: number): Promise<DeleteResult> {
     return this.articleOrderRepository.delete({ orderId, articleId });
+  }
+
+  // Gets: Functions that execute another entity's service function.
+  getArticle(id: number): Promise<Article> {
+    return this.articlesService.findOne(id);
+  }
+
+  getOrder(id: number): Promise<Order> {
+    return this.ordersService.findOne(id);
   }
 }

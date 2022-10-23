@@ -13,6 +13,7 @@ import { CreateCustomerInput } from './dto/create-customer.input';
 import { UpdateCustomerInput } from './dto/update-customer.input';
 import { Address } from '../addresses/entities/address.entity';
 import { Order } from '../orders/entities/order.entity';
+import { Review } from 'src/reviews/entities/review.entity';
 
 @Resolver(() => Customer)
 export class CustomersResolver {
@@ -37,12 +38,17 @@ export class CustomersResolver {
 
   @ResolveField(() => [Address])
   addresses(@Parent() customer: Customer): Promise<Address[]> {
-    return this.customersService.findAllAddresses(customer.id);
+    return this.customersService.getAllAddresses(customer.id);
   }
 
   @ResolveField(() => [Order])
   orders(@Parent() customer: Customer): Promise<Order[]> {
-    return this.customersService.findAllOrders(customer.id);
+    return this.customersService.getAllOrders(customer.id);
+  }
+
+  @ResolveField(() => [Review])
+  reviews(@Parent() customer: Customer): Promise<Review[]> {
+    return this.customersService.getAllReviews(customer.id);
   }
 
   @Mutation(() => Customer)
