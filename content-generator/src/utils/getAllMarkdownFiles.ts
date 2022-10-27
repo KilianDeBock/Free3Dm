@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 export function getAllMarkdownFiles(
-  startFolder,
+  startFolder: string,
   prefix: string = '',
   suffix: string = '',
 ): any {

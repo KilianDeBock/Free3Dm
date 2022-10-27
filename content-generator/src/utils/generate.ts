@@ -1,5 +1,5 @@
 import { getAllMarkdownFiles } from './getAllMarkdownFiles';
-import { createMarkdownFile } from './createMarkdownFile';
+import { createMarkdownFile, MarkdownObject } from './createMarkdownFile';
 
 export interface PrefixSuffix {
   prefix?: string;
@@ -9,10 +9,9 @@ export interface PrefixSuffix {
 export const generate = (
   generate: string,
   from: string,
-  add: PrefixSuffix,
-): void => {
+  add: PrefixSuffix = { prefix: '', suffix: '' },
+): MarkdownObject => {
   const { prefix = '', suffix = '' }: PrefixSuffix = add;
   const contents = getAllMarkdownFiles(from, prefix, suffix);
-  console.log(contents);
-  createMarkdownFile(contents, generate);
+  return createMarkdownFile(contents, generate);
 };

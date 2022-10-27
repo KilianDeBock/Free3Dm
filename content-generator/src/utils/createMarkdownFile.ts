@@ -1,6 +1,18 @@
 import fs from 'fs';
 
-export function createMarkdownFile(contents: any, name: string): void {
+export interface ContentObject {
+  [key: string]: string;
+}
+
+export interface MarkdownObject {
+  default: ContentObject;
+  strings: ContentObject[];
+}
+
+export function createMarkdownFile(
+  contents: ContentObject,
+  name: string,
+): MarkdownObject {
   const _normalExports = [];
   Object.keys(contents).forEach((key) => {
     _normalExports.push(
@@ -16,4 +28,8 @@ export function createMarkdownFile(contents: any, name: string): void {
     `./content/${name}.ts`,
     `${normalExports}\n\n${defaultExport}`,
   );
+
+  const stringContents = [defaultExport, ..._normalExports];
+
+  return { default: contents, strings: stringContents };
 }
