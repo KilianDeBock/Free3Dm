@@ -1,0 +1,8 @@
+all files here are types LikeThis.content.md
+
+Directories without meaning are typed 'like this'
+
+Reviews are in reviews folder with product and just folders with username/number with 3 files:
+ - 1 for the review
+ - 1 for the name
+ - 1 for the stars
