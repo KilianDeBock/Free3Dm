@@ -7,7 +7,8 @@
   "workspaces": [
     "front-office",
     "back-office",
-    "backend"
+    "backend",
+    "content-generator"
   ],
   "scripts": {
     "start:dev": "npm -s run tools && concurrently \"yarn workspace backend start:dev\" \"yarn workspace front-office dev\" \"yarn workspace back-office dev\"",

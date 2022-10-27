@@ -1,0 +1,14 @@
+{
+  "name": "content-generator",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "main": "dist/main.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/main.js",
+    "dev": "tsc -w"
+  }
+}
