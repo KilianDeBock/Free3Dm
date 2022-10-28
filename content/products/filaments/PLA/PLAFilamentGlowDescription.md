@@ -16,7 +16,7 @@
 
 **Perfect for**: Halloween projects, wearable prints like jewellery, toys, figurines
 
-Printing Details
+## Printing Details
 
 **Print temperature**: 180 – 230°C
 
@@ -24,7 +24,7 @@ Printing Details
 
 **Printing recommendations**: Print with thick walls and less infill for a stronger glow!
 
-More Details
+## More Details
 
 **Pros**
 

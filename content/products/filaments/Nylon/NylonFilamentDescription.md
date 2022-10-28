@@ -16,7 +16,7 @@
 
 **Perfect for**: Creating tools, functional prototypes, and mechanical parts like hinges or gears
 
-Printing Details
+## Printing Details
 
 **Print temperature**: 240 – 260°C
 
@@ -24,7 +24,7 @@ Printing Details
 
 **Printing recommendations**: Use a high nozzle and heated printer bed for best results
 
-More Details
+## More Details
 
 **Pros**
 

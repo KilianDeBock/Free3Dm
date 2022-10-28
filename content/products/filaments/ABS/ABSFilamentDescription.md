@@ -16,13 +16,13 @@
 
 **Perfect for**: Frequently handled projects that may be dropped or heated, like phone cases and electrical enclosures
 
-Printing Details
+## Printing Details
 
 **Print temperature**: 210 – 250°C
 
 **Heated Bed**: 80 – 110°C (required)
 
-More Details
+## More Details
 
 **Pros**
  - Superior quality to PLA filament

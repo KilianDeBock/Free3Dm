@@ -16,13 +16,13 @@
 
 **Perfect for**: Projects that need to retain their strength and shape and may be exposed to high temperatures. PC material is clear which makes it great for projects that leverage transparency.
 
-Printing Details
+## Printing Details
 
 **Print temperature**: 270 – 310°C
 
 **Heated Bed**: 90 – 110°C (required)
 
-More Details
+## More Details
 
 **Pros**
 

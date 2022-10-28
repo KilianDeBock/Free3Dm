@@ -16,7 +16,7 @@
 
 **Perfect for**: Prints that will experience a lot of physical wear and tear (bending, stretching, compressing) or harsh weather conditions. Great for toys, phone cases, wearable bands, household appliances, and medical supplies.
 
-Printing Details
+## Printing Details
 
 **Print temperature**: 210 – 230°C
 
@@ -24,7 +24,7 @@ Printing Details
 
 **Printing recommendations**: Tight filament path and slow print speed are recommended
 
-More Details
+## More Details
 
 **Pros**
 

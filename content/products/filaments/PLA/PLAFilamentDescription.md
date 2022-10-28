@@ -16,13 +16,13 @@
 
 **Perfect for**: Non-mechanical prints like toys and figurines
 
-Printing Details
+## Printing Details
 
 **Print temperature**: 180 – 230°C
 
 **Heated Bed**: Not required.
 
-More Details
+## More Details
 
 **Pros**
 
