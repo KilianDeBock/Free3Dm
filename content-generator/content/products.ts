@@ -1,7 +1,39 @@
-export const Ender3Description = "";
-export const Ender3Title = "";
+export const _ABSFilamentDescription = "﻿A durable and great material for general-purpose projects. Acrylonitrile butadiene styrene (ABS) filament is available in a wide range of colours.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: High\n\n**Flexibility**: Medium\n\n**Durability**: High\n\n**Shrinkage/Warping**: Considerable\n\n**Soluble**: In esters, ketones, and acetone\n\n**Food safe**: No\n\n**Perfect for**: Frequently handled projects that may be dropped or heated, like phone cases and electrical enclosures\n\n## Printing Details\n\n**Print temperature**: 210 – 250°C\n\n**Heated Bed**: 80 – 110°C (required)\n\n## More Details\n\n**Pros**\n - Superior quality to PLA filament\n - No off-putting odor\n - Strong, durable, and temperature resistant\n\n**Cons**\n - Difficult to print\n - Harsh fumes\n - Prone to warping without the use of a heated bed\n";
+export const _ABSFilamentTitle = "﻿# 1.75mm ABS Filament\n";
+export const _NylonFilamentDescription = "﻿A popular synthetic polymer. Nylon or polyamide (PA) is a go-to filament material for 3D printing and is available in a wide range of colours.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: Very High\n\n**Flexibility**: High\n\n**Durability**: High\n\n**Shrinkage/Warping**: Considerable\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Creating tools, functional prototypes, and mechanical parts like hinges or gears\n\n## Printing Details\n\n**Print temperature**: 240 – 260°C\n\n**Heated Bed**: 70 – 100°C (required)\n\n**Printing recommendations**: Use a high nozzle and heated printer bed for best results\n\n## More Details\n\n**Pros**\n\n - Can be dyed before or after the printing process\n - Strong, flexible, durable\n\n**Cons**\n\n - Must be stored in a cool, dry place to avoid absorbing moisture\n";
+export const _NylonFilamentTitle = "﻿# 1.75mm Nylon (PA) Filament\n";
+export const _PCFilamentDescription = "﻿One of the strongest 3D printer filaments, PC filament is durable and temperature resistant. It is available in a wide range of colours.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: Very High\n\n**Flexibility**: Medium\n\n**Durability**: Very High\n\n**Shrinkage/Warping**: Considerable\n\n**Soluble**: No\n\n**Food safe**: No\n\n**Perfect for**: Projects that need to retain their strength and shape and may be exposed to high temperatures. PC material is clear which makes it great for projects that leverage transparency.\n\n## Printing Details\n\n**Print temperature**: 270 – 310°C\n\n**Heated Bed**: 90 – 110°C (required)\n\n## More Details\n\n**Pros**\n\n - Very strong, durable material that is resistant to high temperatures\n   and physical stress\n\n**Cons**\n\n - Must be stored in a cool, dry place to avoid absorbing moisture\n   Requires a very high print temperature\n";
+export const _PCFilamentTitle = "﻿# 1.75mm Polycarbonate (PC) Filament\n";
+export const _PETGFilamentDescription = "﻿Polyethylene terephthalate (PET) filament is a variant of one of the most used plastics in the world. It is available in a wide range of colours.\n\n**Difficulty Level**: Beginner\n\n**Strength**: High\n\n**Flexibility**: Medium\n\n**Durability**: High\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Functional objects that may experience physical stress, like mechanical and protective parts\n\n## Printing Details\n\n**Print temperature**: 220 – 250°C\n\n**Heated Bed**: 50 – 75°C (required)\n\n**Printing recommendations**: Use a low print speed for a higher quality result\n\n## More Details\n\n**Pros**\n\n - A happy medium between PLA and ABS filaments\n - Clearer, less brittle, flexible, durable, and temperature resistant\n - Great for layer adhesion\n\n**Cons**\n\n - Sticky when printed\n - Scratches easily\n - Susceptible to moisture\n";
+export const _PETGFilamentTitle = "﻿# 1.75mm PETG Filament\n";
+export const _PLAFilamentDescription = "﻿The popular and easy-to-use 3D printer filament, polylactic acid (PLA), is available in a wide range of colours.\n\n**Difficulty Level**: Beginner\n\n**Strength**: Medium\n\n**Flexibility**: Low\n\n**Durability**: Medium\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Non-mechanical prints like toys and figurines\n\n## Printing Details\n\n**Print temperature**: 180 – 230°C\n\n**Heated Bed**: Not required.\n\n## More Details\n\n**Pros**\n\n - Easy to use\n - No off-putting odor\n - More environmentally friendly (as compared to other 3D printer\n   filaments)\n\n**Cons**\n\n - Brittle: avoid using for projects that will be bent, twisted, or\n   dropped\n - Deforms above temperatures of 60°C\n";
+export const _PLAFilamentGlowDescription = "﻿The popular and easy-to-use 3D printer filament, polylactic acid (PLA), in a glow-in-the-dark variation! To activate, leave your print in the light for a while, then bring it into the dark to experience the glow.\n\n**Difficulty Level**: Beginner\n\n**Strength**: Medium\n\n**Flexibility**: Low\n\n**Durability**: Medium\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Halloween projects, wearable prints like jewellery, toys, figurines\n\n## Printing Details\n\n**Print temperature**: 180 – 230°C\n\n**Heated Bed**: Not required.\n\n**Printing recommendations**: Print with thick walls and less infill for a stronger glow!\n\n## More Details\n\n**Pros**\n\n - Easy to use\n - No off-putting odor\n - More environmentally friendly (as compared to other 3D printer\n   filaments)\n\n**Cons**\n\n - Brittle: avoid using for projects that will be bent, twisted, or\n   dropped\n - Deforms above temperatures of 60°C\n";
+export const _PLAFilamentGlowTitle = "﻿# 1.75mm PLA Filament (Glow-in-the-dark)\n";
+export const _PLAFilamentTitle = "﻿# 1.75mm PLA Filament\n";
+export const _TPEFilamentDescription = "﻿A soft and stretchable plastic, thermoplastic elastomer (TPE) flexible filaments are available in a wide range of colours.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: Medium\n\n**Flexibility**: Very High\n\n**Durability**: Very High\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: No\n\n**Perfect for**: Prints that will experience a lot of physical wear and tear (bending, stretching, compressing) or harsh weather conditions. Great for toys, phone cases, wearable bands, household appliances, and medical supplies.\n\n## Printing Details\n\n**Print temperature**: 210 – 230°C\n\n**Heated Bed**: Not required\n\n**Printing recommendations**: Tight filament path and slow print speed are recommended\n\n## More Details\n\n**Pros**\n\n - Withstands physical stressors that ABS and PLA filaments can’t\n   tolerate\n\n**Cons**\n\n - Can be difficult to extrude\n";
+export const _TPEFilamentTitle = "﻿# 1.75mm TPE Flexible Filament";
+export const _3DPenDescription = "﻿Create 3D projects without software or files! With a 3D Pen you can draw and create 3D doodles on any flat surface. Draw and connect material in mid-air to create unique 3D master pieces.\n\n**Difficulty Level**: Beginner\n\n**Perfect for**: Kids, beginners, artists, and educators\n\n## How does a 3D pen work?\n\nThe plastic printing material is pushed through the pen, heated to the appropriate temperature, and leaves the pen in a soft, melted state. This malleable plastic hardens within a few seconds, taking the shape of your structure.\n\n## Filament Type\n\nABS: Best for beginners and drawing in mid-air\n\nPLA: Best for drawing directly onto flat surfaces\n\n";
+export const _3DPenTitle = "﻿# 3D Pen\n";
+export const _Ender3Description = "";
+export const _Ender3Title = "";
 
 export default {
-  Ender3Description, 
-  Ender3Title
+  _ABSFilamentDescription, 
+  _ABSFilamentTitle, 
+  _NylonFilamentDescription, 
+  _NylonFilamentTitle, 
+  _PCFilamentDescription, 
+  _PCFilamentTitle, 
+  _PETGFilamentDescription, 
+  _PETGFilamentTitle, 
+  _PLAFilamentDescription, 
+  _PLAFilamentGlowDescription, 
+  _PLAFilamentGlowTitle, 
+  _PLAFilamentTitle, 
+  _TPEFilamentDescription, 
+  _TPEFilamentTitle, 
+  _3DPenDescription, 
+  _3DPenTitle, 
+  _Ender3Description, 
+  _Ender3Title
 };

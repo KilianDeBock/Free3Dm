@@ -16,12 +16,12 @@ export function getAllMarkdownFiles(
       } else if (file.endsWith('.md')) {
         const newFile = path.resolve(newDir);
         const fileContents = fs.readFileSync(newFile, 'utf8');
-        const filename =
-          prefix + newDir.split('/').pop().split('.').shift() + suffix;
-        if (filename) {
+        const fileName = newDir.split('/').pop().split('.').shift();
+        const variableName = prefix + fileName + suffix;
+        if (variableName) {
           if (fileContents.endsWith('\n'))
-            files[filename] = fileContents.slice(0, -1);
-          else files[filename] = fileContents;
+            files[variableName] = fileContents.slice(0, -1);
+          else files[variableName] = fileContents;
         }
       }
     });

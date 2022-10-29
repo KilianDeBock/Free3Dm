@@ -1,9 +1,9 @@
-export const name = "Stualyttle Kirry";
-export const review = "Like this product";
-export const stars = "5";
+export const _name = "Stualyttle Kirry";
+export const _review = "Like this product";
+export const _stars = "5";
 
 export default {
-  name, 
-  review, 
-  stars
+  _name, 
+  _review, 
+  _stars
 };
