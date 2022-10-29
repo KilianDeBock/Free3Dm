@@ -1,0 +1,7 @@
+﻿Need Help?  
+Call Customer Service:  
+Canada: +1-800-345-4122  
+Belgium: +32-454-354-4122  
+  
+Email Customer Service:  
+free3dm@customersupport.ca
