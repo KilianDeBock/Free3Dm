@@ -1,0 +1,1 @@
+The machine can be a little tricky to put together if you haven’t tried assembling a printer before. The manual helps a lot, and you can try calling the support number when you have any questions. The white PLA filament that came with the printer worked great and I didn’t have any problems using it.
