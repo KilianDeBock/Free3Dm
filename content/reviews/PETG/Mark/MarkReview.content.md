@@ -1,0 +1,1 @@
+This is my first time trying out a PETG Filament. Initially, I had some difficulties to get an accurate print. After I’ve had a successful print, I found that PETG prints strong objects that are very functional in most applications where mechanical strength is important.
