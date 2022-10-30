@@ -1,0 +1,1 @@
+I got this for my 11- year-old daughter because she loves drawing. She absolutely loves the pen and pretty much uses it everyday since I got it. I would advice parents to supervise their children as the pen can overheat sometimes.
