@@ -6,30 +6,31 @@ export interface ContentObject {
 
 export interface MarkdownObject {
   default: ContentObject;
-  strings: ContentObject[];
+  strings: string[];
 }
 
 export function createMarkdownFile(
   contents: ContentObject,
   name: string,
 ): MarkdownObject {
-  const _normalExports = [];
-  Object.keys(contents).forEach((key) => {
-    _normalExports.push(
-      `export const ${key} = ${JSON.stringify(contents[key], null, 2)};`,
+  // get the keys of the object
+  const normalExports = Object.entries(contents)
+    // Build the export strings
+    .map(
+      ([key, value]) =>
+        `export const ${key} = ${JSON.stringify(value, null, 2)};`,
     );
-  });
-  const normalExports = _normalExports.join('\n');
 
-  const allExports = `{\n  ${Object.keys(contents).join(', \n  ')}\n}`;
-  const defaultExport = `export default ${allExports};`;
+  const defaultExport = `export default {\n  ${Object.keys(contents).join(
+    ', \n  ',
+  )}\n};`;
 
   fs.writeFileSync(
     `./content/${name}.ts`,
-    `${normalExports}\n\n${defaultExport}`,
+    `${normalExports.join('\n')}\n\n${defaultExport}`,
   );
 
-  const stringContents = [defaultExport, ..._normalExports];
+  const stringContents = [defaultExport, ...normalExports];
 
   return { default: contents, strings: stringContents };
 }
