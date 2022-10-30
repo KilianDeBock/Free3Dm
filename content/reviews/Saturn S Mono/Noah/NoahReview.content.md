@@ -1,0 +1,1 @@
+This printer makes the best prints possible. The detailing from the prints is exquisite! I printed a sword that is made up of seven components. The parts were so well printed that all that I needed to do was glue them together. There was no shaping or sanding required. The only difficult part about this printer is getting your resin settings correct.
