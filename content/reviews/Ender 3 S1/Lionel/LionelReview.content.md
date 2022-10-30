@@ -1,0 +1,1 @@
+My first print was a success! It was so easy to install, I couldn’t believe it! The Ender 3 S1 combines all the upgrades available for Ender 3 and Ender 3 V2. I am so happy I made the decision to get the Ender 3 S1! I was thinking to get a different printer, but I ended up picking this one due to previous reviews.
