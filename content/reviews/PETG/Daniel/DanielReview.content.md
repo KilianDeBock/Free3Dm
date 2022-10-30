@@ -1,0 +1,1 @@
+I printed an iPhone case with the PETG Filament. I've printed cases before, and they've always been fragile. Whenever snapping them on or off my phone they would normally break. It was different for the PETG Filament. It was easy getting it on and it didn’t break. Getting it off was so hard because the filament was strong. This is the strongest filament I’ve ever encountered!
