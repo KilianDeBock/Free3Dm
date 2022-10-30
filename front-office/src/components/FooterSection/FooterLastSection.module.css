@@ -1,0 +1,14 @@
+.footer__last-links {
+    position: relative;
+    top: -1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.footer__last-links li:not(:last-child):after {
+    font-weight: normal;
+    margin-left: .8rem;
+    content: "|";
+}

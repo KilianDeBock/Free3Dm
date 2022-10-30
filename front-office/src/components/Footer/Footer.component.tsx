@@ -4,10 +4,13 @@ import bannerStyles from './Banner.module.css';
 import {
   FooterSection,
   FooterSectionGroupComponent,
+  FooterSectionLink,
   PageInfoComponent,
   PaymentMethodsComponent,
   SearchComponent,
 } from '../';
+import { ROUTES } from '../../constants';
+import { FooterLastSectionComponent } from '../FooterSection/FooterLastSection.component';
 
 const links: FooterSection[] = [
   {
@@ -16,7 +19,7 @@ const links: FooterSection[] = [
     links: [
       {
         label: 'orders & delivery',
-        link: '/',
+        link: ROUTES.DELIVERY_POLICY,
       },
       {
         label: 'payments',
@@ -24,11 +27,11 @@ const links: FooterSection[] = [
       },
       {
         label: 'retouring',
-        link: '/',
+        link: ROUTES.RETURN_POLICY,
       },
       {
         label: 'warranty & repair',
-        link: '/',
+        link: ROUTES.WARRANTY_REPAIR_POLICY,
       },
     ],
   },
@@ -38,11 +41,7 @@ const links: FooterSection[] = [
     links: [
       {
         label: 'Company details',
-        link: '/',
-      },
-      {
-        label: 'News',
-        link: '/',
+        link: ROUTES.COMPANY,
       },
       {
         label: 'Jobs',
@@ -50,7 +49,11 @@ const links: FooterSection[] = [
       },
       {
         label: 'Sustainability',
-        link: '/',
+        link: ROUTES.SUSTAINABILITY,
+      },
+      {
+        label: 'Frequently asked questions',
+        link: ROUTES.FAQ,
       },
     ],
   },
@@ -111,6 +114,24 @@ const links: FooterSection[] = [
   },
 ];
 
+const lastLinks: FooterSectionLink[] = [
+  {
+    label: 'terms & conditions',
+    href: true,
+    link: ROUTES.TERMS_AND_CONDITIONS,
+  },
+  {
+    label: 'Privacy Policy',
+    href: true,
+    link: ROUTES.PRIVACY_POLICY,
+  },
+  {
+    label: 'Sitemap',
+    href: true,
+    link: '/',
+  },
+];
+
 export const FooterComponent = () => (
   <footer className={styles.footer}>
     <PageInfoComponent />
@@ -135,10 +156,6 @@ export const FooterComponent = () => (
         </section>
       </div>
     </section>
-    <ul className={`container ${styles['footer__last-links']}`}>
-      <li>terms & conditions</li>
-      <li>Privacy Policy</li>
-      <li>Sitemap</li>
-    </ul>
+    <FooterLastSectionComponent links={lastLinks} />
   </footer>
 );

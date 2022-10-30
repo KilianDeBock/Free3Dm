@@ -35,7 +35,11 @@ export const LinkComponent = ({
   return href || copy || newTab ? (
     <a
       onClick={(ev) => copy && copyLink(ev)}
-      href={link}
+      href={
+        copy
+          ? `info: Clicking this link will copy "${link}" to your clipboard!`
+          : link
+      }
       target={newTab ? '_blank' : '_self'}
       className={`${styles.link} ${!noHover && styles.hover} ${
         icon && styles['link__icon']
