@@ -1,0 +1,1 @@
+I have to say that this is the best tool that I own. The pricing is unbeatable, and the quality is incredible! This printer will teach you a lot that expensive printers won’t. It will take some adjustments to use it. For the size and price, it’s the best investment for beginners.
