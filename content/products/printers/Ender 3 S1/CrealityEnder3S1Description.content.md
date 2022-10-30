@@ -2,7 +2,7 @@
 The Creality Ender 3 S1 3D printer is an excellent printer for experienced makers. The Ender 3 S1 is semi-assembled, so you can assemble it quickly and get printing. The Creality Ender 3 S1 3D printer has the following features:
 
  - Silent mainboard for quieter printing
- -  Automatic bed leveling
+ - Automatic bed leveling
  - New user interface for simple operation
  - Power-recovery mode allows you to resume printing after an unexpected power loss
 ## Specifications

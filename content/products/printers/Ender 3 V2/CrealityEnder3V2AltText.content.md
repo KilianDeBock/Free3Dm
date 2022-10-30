@@ -1,0 +1,1 @@
+﻿![Creality Ender 3 V2 filament printer. The assembled printer has an all-metal body, compact base, enclosed hotend, and updated display panel.](https://img.staticdj.com/2e04a8d6247ebdb9fcc57b41bfd09a1c_540x.jpg)

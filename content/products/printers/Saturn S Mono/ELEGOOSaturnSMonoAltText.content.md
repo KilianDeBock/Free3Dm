@@ -1,0 +1,1 @@
+﻿![ELEGOO Saturn S Mono resin 3D printer. The printer has a transparent green UV cover to protect models as they print.](https://cdn.shopify.com/s/files/1/0296/9026/5648/products/elegoo-saturn-s-msla-91-4k-mono-lcd-3d-printer-3d-printers-elegoo-shop-997651_2048x2048.jpg?v=1645180731)
