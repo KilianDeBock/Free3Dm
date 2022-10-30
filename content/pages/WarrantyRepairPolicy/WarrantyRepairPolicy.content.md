@@ -10,7 +10,7 @@ Hours of operation: 8:00 AM to 6:30 PM (Eastern Time GMT-4)**
 **Belgium: +32-454-354-4122  
 Hours of operation: 8:00 AM to 6:30 PM (Central European Time GMT+2)**
 
-[**free3dm@customersupport.ca**](mailto:free3dm@customersupport.ca)
+[**customersupport@free3dm.com**](mailto:customersupport@free3dm.com)
 
 If your order is found eligible for repair, you will be asked to send the item directly to Free3Dm for repair. As the customer, you will be responsible for all return and repair-related shipping fees. The product will be repaired or replaced and shipped back to you as soon as possible.
 

@@ -1,1 +1,5 @@
 Printers
+Filaments
+Resin
+Toys
+Accessories

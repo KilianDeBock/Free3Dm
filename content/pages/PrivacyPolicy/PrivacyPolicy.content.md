@@ -24,4 +24,4 @@ Hours of operation: 8:00 AM to 6:30 PM (Eastern Time GMT-4)**
 **Belgium: +32-454-354-4122  
 Hours of operation: 8:00 AM to 6:30 PM (Central European Time GMT+2)**
 
-[**free3dm@customersupport.ca**](mailto:free3dm@customersupport.ca)
+[**customersupport@free3dm.com**](mailto:customersupport@free3dm.com)
