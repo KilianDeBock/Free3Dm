@@ -1,0 +1,1 @@
+The shipping took a long time, the printer came in two months after I’ve ordered. The filament that shipped with the product was slightly damaged because of the tight packaging. However, the printer itself was packed perfectly. The printer is amazing, and I love using it! The filament still works but I will have to be cautious when using it.
