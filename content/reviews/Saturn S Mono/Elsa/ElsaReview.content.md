@@ -1,0 +1,1 @@
+The shipping came in really fast. It was easy to set the printer up out of the box. It was easy to get in touch with tech support when I needed help. I am having a great experience overall with this printer.
