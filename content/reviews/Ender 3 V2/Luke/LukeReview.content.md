@@ -1,0 +1,1 @@
+I love this the Ender 3 V2 for so many reasons. My favourite reasons are that it is open source, there are a ton of extras and aftermarkets available, and it’s silent as it prints. I believe that the glass bed works perfectly for several materials! I would recommend this to any of my friends.
