@@ -1,0 +1,1 @@
+﻿![3D pen with red and black casing. A 3D reindeer has been drawn in blue filament. The pen has an LED display screen, metal tip, and inlet to feed the filament into the pen.](https://m.media-amazon.com/images/I/41pocdH+jWL.jpg)

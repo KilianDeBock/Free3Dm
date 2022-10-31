@@ -1,0 +1,1 @@
+﻿![3D pen with blue casing. The pen has an LED display screen, metal tip, and inlet to feed the filament into the pen.](https://i5.walmartimages.com/asr/d5deeee5-5aec-4154-838d-c59897c0a9d8_1.10784f96f987b3f0cb13a39cc93ca7cc.jpeg)
