@@ -13,6 +13,7 @@ export const GET_ALL_CATEGORIES = gql`
         id
         name
         articles {
+          id
           price
           details {
             key
@@ -40,6 +41,7 @@ export const GET_CATEGORY = gql`
         id
         name
         articles {
+          id
           price
           details {
             key

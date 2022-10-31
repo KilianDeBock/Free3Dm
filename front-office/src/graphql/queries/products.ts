@@ -11,6 +11,7 @@ export const GET_ALL_PRODUCTS = gql`
       id
       name
       articles {
+        id
         price
         details {
           key
@@ -35,6 +36,7 @@ export const GET_PRODUCT = gql`
       id
       name
       articles {
+        id
         price
         details {
           key

@@ -6,34 +6,37 @@ export interface CardProps {
   category: Category;
 }
 
-export const CategoryProductsComponent = ({ category }: CardProps) => {
-  console.log(category);
-  return (
-    <ul>
-      {category.products?.map((product, index) => {
-        if (!product.articles || product.articles.length < 1) return;
-        const article = product.articles[0];
+export const CategoryProductsComponent = ({
+  category: { products },
+}: CardProps) => (
+  <>
+    {products && (
+      <ul>
+        {products?.map(({ articles, name }) =>
+          articles?.map(({ details, id, price: p }) => {
+            // Check if the required image details is available.
+            const hasImage = details?.find(({ key }) => key === 'image');
 
-        const articleHasImageDetail = article.details?.find((detail) => {
-          return detail.key === 'image';
-        });
-        if (
-          !article.details ||
-          article.details.length < 1 ||
-          !articleHasImageDetail
-        )
-          return;
+            // Check if we have an image and detail(s).
+            if (!details || !hasImage || details.length < 1) return;
 
-        return (
-          <CardComponent
-            key={index}
-            image={getDetail<string>(article.details, 'image') || '/'}
-            title={product.name}
-            alt={product.name}
-            price={article.price.toString() || 'Unknown'}
-          />
-        );
-      })}
-    </ul>
-  );
-};
+            // Get variables for the card component.
+            const image = getDetail<string>(details, 'image') || '/';
+            const title = getDetail<string>(details, 'name') || name;
+            const price = p.toString() || 'Unknown';
+
+            // Merge them into a single object.
+            const props = { image, title, alt: title, price };
+
+            // Return the card component.
+            return (
+              <li key={id}>
+                <CardComponent {...props} />
+              </li>
+            );
+          })
+        )}
+      </ul>
+    )}
+  </>
+);
