@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { CategoriesData, Category, GET_ALL_CATEGORIES } from '../../graphql';
+import { CategoriesData, Category, GET_ALL_CATEGORIES } from '@graphql';
 import { useQuery } from '@apollo/client';
 import { useApp } from '../../contexts';
+import { CategoryProductsComponent } from '../../components/CategoryProducts/CategoryProducts.component';
 
 export const CategoryPage = (): JSX.Element => {
   const app = useApp();
-  const [category, setCategory] = useState<Category | null>(null);
+  type CategoryState = Category | null;
+  const [category, setCategory] = useState<CategoryState>(null);
   let { name } = useParams();
 
   const { loading, error, data } = useQuery<CategoriesData>(
@@ -17,15 +19,14 @@ export const CategoryPage = (): JSX.Element => {
   );
 
   useEffect(() => {
-    const category: Category | undefined = data?.categories?.find(
-      (category) => category.name.toLowerCase() === name?.toLowerCase()
-    );
+    const _category: CategoryState =
+      data?.categories?.find(
+        (c) => c.name.toLowerCase() === name?.toLowerCase()
+      ) || null;
 
-    if (data && category) {
-      setCategory(category);
-      app?.setTitle(category.name);
-    }
-  }, [data]);
+    setCategory(_category);
+    app?.setTitle(_category?.name || 'Category Not Found');
+  }, [data, name]);
 
   if (loading) return <p>Loading ...</p>;
   if (error) return <p>Error :(</p>;
@@ -38,5 +39,10 @@ export const CategoryPage = (): JSX.Element => {
     );
   }
 
-  return <>{category?.name}</>;
+  return (
+    <section className={'container'}>
+      {category?.name}
+      <CategoryProductsComponent category={category} />
+    </section>
+  );
 };

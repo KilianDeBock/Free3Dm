@@ -22,6 +22,9 @@
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
+      "@graphql": [
+        "./src/graphql/"
+      ],
       "@content/*": [
         "../content-generator/content/*"
       ]
