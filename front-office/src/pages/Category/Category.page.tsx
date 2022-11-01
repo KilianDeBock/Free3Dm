@@ -12,6 +12,11 @@ export const CategoryPage = (): JSX.Element => {
   const [category, setCategory] = useState<CategoryState>(null);
   let { name } = useParams();
 
+  app?.setNavigationInfo([
+    ['categories', '/category'],
+    ['printers', '/category/printers'],
+  ]);
+
   const { loading, error, data } = useQuery<CategoriesData>(
     GET_ALL_CATEGORIES,
     {
@@ -47,6 +52,12 @@ export const CategoryPage = (): JSX.Element => {
     }, 0) ?? 0;
   const countIsOne = productsCount === 1;
 
+  app?.setNavigationInfo(
+    null,
+    `There ${countIsOne ? 'is' : 'are'} ${productsCount} product
+          ${!countIsOne ? 's' : ''}`
+  );
+
   return (
     <>
       <section className={`container ${styles['category-info']}`}>
@@ -58,7 +69,7 @@ export const CategoryPage = (): JSX.Element => {
           {!countIsOne && 's'}
         </p>
       </section>
-      <section className={styles['category-content']}>
+      <section className={`container ${styles['category-content']}`}>
         <ul>
           <li>Test</li>
         </ul>

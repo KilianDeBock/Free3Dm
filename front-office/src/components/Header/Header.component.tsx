@@ -62,7 +62,7 @@ export const HeaderComponent = () => (
       appName={CONSTS.APP_NAME}
       links={secondaryNavLinks}
     />
-    <section className={styles.search}>
+    <section className={`container ${styles.search}`}>
       <SearchComponent
         submitTxt="GO!"
         placeholderTxt="What are you looking for?"
