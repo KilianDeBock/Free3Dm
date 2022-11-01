@@ -4,6 +4,7 @@ import { CategoriesData, Category, GET_ALL_CATEGORIES } from '@graphql';
 import { useQuery } from '@apollo/client';
 import { useApp } from '../../contexts';
 import { CategoryProductsComponent } from '../../components/CategoryProducts/CategoryProducts.component';
+import styles from './Category.module.css';
 
 export const CategoryPage = (): JSX.Element => {
   const app = useApp();
@@ -39,10 +40,33 @@ export const CategoryPage = (): JSX.Element => {
     );
   }
 
+  const productsCount =
+    category?.products?.reduce((totalLength, { articles }) => {
+      const articlesLength = articles?.length ?? 0;
+      return totalLength + articlesLength;
+    }, 0) ?? 0;
+  const countIsOne = productsCount === 1;
+
   return (
-    <section className={'container'}>
-      {category?.name}
-      <CategoryProductsComponent category={category} />
-    </section>
+    <>
+      <section className={`container ${styles['category-info']}`}>
+        <span>
+          Home {'<'} {category?.name}
+        </span>
+        <p>
+          There {(countIsOne && 'is') || 'are'} {productsCount} product
+          {!countIsOne && 's'}
+        </p>
+      </section>
+      <section className={styles['category-content']}>
+        <ul>
+          <li>Test</li>
+        </ul>
+        <div>
+          <h1>{category?.name}</h1>
+          <CategoryProductsComponent category={category} />
+        </div>
+      </section>
+    </>
   );
 };

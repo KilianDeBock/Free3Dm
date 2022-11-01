@@ -1,30 +1,5 @@
-.card {
-    position: relative;
-    max-width: 15rem;
-}
-
-.card__image {
-    padding: 2rem;
-    background-color: var(--white-300);
-}
-
-.card__title {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: .4rem;
-    margin-bottom: 0.5rem;
-}
-
-.card__like {
-    font-size: 0;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    padding: .6rem;
-    background: url("/media/icons/heart.svg") no-repeat center;
-    background-size: contain;
-}
-
-.card__like--liked {
-    background-image: url("/media/icons/full-heart.svg");
+.category__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
