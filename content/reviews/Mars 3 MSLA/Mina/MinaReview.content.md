@@ -1,0 +1,1 @@
+The print detail is really impressive! I got no failures after I’ve printed more than 10 times. This means that the printer is very reliable because it hasn’t had any issues after multiple uses. I would say this is the best buy for the 6 - 7 inch LCD 3D printers in the market.

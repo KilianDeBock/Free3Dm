@@ -1,0 +1,1 @@
+I think this is a good printer and people can learn a lot from using it. The Mars 2 Mono can print fast and delivers good quality prints. I believe that any errors I've experienced have been part of the learning process. Tech support has been amazing with troubleshooting when I have no solution myself. Tech support has also replaced any pieces I’ve asked for.

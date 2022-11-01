@@ -1,0 +1,1 @@
+This printer has so much potential to create many things. I had some issues when assembling the printer, but some videos online helped. After figuring it out, I am having so much fun creating new things.

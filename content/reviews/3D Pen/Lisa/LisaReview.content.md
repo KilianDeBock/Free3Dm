@@ -1,0 +1,1 @@
+It’s a bit hard to get used to and to make good sculptures. Practise makes perfect. You’ll have to try many times before actually creating what you wanted. You need patience while working with a 3D pen.

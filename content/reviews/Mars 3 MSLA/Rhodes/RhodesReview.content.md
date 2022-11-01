@@ -1,0 +1,1 @@
+This printer has created insane detail for miniatures. It prints fast and it’s silent unlike other printers. I have only had one failed print and that was more my fault because of bad support placement.

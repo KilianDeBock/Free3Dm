@@ -1,0 +1,1 @@
+In the beginning, my printer was working fine, and I had no major issues. After 4 months my printer started to tangle the filament in the middle of the print. I’ve tried adjusting the bed and other parts, but nothing has changed. It seems that it only works with smaller projects after some time has passed.

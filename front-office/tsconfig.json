@@ -19,7 +19,16 @@
     "isolatedModules": true,
     "noEmit": true,
     "tsx": "react-tsx",
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@graphql": [
+        "./src/graphql/"
+      ],
+      "@content/*": [
+        "../content-generator/content/*"
+      ]
+    }
   },
   "include": [
     "src"

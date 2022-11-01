@@ -1,0 +1,1 @@
+I was not excepting expecting to have a high-quality product for this price! This is my first 3D printer and I’m extremely satisfied and excited to use it. The printer came well packed and secured. The assembly of the printer was easy with the help of the guide that came with it.

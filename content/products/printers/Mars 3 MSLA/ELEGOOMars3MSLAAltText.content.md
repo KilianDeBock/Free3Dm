@@ -1,0 +1,1 @@
+﻿![ELEGOO Mars 3 MSLA resin 3D printer. The printer has a transparent red UV cover, a control panel on the base, and an inverted build platform.](https://cdn.shopify.com/s/files/1/0296/9026/5648/products/pre-orderelegoo-mars-3-ultra-4k-mono-lcd-3d-printer-with-3pcs-fep20-film-3d-printers-elegoo-356741_2048x2048.jpg?v=1637567969)

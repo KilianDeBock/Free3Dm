@@ -1,0 +1,1 @@
+I got this as a gift for my birthday and I have to say it is the best present that I’ve received. I wanted to start creating 3D objects as a hobby. It was easy to build because there were straightforward instructions and videos to follow. I managed to record my first print of a cat on TikTok Live and so many people were satisfied with the outcome.

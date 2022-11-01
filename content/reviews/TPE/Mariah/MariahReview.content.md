@@ -1,0 +1,1 @@
+I had problems with the spool I got. I immediately sent an email. As soon as tech support seen our email about my problems with the spool, they mailed a new one. The spool had no problems, the first print turned out better than before and I'm extremely satisfied with it.

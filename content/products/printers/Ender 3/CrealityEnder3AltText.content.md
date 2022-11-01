@@ -1,0 +1,1 @@
+﻿![Creality Ender 3 filament 3D printer. The printer is assembled and shows the frame, base and print bed, hotend, and display screen.](https://img.staticdj.com/78b4b1a181b236e46e401c5efe4df976_540x.jpg)

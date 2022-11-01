@@ -4,11 +4,11 @@
   "description": "",
   "author": "",
   "private": true,
-  "main": "dist/src/main.js",
+  "main": "dist/main.js",
   "license": "UNLICENSED",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/src/main.js",
+    "start": "npm run build && node dist/main.js",
     "dev": "tsc -w"
   }
 }

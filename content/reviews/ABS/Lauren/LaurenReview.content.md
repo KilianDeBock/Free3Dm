@@ -1,0 +1,1 @@
+I got this to pair with my new printer and it is fairly good. I can’t compare it to others in the market because it is the first time I have ever used it. However, it has given me a great first impression.

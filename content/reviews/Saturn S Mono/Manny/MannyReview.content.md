@@ -1,0 +1,1 @@
+Generally, I am pleased with the Saturn S Mono and the resin. However, I am having issues with parts staying on the build plate. I’ve tried to sand the plate a few times. I’ve had the printer a week and need to replace the sheet at bottom of resin tank because of the plate sticking issues.

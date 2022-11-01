@@ -1,0 +1,1 @@
+In the beginning it was working fine but after some time I am having trouble with my printer. I keep having failed prints and no matter what I do I can’t get it to work. I’ve spoken to tech support and still have major issues with every print. I’ve absolutely given up on this printer.
