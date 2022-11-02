@@ -10,27 +10,44 @@ import {
 import styles from './Header.module.css';
 import bannerStyles from './Banner.module.css';
 import { CONSTS } from '../../constants';
+import {
+  _3DPrintersButton,
+  _AccessoriesButton,
+  _FilamentsButton,
+  _ResinButton,
+  _SearchButton,
+  _ShoppingCartButton,
+  _SignInButton,
+  _ToysButton,
+  _WishlistButton,
+} from '@content/buttons';
+import {
+  _EmailAddress,
+  _PhoneNumberBE,
+  _PhoneNumberCA,
+  _SearchBar,
+} from '@content/dialogs';
 
 const primaryNavCategories: string[] = [
-  'Printers',
-  'Filament',
-  'Resin',
-  'Toys',
-  'Accessories',
+  _3DPrintersButton,
+  _FilamentsButton,
+  _ResinButton,
+  _ToysButton,
+  _AccessoriesButton,
 ];
 
 const secondaryNavLinks: SecondaryNavigationLink[] = [
   {
-    link: 'wishlist',
-    label: 'my wishlist',
+    link: '/wishlist',
+    label: _WishlistButton,
   },
   {
-    link: 'login',
-    label: 'sign in',
+    link: '/login',
+    label: _SignInButton,
   },
   {
-    link: 'cart',
-    label: 'my cart',
+    link: '/cart',
+    label: _ShoppingCartButton,
     button: true,
     icon: '/media/icons/cart.svg',
   },
@@ -38,12 +55,16 @@ const secondaryNavLinks: SecondaryNavigationLink[] = [
 
 const tertiaryNavLinks: TertiaryNavigationLink[] = [
   {
-    link: 'tel:+3200000000',
-    label: '+3200 000 000',
+    link: `tel:${_PhoneNumberCA}`,
+    label: _PhoneNumberCA,
   },
   {
-    link: 'mailto:info@Free3Dm.org',
-    label: 'info@Free3Dm.org',
+    link: `tel:${_PhoneNumberBE}`,
+    label: _PhoneNumberBE,
+  },
+  {
+    link: `mailto:${_EmailAddress}`,
+    label: _EmailAddress,
   },
   {
     link: 'BE00 000 000 000',
@@ -63,10 +84,7 @@ export const HeaderComponent = () => (
       links={secondaryNavLinks}
     />
     <section className={`container ${styles.search}`}>
-      <SearchComponent
-        submitTxt="GO!"
-        placeholderTxt="What are you looking for?"
-      />
+      <SearchComponent submitTxt={_SearchButton} placeholderTxt={_SearchBar} />
     </section>
     <NavigationComponent categories={primaryNavCategories} />
   </header>

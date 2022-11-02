@@ -11,6 +11,21 @@ import {
 } from '../';
 import { ROUTES } from '../../constants';
 import { FooterLastSectionComponent } from '../FooterSection/FooterLastSection.component';
+import {
+  _CompanyDetailsButton,
+  _ContactUsButton,
+  _FAQsButton,
+  _JobsButton,
+  _PrivacyPolicyButton,
+  _ReturnPolicyButton,
+  _SearchButton,
+  _ShippingDeliveryButton,
+  _SitemapButton,
+  _SustainabilityButton,
+  _TermsConditionsButton,
+  _WarrantyRepairPolicyButton,
+} from '@content/buttons';
+import { _PhoneNumberBE, _PhoneNumberCA } from '@content/dialogs';
 
 const links: FooterSection[] = [
   {
@@ -18,7 +33,7 @@ const links: FooterSection[] = [
     label: 'Customer Service',
     links: [
       {
-        label: 'orders & delivery',
+        label: _ShippingDeliveryButton,
         link: ROUTES.DELIVERY_POLICY,
       },
       {
@@ -26,11 +41,11 @@ const links: FooterSection[] = [
         link: '/',
       },
       {
-        label: 'retouring',
+        label: _ReturnPolicyButton,
         link: ROUTES.RETURN_POLICY,
       },
       {
-        label: 'warranty & repair',
+        label: _WarrantyRepairPolicyButton,
         link: ROUTES.WARRANTY_REPAIR_POLICY,
       },
     ],
@@ -40,36 +55,36 @@ const links: FooterSection[] = [
     label: 'About Us',
     links: [
       {
-        label: 'Company details',
+        label: _CompanyDetailsButton,
         link: ROUTES.COMPANY,
       },
       {
-        label: 'Jobs',
+        label: _JobsButton,
         link: '/',
       },
       {
-        label: 'Sustainability',
+        label: _SustainabilityButton,
         link: ROUTES.SUSTAINABILITY,
       },
       {
-        label: 'Frequently asked questions',
+        label: _FAQsButton,
         link: ROUTES.FAQ,
       },
     ],
   },
   {
     type: 'text',
-    label: 'Contact Us',
+    label: _ContactUsButton,
     links: [
       {
-        label: '+3200 000 000',
+        link: `tel:${_PhoneNumberCA}`,
         href: true,
-        link: 'tel:+3200000000',
+        label: _PhoneNumberCA,
       },
       {
-        label: 'info@Free3Dm.org',
+        link: `tel:${_PhoneNumberBE}`,
         href: true,
-        link: 'mailto:info@Free3Dm.org',
+        label: _PhoneNumberBE,
       },
       {
         label: 'BE00 000 000 000',
@@ -116,17 +131,17 @@ const links: FooterSection[] = [
 
 const lastLinks: FooterSectionLink[] = [
   {
-    label: 'terms & conditions',
+    label: _TermsConditionsButton,
     href: true,
     link: ROUTES.TERMS_AND_CONDITIONS,
   },
   {
-    label: 'Privacy Policy',
+    label: _PrivacyPolicyButton,
     href: true,
     link: ROUTES.PRIVACY_POLICY,
   },
   {
-    label: 'Sitemap',
+    label: _SitemapButton,
     href: true,
     link: '/',
   },
@@ -147,7 +162,10 @@ export const FooterComponent = () => (
             <span className={styles['footer__subscribe__text']}>
               Subscribe to our newsletter
             </span>
-            <SearchComponent placeholderTxt={'Ender email'} submitTxt={'Go!'} />
+            <SearchComponent
+              placeholderTxt={'Ender email'}
+              submitTxt={_SearchButton}
+            />
           </article>
           <article>
             <span>100% save transactions</span>
