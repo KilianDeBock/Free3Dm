@@ -1,1 +1,1 @@
-﻿Add to Cart
+﻿Add to Shopping Cart
