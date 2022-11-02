@@ -1,0 +1,1 @@
+﻿![Spool of PLA (polylactic acid) 3D printer filament in glow-in-the-dark blue. The left half shows the plain filament in the light. The right half shows the glowing blue filament in the dark.](https://images-na.ssl-images-amazon.com/images/I/411FUc00T1L.jpg)

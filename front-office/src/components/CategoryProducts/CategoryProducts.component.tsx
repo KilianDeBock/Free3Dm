@@ -1,6 +1,7 @@
 import React from 'react';
 import { Category, getDetail } from '@graphql';
 import { CardComponent } from '../Card/Card.component';
+import styles from './CategoryProducts.module.css';
 
 export interface CardProps {
   category: Category;
@@ -11,7 +12,7 @@ export const CategoryProductsComponent = ({
 }: CardProps) => (
   <>
     {products && (
-      <ul>
+      <ul className={styles['category__items']}>
         {products?.map(({ articles, name }) =>
           articles?.map(({ details, id, price: p }) => {
             // Check if the required image details is available.

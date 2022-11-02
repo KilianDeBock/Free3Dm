@@ -1,0 +1,16 @@
+.category-info,
+.category-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.category-content > *:first-child {
+    width: 100%;
+    max-width: 10rem;
+}
+
+
+.category-content > *:last-child {
+    width: 100%;
+}

@@ -29,7 +29,10 @@
 
 @media (min-width: 60rem) {
     .search {
-        left: 40%;
-        max-width: 22rem;
+        padding-left: 15rem;
+    }
+
+    .search > *:first-child {
+        max-width: calc(22rem);
     }
 }

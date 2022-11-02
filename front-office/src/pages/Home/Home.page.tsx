@@ -61,7 +61,9 @@ const recommendedArticles: CardProps[] = [
 ];
 
 export const HomePage = (): JSX.Element => {
-  useApp()?.setTitle('Home');
+  const app = useApp();
+  app?.setTitle('Home');
+  app?.setNavigationInfo('reset', '');
 
   return (
     <>

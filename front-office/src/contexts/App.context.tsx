@@ -3,13 +3,23 @@ import { AuthProvider } from './';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 
+export type Path = [string, string][];
+
 export interface AppContextInterface {
   title: string;
   setTitle: (title: string) => void;
+  navigationInfo: NavigationInfo;
+  setNavigationInfo: (path: Path | 'reset' | null, text?: string) => void;
+  setNavigationUpdate: (update: () => void) => void;
 }
 
 export interface AppContextProps {
   children: React.ReactNode;
+}
+
+export interface NavigationInfo {
+  path: Path;
+  text: string;
 }
 
 export const AppContext = createContext<AppContextInterface | null>(null);
@@ -27,11 +37,44 @@ export const AppProvider = ({ children }: AppContextProps) => {
     }
   };
 
+  let updateNavigation = () => {};
+  const setNavigationUpdate = (update: () => void) => {
+    updateNavigation = update;
+  };
+
+  const navigationInfo: NavigationInfo = {
+    path: [['Home', '/']],
+    text: '',
+  };
+
+  const setNavigationInfo = (
+    path: Path | 'reset' | null,
+    text: string = ''
+  ) => {
+    const newNavigationInfo = { ...navigationInfo };
+    if (typeof path === 'string' && path === 'reset')
+      newNavigationInfo.path = [['Home', '/']];
+    else if (path) newNavigationInfo.path = [['Home', '/'], ...path];
+    if (text) newNavigationInfo.text = text;
+    if (
+      JSON.stringify(navigationInfo.path) !==
+        JSON.stringify(newNavigationInfo.path) ||
+      navigationInfo.text !== newNavigationInfo.text
+    ) {
+      navigationInfo.path = newNavigationInfo.path;
+      navigationInfo.text = newNavigationInfo.text;
+      updateNavigation();
+    }
+  };
+
   return (
     <AppContext.Provider
       value={{
         title,
         setTitle,
+        navigationInfo,
+        setNavigationInfo,
+        setNavigationUpdate,
       }}
     >
       <CookiesProvider>

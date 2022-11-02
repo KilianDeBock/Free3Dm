@@ -1,19 +1,98 @@
+export const _ABSFilamentBlackAltText = "![Spool of black ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/51IY6Mnm+CL._AC_.jpg)";
+export const _ABSFilamentBlueAltText = "![Spool of blue ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81dmTBu42tL._AC_SL1500_.jpg)";
+export const _ABSFilamentBrownAltText = "![Spool of brown ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81lwFr3kj4L._AC_SL1500_.jpg)";
+export const _ABSFilamentDarkBlueAltText = "![Spool of dark blue ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/811y-SQKRGL._AC_SL1500_.jpg)";
 export const _ABSFilamentDescription = "A durable and great material for general-purpose projects. Acrylonitrile butadiene styrene (ABS) filament is available in a wide range of colours.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: High\n\n**Flexibility**: Medium\n\n**Durability**: High\n\n**Shrinkage/Warping**: Considerable\n\n**Soluble**: In esters, ketones, and acetone\n\n**Food safe**: No\n\n**Perfect for**: Frequently handled projects that may be dropped or heated, like phone cases and electrical enclosures\n\n## Printing Details\n\n**Print temperature**: 210 – 250°C\n\n**Heated Bed**: 80 – 110°C (required)\n\n## More Details\n\n**Pros**\n - Superior quality to PLA filament\n - No off-putting odor\n - Strong, durable, and temperature resistant\n\n**Cons**\n - Difficult to print\n - Harsh fumes\n - Prone to warping without the use of a heated bed\n";
+export const _ABSFilamentGreenAltText = "![Spool of green ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81jfVSj7qiL._AC_SL1500_.jpg)";
+export const _ABSFilamentGreyAltText = "![Spool of grey ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71fKYIUQEeL._AC_SL1500_.jpg)";
+export const _ABSFilamentOrangeAltText = "![Spool of orange ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71+lXJHkETL._AC_SL1500_.jpg)";
+export const _ABSFilamentPinkAltText = "![Spool of pink ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81auEA2spEL._AC_SL1500_.jpg)";
+export const _ABSFilamentPurpleAltText = "![Spool of purple ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81XlW6Ef0NL._AC_SL1500_.jpg)";
+export const _ABSFilamentRedAltText = "![Spool of red ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71jh-iAlpHL._AC_SL1500_.jpg)";
 export const _ABSFilamentTitle = "# 1.75mm ABS Filament\n";
+export const _ABSFilamentWhiteAltText = "![Spool of white ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71kEUL12M3L._AC_SL1500_.jpg)";
+export const _ABSFilamentYellowAltText = "![Spool of yellow ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81dgH9opALL._AC_SL1500_.jpg)";
+export const _NylonFilamentBlackAltText = "![Spool of black nylon (polyamide) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81uCOZ0t+ML._AC_SL1500_.jpg)";
+export const _NylonFilamentBlueAltText = "Spool of blue nylon (polyamide) 3D printer filament in 1.75mm diameter.";
+export const _NylonFilamentBrownAltText = "Spool of brown nylon (polyamide) 3D printer filament in 1.75mm diameter.";
+export const _NylonFilamentDarkBlueAltText = "Spool of dark blue nylon (polyamide) 3D printer filament in 1.75mm diameter.";
 export const _NylonFilamentDescription = "A popular synthetic polymer. Nylon or polyamide (PA) is a go-to filament material for 3D printing and is available in a wide range of colours.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: Very High\n\n**Flexibility**: High\n\n**Durability**: High\n\n**Shrinkage/Warping**: Considerable\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Creating tools, functional prototypes, and mechanical parts like hinges or gears\n\n## Printing Details\n\n**Print temperature**: 240 – 260°C\n\n**Heated Bed**: 70 – 100°C (required)\n\n**Printing recommendations**: Use a high nozzle and heated printer bed for best results\n\n## More Details\n\n**Pros**\n\n - Can be dyed before or after the printing process\n - Strong, flexible, durable\n\n**Cons**\n\n - Must be stored in a cool, dry place to avoid absorbing moisture\n";
+export const _NylonFilamentGreenAltText = "Spool of green nylon (polyamide) 3D printer filament in 1.75mm diameter.";
+export const _NylonFilamentGreyAltText = "![Spool of grey nylon (polyamide) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81EDuZEPvcL._AC_SL1500_.jpg)";
+export const _NylonFilamentOrangeAltText = "Spool of orange nylon (polyamide) 3D printer filament in 1.75mm diameter.";
+export const _NylonFilamentPinkAltText = "Spool of pink nylon (polyamide) 3D printer filament in 1.75mm diameter.";
+export const _NylonFilamentPurpleAltText = "Spool of purple nylon (polyamide) 3D printer filament in 1.75mm diameter.";
+export const _NylonFilamentRedAltText = "Spool of red nylon (polyamide) 3D printer filament in 1.75mm diameter.";
 export const _NylonFilamentTitle = "# 1.75mm Nylon (PA) Filament\n";
+export const _NylonFilamentWhiteAltText = "Spool of white nylon (polyamide) 3D printer filament in 1.75mm diameter.";
+export const _NylonFilamentYellowAltText = "Spool of yellow nylon (polyamide) 3D printer filament in 1.75mm diameter.";
+export const _PCFilamentBlackAltText = "![Spool of black PC (polycarbonate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71yIMVYkrpL._AC_SL1500_.jpg)";
+export const _PCFilamentBlueAltText = "Spool of blue PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
+export const _PCFilamentBrownAltText = "Spool of brown PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
+export const _PCFilamentDarkBlueAltText = "Spool of dark blue PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
 export const _PCFilamentDescription = "One of the strongest 3D printer filaments, PC filament is durable and temperature resistant. It is available in a wide range of colours.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: Very High\n\n**Flexibility**: Medium\n\n**Durability**: Very High\n\n**Shrinkage/Warping**: Considerable\n\n**Soluble**: No\n\n**Food safe**: No\n\n**Perfect for**: Projects that need to retain their strength and shape and may be exposed to high temperatures. PC material is clear which makes it great for projects that leverage transparency.\n\n## Printing Details\n\n**Print temperature**: 270 – 310°C\n\n**Heated Bed**: 90 – 110°C (required)\n\n## More Details\n\n**Pros**\n\n - Very strong, durable material that is resistant to high temperatures\n   and physical stress\n\n**Cons**\n\n - Must be stored in a cool, dry place to avoid absorbing moisture\n   Requires a very high print temperature\n";
+export const _PCFilamentGreenAltText = "Spool of green PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
+export const _PCFilamentGreyAltText = "![Spool of grey PC (polycarbonate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/612FzBWQFHL._AC_.jpg)";
+export const _PCFilamentOrangeAltText = "Spool of orange PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
+export const _PCFilamentPinkAltText = "Spool of pink PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
+export const _PCFilamentPurpleAltText = "Spool of purple PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
+export const _PCFilamentRedAltText = "Spool of red PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
 export const _PCFilamentTitle = "# 1.75mm Polycarbonate (PC) Filament\n";
+export const _PCFilamentWhiteAltText = "![Spool of white PC (polycarbonate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71FP5qorw+L._AC_SL1500_.jpg)";
+export const _PCFilamentYellowAltText = "Spool of yellow PC (polycarbonate) 3D printer filament in 1.75mm diameter.";
+export const _PETGFilamentBlackAltText = "![Spool of black PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/819NNIp1obL._AC_SL1500_.jpg)";
+export const _PETGFilamentBlueAltText = "![Spool of blue PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81n5J4bnfQL._AC_SL1500_.jpg)";
+export const _PETGFilamentBrownAltText = "![Spool of brown PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61qQ6LcvNUL._AC_SL1500_.jpg)";
+export const _PETGFilamentDarkBlueAltText = "![Spool of dark blue PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81opjTrv0UL._AC_SL1500_.jpg)";
 export const _PETGFilamentDescription = "Polyethylene terephthalate (PET) filament is a variant of one of the most used plastics in the world. It is available in a wide range of colours.\n\n**Difficulty Level**: Beginner\n\n**Strength**: High\n\n**Flexibility**: Medium\n\n**Durability**: High\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Functional objects that may experience physical stress, like mechanical and protective parts\n\n## Printing Details\n\n**Print temperature**: 220 – 250°C\n\n**Heated Bed**: 50 – 75°C (required)\n\n**Printing recommendations**: Use a low print speed for a higher quality result\n\n## More Details\n\n**Pros**\n\n - A happy medium between PLA and ABS filaments\n - Clearer, less brittle, flexible, durable, and temperature resistant\n - Great for layer adhesion\n\n**Cons**\n\n - Sticky when printed\n - Scratches easily\n - Susceptible to moisture\n";
+export const _PETGFilamentGreenAltText = "![Spool of green PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81aGoqGokPL._AC_SL1500_.jpg)";
+export const _PETGFilamentGreyAltText = "![Spool of grey PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/817rK90Ze3L._AC_SL1500_.jpg)";
+export const _PETGFilamentOrangeAltText = "![Spool of orange PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81dJvAFi3VL._AC_SL1500_.jpg)";
+export const _PETGFilamentPinkAltText = "![Spool of pink PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71-eX0i60kL._SL1500_.jpg)";
+export const _PETGFilamentPurpleAltText = "![Spool of purple PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/817D7xFaVpL._AC_SL1500_.jpg)";
+export const _PETGFilamentRedAltText = "![Spool of red PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81GbehvfWpL._AC_SL1500_.jpg)";
 export const _PETGFilamentTitle = "# 1.75mm PETG Filament\n";
+export const _PETGFilamentWhiteAltText = "![Spool of white PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/811dPf2kPYL._AC_SL1500_.jpg)";
+export const _PETGFilamentYellowAltText = "![Spool of yellow PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81phllhs0fL._AC_SL1500_.jpg)";
+export const _PLAFilamentBlackAltText = "![Spool of black PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61YF1Zj37GL._AC_SL1000_.jpg)";
+export const _PLAFilamentBlueAltText = "![Spool of blue PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/51aQpWn+aSL._AC_SL1000_.jpg)";
+export const _PLAFilamentBrownAltText = "![Spool of brown PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/617pDET3ffL._AC_SL1000_.jpg)";
+export const _PLAFilamentDarkBlueAltText = "![Spool of dark blue PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61EyGIQd4FL._AC_SL1000_.jpg)";
 export const _PLAFilamentDescription = "The popular and easy-to-use 3D printer filament, polylactic acid (PLA), is available in a wide range of colours.\n\n**Difficulty Level**: Beginner\n\n**Strength**: Medium\n\n**Flexibility**: Low\n\n**Durability**: Medium\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Non-mechanical prints like toys and figurines\n\n## Printing Details\n\n**Print temperature**: 180 – 230°C\n\n**Heated Bed**: Not required.\n\n## More Details\n\n**Pros**\n\n - Easy to use\n - No off-putting odor\n - More environmentally friendly (as compared to other 3D printer\n   filaments)\n\n**Cons**\n\n - Brittle: avoid using for projects that will be bent, twisted, or\n   dropped\n - Deforms above temperatures of 60°C\n";
 export const _PLAFilamentGlowDescription = "The popular and easy-to-use 3D printer filament, polylactic acid (PLA), in a glow-in-the-dark variation! To activate, leave your print in the light for a while, then bring it into the dark to experience the glow.\n\n**Difficulty Level**: Beginner\n\n**Strength**: Medium\n\n**Flexibility**: Low\n\n**Durability**: Medium\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Halloween projects, wearable prints like jewellery, toys, figurines\n\n## Printing Details\n\n**Print temperature**: 180 – 230°C\n\n**Heated Bed**: Not required.\n\n**Printing recommendations**: Print with thick walls and less infill for a stronger glow!\n\n## More Details\n\n**Pros**\n\n - Easy to use\n - No off-putting odor\n - More environmentally friendly (as compared to other 3D printer\n   filaments)\n\n**Cons**\n\n - Brittle: avoid using for projects that will be bent, twisted, or\n   dropped\n - Deforms above temperatures of 60°C\n";
+export const _PLAFilamentGlowInTheDarkBlueAltText = "![Spool of PLA (polylactic acid) 3D printer filament in glow-in-the-dark blue. The left half shows the plain filament in the light. The right half shows the glowing blue filament in the dark.](https://images-na.ssl-images-amazon.com/images/I/411FUc00T1L.jpg)";
+export const _PLAFilamentGlowInTheDarkWhiteGreenAltText = "![Spool of PLA (polylactic acid) 3D printer filament in glow-in-the-dark white-green. The left half shows the plain filament in the light. The right half shows the glowing green filament in the dark.](https://cdn.shopify.com/s/files/1/2719/6506/products/571_4_679134b9-36bc-4e1c-974f-8928fc0fb426.jpg?crop=center&height=1000&v=1653079031&width=832)";
 export const _PLAFilamentGlowTitle = "# 1.75mm PLA Filament (Glow-in-the-dark)\n";
+export const _PLAFilamentGreenAltText = "![Spool of green PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61A7vnKRS7L._AC_SL1000_.jpg)";
+export const _PLAFilamentGreyAltText = "![Spool of grey PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61S-m4eilYL._AC_SL1000_.jpg)";
+export const _PLAFilamentOrangeAltText = "![Spool of orange PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61yMWWCp66L._AC_SL1000_.jpg)";
+export const _PLAFilamentPinkAltText = "![Spool of pink PLA (polylactic acid) 3D printer filament in 1.75mm diameter. A figurine of a squirrel shows the printed colour.](https://m.media-amazon.com/images/I/61x7uEM1xUL._AC_SL1000_.jpg)";
+export const _PLAFilamentPurpleAltText = "![Spool of purple PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61wzOg5aKkL._AC_SL1000_.jpg)";
+export const _PLAFilamentRedAltText = "![Spool of red PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/51uBrmD1D5L._AC_SL1000_.jpg)";
 export const _PLAFilamentTitle = "# 1.75mm PLA Filament\n";
+export const _PLAFilamentWhiteAltText = "![Spool of white PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/51AycXPn7oL._AC_SL1000_.jpg)";
+export const _PLAFilamentYellowAltText = "![Spool of yellow PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61IWRwudQlL._AC_SL1000_.jpg)";
+export const _TPEFilamentBlackAltText = "![Spool of black TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71Gq+kieHTS._AC_SL1500_.jpg)";
+export const _TPEFilamentBlueAltText = "![Spool of blue TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71PXqfaSt2S._AC_SL1500_.jpg)";
+export const _TPEFilamentBrownAltText = "![Spool of brown TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter. A vase shows the printed colour.](https://m.media-amazon.com/images/I/5100O76WeSL._SL1000_.jpg)";
+export const _TPEFilamentDarkBlueAltText = "![Spool of dark blue TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter. A vase shows the printed colour.](https://m.media-amazon.com/images/I/511nG2Du68L._SL1000_.jpg)";
 export const _TPEFilamentDescription = "A soft and stretchable plastic, thermoplastic elastomer (TPE) flexible filaments are available in a wide range of colours.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: Medium\n\n**Flexibility**: Very High\n\n**Durability**: Very High\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: No\n\n**Perfect for**: Prints that will experience a lot of physical wear and tear (bending, stretching, compressing) or harsh weather conditions. Great for toys, phone cases, wearable bands, household appliances, and medical supplies.\n\n## Printing Details\n\n**Print temperature**: 210 – 230°C\n\n**Heated Bed**: Not required\n\n**Printing recommendations**: Tight filament path and slow print speed are recommended\n\n## More Details\n\n**Pros**\n\n - Withstands physical stressors that ABS and PLA filaments can’t\n   tolerate\n\n**Cons**\n\n - Can be difficult to extrude\n";
+export const _TPEFilamentGreenAltText = "![Spool of green TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71xPyz-v0KS._AC_SL1500_.jpg)";
+export const _TPEFilamentGreyAltText = "![Spool of grey TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71udLGWisnS._AC_SL1500_.jpg)";
+export const _TPEFilamentOrangeAltText = "![Spool of orange TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71tsGpC3AkS._AC_SL1466_.jpg)";
+export const _TPEFilamentPinkAltText = "![Spool of pink TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter. A vase shows the printed colour.](https://m.media-amazon.com/images/I/51wOMb3viSL._SL1000_.jpg)";
+export const _TPEFilamentPurpleAltText = "![Spool of purple TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/712dWJ0o2gS._AC_SL1500_.jpg)";
+export const _TPEFilamentRedAltText = "![Spool of red TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/71ycMpYeJcL._AC_SL1500_.jpg)";
 export const _TPEFilamentTitle = "# 1.75mm TPE Flexible Filament";
+export const _TPEFilamentWhiteAltText = "![Spool of white TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61jj2ftO59S._AC_SL1500_.jpg)";
+export const _TPEFilamentYellowAltText = "![Spool of yellow TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61G-DzVdPgS._AC_SL1500_.jpg)";
+export const _3DPenBlackAltText = "![3D pen with black casing. The pen has an LED display screen, metal tip, and inlet to feed the filament into the pen.](https://cdn.reprapworld.com/images/default/dynamic/products/large/prod_TFWSax.jpg)";
+export const _3DPenBlueAltText = "![3D pen with blue casing. The pen has an LED display screen, metal tip, and inlet to feed the filament into the pen.](https://i5.walmartimages.com/asr/d5deeee5-5aec-4154-838d-c59897c0a9d8_1.10784f96f987b3f0cb13a39cc93ca7cc.jpeg)";
 export const _3DPenDescription = "Create 3D projects without software or files! With a 3D Pen you can draw and create 3D doodles on any flat surface. Draw and connect material in mid-air to create unique 3D master pieces.\n\n**Difficulty Level**: Beginner\n\n**Perfect for**: Kids, beginners, artists, and educators\n\n## How does a 3D pen work?\n\nThe plastic printing material is pushed through the pen, heated to the appropriate temperature, and leaves the pen in a soft, melted state. This malleable plastic hardens within a few seconds, taking the shape of your structure.\n\n## Filament Type\n\nABS: Best for beginners and drawing in mid-air\n\nPLA: Best for drawing directly onto flat surfaces\n\n";
+export const _3DPenPinkAltText = "![3D pen with pink casing. The pen has an LED display screen, metal tip, and inlet to feed the filament into the pen.](https://m.media-amazon.com/images/I/41-V9tUqaUS._AC_SL1500_.jpg)";
+export const _3DPenRedAltText = "![3D pen with red and black casing. A 3D reindeer has been drawn in blue filament. The pen has an LED display screen, metal tip, and inlet to feed the filament into the pen.](https://m.media-amazon.com/images/I/41pocdH+jWL.jpg)";
 export const _3DPenTitle = "# 3D Pen\n";
+export const _3DPenWhiteAltText = "![3D pen with white casing. The pen has an LED display screen, metal tip, and inlet to feed the filament into the pen.](https://cdn.reprapworld.com/images/default/dynamic/products/large/prod_pZopdZ.jpg)";
 export const _CrealityEnder3AltText = "![Creality Ender 3 filament 3D printer. The printer is assembled and shows the frame, base and print bed, hotend, and display screen.](https://img.staticdj.com/78b4b1a181b236e46e401c5efe4df976_540x.jpg)";
 export const _CrealityEnder3Description = "## Description\nThe Creality Ender 3 3D printer is an ideal printer for new and experienced 3D printing enthusiasts. The Ender 3 is semi-assembled, so you can assemble it quickly and get printing. The Creality Ender 3 3D printer has the following features:\n\n - Stable all-metal body\n - Hotbed reaches its maximum temperature in 5 minutes\n - Power-recovery mode allows you to resume printing after an unexpected power loss\n## Specifications\n**Technology**: FDM\n\n**Printing size**: 220x220x250mm\n\n**Filament types**: PLA, ABS, TPU, PETG\n\n**Maximum printing speed**: 180mm/s\n\n**Maximum bed temperature**: 110&deg;C\n\n**Maximum nozzle temperature**: 240&deg;C\n\n**Extruder**: Bowden\n\n**Build plate**: BuildTak-style sticker\n\n**Slicer software**: Cura, Repetier-Host, simplify3D";
 export const _CrealityEnder3Title = "Creality Ender 3 Filament 3D Printer";
@@ -49,22 +128,101 @@ export const _WaterWashableResinWhiteAltText = "![ELEGOO Water Washable Photopol
 export const _WaterWashableResinYellowAltText = "![ELEGOO Water Washable Photopolymer yellow resin in a 1000-gram bottle. A yellow geometric model shows the printed colour.](https://m.media-amazon.com/images/I/71d0nQeaXcL._SL1500_.jpg)";
 
 export default {
+  _ABSFilamentBlackAltText, 
+  _ABSFilamentBlueAltText, 
+  _ABSFilamentBrownAltText, 
+  _ABSFilamentDarkBlueAltText, 
   _ABSFilamentDescription, 
+  _ABSFilamentGreenAltText, 
+  _ABSFilamentGreyAltText, 
+  _ABSFilamentOrangeAltText, 
+  _ABSFilamentPinkAltText, 
+  _ABSFilamentPurpleAltText, 
+  _ABSFilamentRedAltText, 
   _ABSFilamentTitle, 
+  _ABSFilamentWhiteAltText, 
+  _ABSFilamentYellowAltText, 
+  _NylonFilamentBlackAltText, 
+  _NylonFilamentBlueAltText, 
+  _NylonFilamentBrownAltText, 
+  _NylonFilamentDarkBlueAltText, 
   _NylonFilamentDescription, 
+  _NylonFilamentGreenAltText, 
+  _NylonFilamentGreyAltText, 
+  _NylonFilamentOrangeAltText, 
+  _NylonFilamentPinkAltText, 
+  _NylonFilamentPurpleAltText, 
+  _NylonFilamentRedAltText, 
   _NylonFilamentTitle, 
+  _NylonFilamentWhiteAltText, 
+  _NylonFilamentYellowAltText, 
+  _PCFilamentBlackAltText, 
+  _PCFilamentBlueAltText, 
+  _PCFilamentBrownAltText, 
+  _PCFilamentDarkBlueAltText, 
   _PCFilamentDescription, 
+  _PCFilamentGreenAltText, 
+  _PCFilamentGreyAltText, 
+  _PCFilamentOrangeAltText, 
+  _PCFilamentPinkAltText, 
+  _PCFilamentPurpleAltText, 
+  _PCFilamentRedAltText, 
   _PCFilamentTitle, 
+  _PCFilamentWhiteAltText, 
+  _PCFilamentYellowAltText, 
+  _PETGFilamentBlackAltText, 
+  _PETGFilamentBlueAltText, 
+  _PETGFilamentBrownAltText, 
+  _PETGFilamentDarkBlueAltText, 
   _PETGFilamentDescription, 
+  _PETGFilamentGreenAltText, 
+  _PETGFilamentGreyAltText, 
+  _PETGFilamentOrangeAltText, 
+  _PETGFilamentPinkAltText, 
+  _PETGFilamentPurpleAltText, 
+  _PETGFilamentRedAltText, 
   _PETGFilamentTitle, 
+  _PETGFilamentWhiteAltText, 
+  _PETGFilamentYellowAltText, 
+  _PLAFilamentBlackAltText, 
+  _PLAFilamentBlueAltText, 
+  _PLAFilamentBrownAltText, 
+  _PLAFilamentDarkBlueAltText, 
   _PLAFilamentDescription, 
   _PLAFilamentGlowDescription, 
+  _PLAFilamentGlowInTheDarkBlueAltText, 
+  _PLAFilamentGlowInTheDarkWhiteGreenAltText, 
   _PLAFilamentGlowTitle, 
+  _PLAFilamentGreenAltText, 
+  _PLAFilamentGreyAltText, 
+  _PLAFilamentOrangeAltText, 
+  _PLAFilamentPinkAltText, 
+  _PLAFilamentPurpleAltText, 
+  _PLAFilamentRedAltText, 
   _PLAFilamentTitle, 
+  _PLAFilamentWhiteAltText, 
+  _PLAFilamentYellowAltText, 
+  _TPEFilamentBlackAltText, 
+  _TPEFilamentBlueAltText, 
+  _TPEFilamentBrownAltText, 
+  _TPEFilamentDarkBlueAltText, 
   _TPEFilamentDescription, 
+  _TPEFilamentGreenAltText, 
+  _TPEFilamentGreyAltText, 
+  _TPEFilamentOrangeAltText, 
+  _TPEFilamentPinkAltText, 
+  _TPEFilamentPurpleAltText, 
+  _TPEFilamentRedAltText, 
   _TPEFilamentTitle, 
+  _TPEFilamentWhiteAltText, 
+  _TPEFilamentYellowAltText, 
+  _3DPenBlackAltText, 
+  _3DPenBlueAltText, 
   _3DPenDescription, 
+  _3DPenPinkAltText, 
+  _3DPenRedAltText, 
   _3DPenTitle, 
+  _3DPenWhiteAltText, 
   _CrealityEnder3AltText, 
   _CrealityEnder3Description, 
   _CrealityEnder3Title, 
