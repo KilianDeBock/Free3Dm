@@ -32,8 +32,9 @@ export const _ExpeditedShipping = "Expedited Shipping  \n1-2 business days";
 export const _ShippingMethodTitle = "Shipping Method";
 export const _StandardShipping = "Standard Shipping  \n5-10 business days";
 export const _NewsletterEmail = "Enter your email address here";
-export const _EmailAddress = "free3dm@customersupport.ca";
-export const _PhoneNumber = "Canada: +1-800-345-4122  \nBelgium: +32-454-354-4122";
+export const _EmailAddress = "support@Free3Dm.com";
+export const _PhoneNumberBE = "+32-454-354-4122";
+export const _PhoneNumberCA = "+1-800-345-4122";
 export const _SearchBar = "Search our products!";
 export const _AlreadySignedUpForNewsletter = "You're already signed up for our newsletter.\nNot getting our emails? Learn <u>how to add news@free3dm.com to your safe sender list</u>.";
 export const _NewsletterSameDayUnsubscribeConfirmation = "You just signed up for our newsletter today, are you sure you want to unsubscribe?";
@@ -76,7 +77,8 @@ export default {
   _StandardShipping, 
   _NewsletterEmail, 
   _EmailAddress, 
-  _PhoneNumber, 
+  _PhoneNumberBE, 
+  _PhoneNumberCA, 
   _SearchBar, 
   _AlreadySignedUpForNewsletter, 
   _NewsletterSameDayUnsubscribeConfirmation, 

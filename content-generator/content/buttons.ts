@@ -1,95 +1,95 @@
-export const _PlaceOrderButtonButton = "Place Order";
-export const _CompanyDetailsButtonButton = "Company Details";
-export const _JobsButtonButton = "Jobs";
-export const _NewsButtonButton = "News";
-export const _SustainabilityButtonButton = "Sustainability";
-export const _ContactUsButtonButton = "Contact Us";
-export const _FAQsButtonButton = "Frequently Asked Questions";
-export const _ReturnPolicyButtonButton = "Return Policy";
-export const _ShippingDeliveryButtonButton = "Shipping & Delivery";
-export const _WarrantyRepairPolicyButtonButton = "Warranty & Repair Policy";
-export const _NewsletterSubscriptionButtonButton = "Subscribe!";
-export const _PrivacyPolicyButtonButton = "Privacy Policy";
-export const _SitemapButtonButton = "Sitemap";
-export const _TermsConditionsButtonButton = "Terms & Conditions";
-export const _SearchButtonButton = "Search";
-export const _ShoppingCartButtonButton = "Shopping Cart";
-export const _SignInButtonButton = "Sign In";
-export const _WishlistButtonButton = "Wish List";
-export const _AddToCartButtonButton = "Add to Shopping Cart";
-export const _ColourButtonButton = "Colour";
-export const _3DPrintersButtonButton = "3D Printers";
-export const _AccessoriesButtonButton = "Accessories";
-export const _FilamentsButtonButton = "Filaments";
-export const _ResinButtonButton = "Resin";
-export const _ToysButtonButton = "Toys";
-export const _NumberOfProductsButtonButton = "Browse all XXX products";
-export const _ABSFilterButtonButton = "ABS";
-export const _NylonFilterButtonButton = "Nylon";
-export const _PCFilterButtonButton = "PC";
-export const _PETGFilterButtonButton = "PETG";
-export const _PLAFilterButtonButton = "PLA";
-export const _TPEFilterButtonButton = "TPE";
-export const _WaterWashableResinFilterButtonButton = "Water washable resin";
-export const _CrealityBrandFilterButtonButton = "Creality";
-export const _ELEGOOBrandFilterButtonButton = "ELEGOO";
-export const _3DPrintersFilterButtonButton = "3D Printers";
-export const _3DPrintingMaterialsFilterButtonButton = "3D Printing Materials";
-export const _3DPenCollectionButtonButton = "3D Pen Collection";
-export const _FDMPrinterCollectionButtonButton = "FDM Printer Collection";
-export const _FilamentCollectionButtonButton = "Filament Collection";
-export const _SLAPrinterCollectionButtonButton = "SLA Printer Collection";
-export const _1StarFilterButtonButton = "1 Star";
-export const _2StarsFilterButtonButton = "2 Stars";
-export const _3StarsFilterButtonButton = "3 Stars";
-export const _4StarsFilterButtonButton = "4 Stars";
-export const _5StarsFilterButtonButton = "5 Stars";
+export const _PlaceOrderButton = "Place Order";
+export const _CompanyDetailsButton = "Company Details";
+export const _JobsButton = "Jobs";
+export const _NewsButton = "News";
+export const _SustainabilityButton = "Sustainability";
+export const _ContactUsButton = "Contact Us";
+export const _FAQsButton = "Frequently Asked Questions";
+export const _ReturnPolicyButton = "Return Policy";
+export const _ShippingDeliveryButton = "Shipping & Delivery";
+export const _WarrantyRepairPolicyButton = "Warranty & Repair Policy";
+export const _NewsletterSubscriptionButton = "Subscribe!";
+export const _PrivacyPolicyButton = "Privacy Policy";
+export const _SitemapButton = "Sitemap";
+export const _TermsConditionsButton = "Terms & Conditions";
+export const _SearchButton = "Search";
+export const _ShoppingCartButton = "Shopping Cart";
+export const _SignInButton = "Sign In";
+export const _WishlistButton = "Wish List";
+export const _AddToCartButton = "Add to Shopping Cart";
+export const _ColourButton = "Colour";
+export const _3DPrintersButton = "3D Printers";
+export const _AccessoriesButton = "Accessories";
+export const _FilamentsButton = "Filaments";
+export const _ResinButton = "Resin";
+export const _ToysButton = "Toys";
+export const _NumberOfProductsButton = "Browse all XXX products";
+export const _ABSFilterButton = "ABS";
+export const _NylonFilterButton = "Nylon";
+export const _PCFilterButton = "PC";
+export const _PETGFilterButton = "PETG";
+export const _PLAFilterButton = "PLA";
+export const _TPEFilterButton = "TPE";
+export const _WaterWashableResinFilterButton = "Water washable resin";
+export const _CrealityBrandFilterButton = "Creality";
+export const _ELEGOOBrandFilterButton = "ELEGOO";
+export const _3DPrintersFilterButton = "3D Printers";
+export const _3DPrintingMaterialsFilterButton = "3D Printing Materials";
+export const _3DPenCollectionButton = "3D Pen Collection";
+export const _FDMPrinterCollectionButton = "FDM Printer Collection";
+export const _FilamentCollectionButton = "Filament Collection";
+export const _SLAPrinterCollectionButton = "SLA Printer Collection";
+export const _1StarFilterButton = "1 Star";
+export const _2StarsFilterButton = "2 Stars";
+export const _3StarsFilterButton = "3 Stars";
+export const _4StarsFilterButton = "4 Stars";
+export const _5StarsFilterButton = "5 Stars";
 
 export default {
-  _PlaceOrderButtonButton, 
-  _CompanyDetailsButtonButton, 
-  _JobsButtonButton, 
-  _NewsButtonButton, 
-  _SustainabilityButtonButton, 
-  _ContactUsButtonButton, 
-  _FAQsButtonButton, 
-  _ReturnPolicyButtonButton, 
-  _ShippingDeliveryButtonButton, 
-  _WarrantyRepairPolicyButtonButton, 
-  _NewsletterSubscriptionButtonButton, 
-  _PrivacyPolicyButtonButton, 
-  _SitemapButtonButton, 
-  _TermsConditionsButtonButton, 
-  _SearchButtonButton, 
-  _ShoppingCartButtonButton, 
-  _SignInButtonButton, 
-  _WishlistButtonButton, 
-  _AddToCartButtonButton, 
-  _ColourButtonButton, 
-  _3DPrintersButtonButton, 
-  _AccessoriesButtonButton, 
-  _FilamentsButtonButton, 
-  _ResinButtonButton, 
-  _ToysButtonButton, 
-  _NumberOfProductsButtonButton, 
-  _ABSFilterButtonButton, 
-  _NylonFilterButtonButton, 
-  _PCFilterButtonButton, 
-  _PETGFilterButtonButton, 
-  _PLAFilterButtonButton, 
-  _TPEFilterButtonButton, 
-  _WaterWashableResinFilterButtonButton, 
-  _CrealityBrandFilterButtonButton, 
-  _ELEGOOBrandFilterButtonButton, 
-  _3DPrintersFilterButtonButton, 
-  _3DPrintingMaterialsFilterButtonButton, 
-  _3DPenCollectionButtonButton, 
-  _FDMPrinterCollectionButtonButton, 
-  _FilamentCollectionButtonButton, 
-  _SLAPrinterCollectionButtonButton, 
-  _1StarFilterButtonButton, 
-  _2StarsFilterButtonButton, 
-  _3StarsFilterButtonButton, 
-  _4StarsFilterButtonButton, 
-  _5StarsFilterButtonButton
+  _PlaceOrderButton, 
+  _CompanyDetailsButton, 
+  _JobsButton, 
+  _NewsButton, 
+  _SustainabilityButton, 
+  _ContactUsButton, 
+  _FAQsButton, 
+  _ReturnPolicyButton, 
+  _ShippingDeliveryButton, 
+  _WarrantyRepairPolicyButton, 
+  _NewsletterSubscriptionButton, 
+  _PrivacyPolicyButton, 
+  _SitemapButton, 
+  _TermsConditionsButton, 
+  _SearchButton, 
+  _ShoppingCartButton, 
+  _SignInButton, 
+  _WishlistButton, 
+  _AddToCartButton, 
+  _ColourButton, 
+  _3DPrintersButton, 
+  _AccessoriesButton, 
+  _FilamentsButton, 
+  _ResinButton, 
+  _ToysButton, 
+  _NumberOfProductsButton, 
+  _ABSFilterButton, 
+  _NylonFilterButton, 
+  _PCFilterButton, 
+  _PETGFilterButton, 
+  _PLAFilterButton, 
+  _TPEFilterButton, 
+  _WaterWashableResinFilterButton, 
+  _CrealityBrandFilterButton, 
+  _ELEGOOBrandFilterButton, 
+  _3DPrintersFilterButton, 
+  _3DPrintingMaterialsFilterButton, 
+  _3DPenCollectionButton, 
+  _FDMPrinterCollectionButton, 
+  _FilamentCollectionButton, 
+  _SLAPrinterCollectionButton, 
+  _1StarFilterButton, 
+  _2StarsFilterButton, 
+  _3StarsFilterButton, 
+  _4StarsFilterButton, 
+  _5StarsFilterButton
 };
