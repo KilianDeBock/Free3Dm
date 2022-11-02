@@ -1,1 +1,1 @@
-﻿free3dm@customersupport.ca
+﻿support@Free3Dm.com
