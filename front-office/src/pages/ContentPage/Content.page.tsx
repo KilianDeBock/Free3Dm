@@ -2,6 +2,7 @@ import React from 'react';
 import { useApp } from '../../contexts';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import styles from './Content.module.css';
 
 export interface ContentPageProps {
   title: string;
@@ -17,7 +18,7 @@ export const ContentPage = ({
   useApp()?.setTitle(setTitle || title || 'Content');
 
   return (
-    <section className={'container'}>
+    <section className={`container ${styles.content}`}>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
     </section>
   );
