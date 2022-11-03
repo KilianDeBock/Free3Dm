@@ -1,4 +1,5 @@
-﻿The popular and easy-to-use 3D printer filament, polylactic acid (PLA), is available in a wide range of colours.
+﻿# 1.75mm PLA Filament
+The popular and easy-to-use 3D printer filament, polylactic acid (PLA), is available in a wide range of colours.
 
 **Difficulty Level**: Beginner
 

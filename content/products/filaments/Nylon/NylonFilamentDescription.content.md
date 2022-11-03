@@ -1,4 +1,5 @@
-﻿A popular synthetic polymer. Nylon or polyamide (PA) is a go-to filament material for 3D printing and is available in a wide range of colours.
+﻿# 1.75mm Nylon (PA) Filament
+A popular synthetic polymer. Nylon or polyamide (PA) is a go-to filament material for 3D printing and is available in a wide range of colours.
 
 **Difficulty Level**: Intermediate
 

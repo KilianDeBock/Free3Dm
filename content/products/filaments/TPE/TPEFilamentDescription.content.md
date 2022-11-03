@@ -1,4 +1,5 @@
-﻿A soft and stretchable plastic, thermoplastic elastomer (TPE) flexible filaments are available in a wide range of colours.
+﻿# 1.75mm TPE Flexible Filament
+A soft and stretchable plastic, thermoplastic elastomer (TPE) flexible filaments are available in a wide range of colours.
 
 **Difficulty Level**: Intermediate
 

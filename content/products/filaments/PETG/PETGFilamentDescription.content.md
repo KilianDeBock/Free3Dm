@@ -1,4 +1,5 @@
-﻿Polyethylene terephthalate (PET) filament is a variant of one of the most used plastics in the world. It is available in a wide range of colours.
+﻿# 1.75mm PETG Filament
+Polyethylene terephthalate (PET) filament is a variant of one of the most used plastics in the world. It is available in a wide range of colours.
 
 **Difficulty Level**: Beginner
 

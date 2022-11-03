@@ -1,4 +1,5 @@
-﻿A durable and great material for general-purpose projects. Acrylonitrile butadiene styrene (ABS) filament is available in a wide range of colours.
+﻿# 1.75mm ABS Filament
+A durable and great material for general-purpose projects. Acrylonitrile butadiene styrene (ABS) filament is available in a wide range of colours.
 
 **Difficulty Level**: Intermediate
 

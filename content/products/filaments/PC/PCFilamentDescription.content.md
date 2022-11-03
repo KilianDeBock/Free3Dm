@@ -1,4 +1,5 @@
-﻿One of the strongest 3D printer filaments, PC filament is durable and temperature resistant. It is available in a wide range of colours.
+﻿# 1.75mm Polycarbonate (PC) Filament
+One of the strongest 3D printer filaments, PC filament is durable and temperature resistant. It is available in a wide range of colours.
 
 **Difficulty Level**: Intermediate
 

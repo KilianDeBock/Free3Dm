@@ -1,4 +1,5 @@
-﻿The popular and easy-to-use 3D printer filament, polylactic acid (PLA), in a glow-in-the-dark variation! To activate, leave your print in the light for a while, then bring it into the dark to experience the glow.
+﻿# 1.75mm PLA Filament (Glow-in-the-dark)
+The popular and easy-to-use 3D printer filament, polylactic acid (PLA), in a glow-in-the-dark variation! To activate, leave your print in the light for a while, then bring it into the dark to experience the glow.
 
 **Difficulty Level**: Beginner
 
