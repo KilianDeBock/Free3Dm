@@ -22,6 +22,7 @@ type Brand {
 type Product {
   id: Int!
   name: String!
+  description: String!
   categoryId: Int!
   category: Category!
   brandId: Int!
@@ -257,12 +258,14 @@ input CreateProductInput {
   categoryId: Int!
   brandId: Int!
   name: String!
+  description: String!
 }
 
 input UpdateProductInput {
   categoryId: Int
   brandId: Int
   name: String
+  description: String
   id: Int!
 }
 

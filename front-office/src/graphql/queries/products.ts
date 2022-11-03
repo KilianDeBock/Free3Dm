@@ -38,6 +38,7 @@ export const GET_PRODUCT = gql`
       category {
         name
       }
+      description
       articles {
         id
         price

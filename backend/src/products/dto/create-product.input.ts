@@ -10,4 +10,7 @@ export class CreateProductInput {
 
   @Field()
   name: string;
+
+  @Field()
+  description: string;
 }
