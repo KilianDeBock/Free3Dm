@@ -55,7 +55,7 @@ export const AppProvider = ({ children }: AppContextProps) => {
     if (typeof path === 'string' && path === 'reset')
       newNavigationInfo.path = [['Home', '/']];
     else if (path) newNavigationInfo.path = [['Home', '/'], ...path];
-    if (text) newNavigationInfo.text = text;
+    newNavigationInfo.text = text;
     if (
       JSON.stringify(navigationInfo.path) !==
         JSON.stringify(newNavigationInfo.path) ||

@@ -16,16 +16,23 @@ import {
   _ContactUsButton,
   _FAQsButton,
   _JobsButton,
+  _NewsletterSubscriptionButton,
   _PrivacyPolicyButton,
   _ReturnPolicyButton,
-  _SearchButton,
   _ShippingDeliveryButton,
   _SitemapButton,
   _SustainabilityButton,
   _TermsConditionsButton,
   _WarrantyRepairPolicyButton,
 } from '@content/buttons';
-import { _PhoneNumberBE, _PhoneNumberCA } from '@content/dialogs';
+import {
+  _NewsletterEmail,
+  _PhoneNumberBE,
+  _PhoneNumberCA,
+} from '@content/dialogs';
+import { _NewsletterFooter } from '@content/main/footer';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 const links: FooterSection[] = [
   {
@@ -157,18 +164,26 @@ export const FooterComponent = () => (
         <section className={styles['footer__payments']}>
           <article>
             <span className={styles['footer__subscribe__title']}>
-              Save up to -10%
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {_NewsletterFooter.split('\n')[0]}
+              </ReactMarkdown>
             </span>
             <span className={styles['footer__subscribe__text']}>
-              Subscribe to our newsletter
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {_NewsletterFooter.split('\n')[1]}
+              </ReactMarkdown>
             </span>
             <SearchComponent
-              placeholderTxt={'Ender email'}
-              submitTxt={_SearchButton}
+              placeholderTxt={_NewsletterEmail}
+              submitTxt={_NewsletterSubscriptionButton}
             />
           </article>
           <article>
-            <span>100% save transactions</span>
+            <span>
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {_NewsletterFooter.split('\n')[2]}
+              </ReactMarkdown>
+            </span>
             <PaymentMethodsComponent />
           </article>
         </section>

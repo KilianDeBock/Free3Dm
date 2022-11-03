@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { CategoriesData, Category, GET_ALL_CATEGORIES } from '@graphql';
+import {
+  CategoriesData,
+  Category,
+  GET_ALL_CATEGORIES,
+  getDetail,
+} from '@graphql';
 import { useQuery } from '@apollo/client';
 import { useApp } from '../../contexts';
 import { CategoryProductsComponent } from '../../components/CategoryProducts/CategoryProducts.component';
@@ -14,7 +19,7 @@ export const CategoryPage = (): JSX.Element => {
 
   app?.setNavigationInfo([
     ['categories', '/category'],
-    ['printers', '/category/printers'],
+    [name ?? 'unkown', `/category/${name}`],
   ]);
 
   const { loading, error, data } = useQuery<CategoriesData>(
@@ -47,6 +52,10 @@ export const CategoryPage = (): JSX.Element => {
 
   const productsCount =
     category?.products?.reduce((totalLength, { articles }) => {
+      articles =
+        articles?.filter(({ details }) =>
+          details ? getDetail<string>(details, 'image') : false
+        ) ?? articles;
       const articlesLength = articles?.length ?? 0;
       return totalLength + articlesLength;
     }, 0) ?? 0;
@@ -54,21 +63,13 @@ export const CategoryPage = (): JSX.Element => {
 
   app?.setNavigationInfo(
     null,
-    `There ${countIsOne ? 'is' : 'are'} ${productsCount} product
-          ${!countIsOne ? 's' : ''}`
+    `There ${countIsOne ? 'is' : 'are'} ${productsCount} product${
+      !countIsOne ? 's' : ''
+    }`
   );
 
   return (
     <>
-      <section className={`container ${styles['category-info']}`}>
-        <span>
-          Home {'<'} {category?.name}
-        </span>
-        <p>
-          There {(countIsOne && 'is') || 'are'} {productsCount} product
-          {!countIsOne && 's'}
-        </p>
-      </section>
       <section className={`container ${styles['category-content']}`}>
         <ul>
           <li>Test</li>

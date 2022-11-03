@@ -27,19 +27,19 @@
     max-width: 20rem;
 }
 
-.footer__subscribe__title,
-.footer__subscribe__text {
+.footer__subscribe__title *,
+.footer__subscribe__text * {
     font-weight: 600;
     display: block;
 }
 
-.footer__subscribe__title {
+.footer__subscribe__title * {
     font-size: 1.8rem;
     margin-bottom: -.7rem;
     color: var(--blue-500);
 }
 
-.footer__subscribe__text {
+.footer__subscribe__text * {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
