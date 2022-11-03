@@ -1,4 +1,5 @@
-﻿Last updated: October 17, 2022
+﻿# Terms & Conditions
+Last updated: October 17, 2022
 
 Ensure that you have read the following Terms and Conditions before purchasing and using any Free3Dm products. Your use of the Free3Dm website is conditioned upon your understanding, acceptance, and compliance with the following Terms and Conditions.
 
@@ -26,4 +27,4 @@ Hours of operation: 8:00 AM to 6:30 PM (Eastern Time GMT-4)**
 **Belgium: +32-454-354-4122  
 Hours of operation: 8:00 AM to 6:30 PM (Central European Time GMT+2)**
 
-[**customersupport@free3dm.com**](mailto:customersupport@free3dm.com)
+[**free3dm@customersupport.ca**](mailto:free3dm@customersupport.ca)

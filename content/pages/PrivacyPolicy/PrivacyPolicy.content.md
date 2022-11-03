@@ -1,4 +1,5 @@
-﻿This Privacy Policy contains information about the types of information that Free3Dm collects and records, and how we use it to create the best shopping experience for you.
+﻿# Privacy Policy
+This Privacy Policy contains information about the types of information that Free3Dm collects and records, and how we use it to create the best shopping experience for you.
 
 ## Information Collected
 
@@ -24,4 +25,4 @@ Hours of operation: 8:00 AM to 6:30 PM (Eastern Time GMT-4)**
 **Belgium: +32-454-354-4122  
 Hours of operation: 8:00 AM to 6:30 PM (Central European Time GMT+2)**
 
-[**customersupport@free3dm.com**](mailto:customersupport@free3dm.com)
+[**free3dm@customersupport.ca**](mailto:free3dm@customersupport.ca)

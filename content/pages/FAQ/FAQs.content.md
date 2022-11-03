@@ -1,6 +1,7 @@
-﻿## What is 3D printing?
+﻿# Frequently Asked Questions
+## What is 3D printing?
 
-3D printing is _the process of creating_ three-dimensional physical objects from a computer model or digital file. The 3D printer lays down consecutive layers of the printing material until the entire object is created. 3D printing technology allows you to create any geometric shape possible!
+3D printing is the process of creating three-dimensional physical objects from a computer model or digital file. The 3D printer lays down consecutive layers of the printing material until the entire object is created. 3D printing technology allows you to create any geometric shape possible!
 
 A 3D pen operates using a similar concept, but is hand-held and does not require a file, software, or computer to operate. The plastic printing material is pushed through the pen, heated to the appropriate temperature, and leaves the pen in a soft, melted state. This malleable plastic hardens within a few seconds, taking the shape of your structure.
 

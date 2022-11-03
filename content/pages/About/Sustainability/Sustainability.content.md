@@ -1,4 +1,5 @@
-﻿At Free3Dm, we strive to provide the best 3D printers, filaments, and accessories to our customers. We also understand how important it is that our products remain sustainable and friendly to the environment.
+﻿# Sustainability
+At Free3Dm, we strive to provide the best 3D printers, filaments, and accessories to our customers. We also understand how important it is that our products remain sustainable and friendly to the environment.
 
 ## Reduce CO2 Emissions
 
