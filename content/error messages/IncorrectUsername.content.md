@@ -1,1 +1,1 @@
-﻿Incorrect username. Please try again or <u>register for an account</u>.
+﻿Incorrect username. Please try again or [register for an account]("/register").

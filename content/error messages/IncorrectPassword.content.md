@@ -1,1 +1,1 @@
-﻿Incorrect password. Please try again or <u>reset your password</u>.
+﻿Incorrect password. Please try again or [reset your password]("/reset-password").

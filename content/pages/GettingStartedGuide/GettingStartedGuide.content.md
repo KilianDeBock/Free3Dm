@@ -18,11 +18,11 @@ When your 3D printer creates an object, it prints each layer in the 3D model one
 
 The two most popular types of 3D printers are FDM and SLA printers, which print objects in different ways.
 
-Our starter printer, <u>the Creality Ender 3</u>, is an **FDM printer**, which stands for Fused Deposition Modeling. FDM printers use a spool of plastic filament that is heated, melted, and pushed through a nozzle to print your object layer by layer.
+Our starter printer, [the Creality Ender 3]("/category/printers/ender-3"), is an **FDM printer**, which stands for Fused Deposition Modeling. FDM printers use a spool of plastic filament that is heated, melted, and pushed through a nozzle to print your object layer by layer.
 
 **SLA printers** (Stereolithography printers) create objects from liquid resin by hardening each layer with a UV light. SLA printers have a vat of resin that rests above an LCD panel. Each layer of the object is displayed on the LCD panel, which directs the UV light to cure the resin in the exact pattern of each layer.
 ## What do you need for 3D printing?
-<u>Our starter kit</u> includes everything you need to start 3D printing your own projects. It includes:
+[Our starter kit]("/") includes everything you need to start 3D printing your own projects. It includes:
 
  - Creality Ender 3 3D printer
  - 1.75mm PLA Filament - White
@@ -35,11 +35,11 @@ The Creality Ender 3 3D printer comes with all the necessary parts, including:
  - a **Bowden extruder**, which pushes the printing material through the nozzle
  - a **nozzle**, which pushes out the melted material to create the layers of your object
 
-You don’t need additional parts to get started with 3D printing, but you may want to try out different parts as you try out new projects. See our <u>Accessories</u> page to explore the variety of parts available for 3D printers.
+You don’t need additional parts to get started with 3D printing, but you may want to try out different parts as you try out new projects. See our [Accessories]("/category/accessories") page to explore the variety of parts available for 3D printers.
 ### You need filament
-The Creality Ender 3 3D printer uses filament to print, which is a plastic thread that comes in spools. Filaments come in a variety of materials. Our starter kit comes with PLA (Polyactic acid) filaments in a variety of colours. PLA filaments are one of the most popular types of 3D printing filaments because they have a low printing temperature and no off-putting odour.
+The Creality Ender 3 3D printer uses filament to print, which is a plastic thread that comes in spools. Filaments come in a variety of materials. Our starter kit comes with PLA (Polylactic acid) filaments in a variety of colours. PLA filaments are one of the most popular types of 3D printing filaments because they have a low printing temperature and no off-putting odour.
 
-You should store your filaments in air-tight plastic bags or containers to keep them dry for the best printing performance. We recommend using our air-tight storage boxes---you can find these on our <u>Accessories</u> page.
+You should store your filaments in air-tight plastic bags or containers to keep them dry for the best printing performance. We recommend using our air-tight storage boxes---you can find these on our [Accessories]("/category/accessories") page.
 ## What can you make with 3D printing?
 
 
@@ -54,6 +54,6 @@ Or make your own 3D models!
 
 We like websites like [Thingiverse.com](https://www.thingiverse.com/) that offer 3D models for any type of 3D printing project.
 ## More recommended products for starting out
-Check out our range of <u>filament printers here</u>.
-Check out our range of <u>filament colours here</u>.
-Check out our <u>fun 3D pens here</u>.
+Check out our range of [filament printers here]("/category/printers").
+Check out our range of [filament colours here]("/category/filaments").
+Check out our [fun 3D pens here]("/category/toys").
