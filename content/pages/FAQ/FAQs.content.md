@@ -15,7 +15,7 @@ FDM 3D printers work by laying down plastic filament layer by layer onto the pri
 
 FDM printers are commonly used outside of industry manufacturing, however, they are not able to print more complex designs. This makes FDM printers great for printing basic models and simple prototypes.
 
-Free3Dm sells the Creality Ender 3, Ender 3 Pro, Ender 3 V2, and Ender 3 S1 FDM printers.
+Free3Dm sells the Creality Ender 3, Ender 3 Pro, Ender 3 V2, and Ender 3 S1 FDM [printers](/category/printers).
 
 ### Stereolithography (SLA) Printers
 
@@ -23,7 +23,7 @@ SLA 3D printers use lasers or UV light to harden resin into plastic. The printer
 
 SLA printers are great for printing high-resolution and extremely accurate prints with fine details. SLA printers are also great for printing functional prototypes, patterns, and tools.
 
-Free3Dm sells the ELEG00 Mars 2 Mono, Mars 3 MSLA, and Saturn S Mono SLA printers.
+Free3Dm sells the ELEG00 Mars 2 Mono, Mars 3 MSLA, and Saturn S Mono SLA [printers](/category/printers).
 
 ### 3D Pens
 
@@ -33,7 +33,9 @@ Free3Dm sells the ELEG00 Mars 2 Mono, Mars 3 MSLA, and Saturn S Mono SLA printer
 
 ## What types of material can 3D printers print with?
 
-Routine preventative maintenance for any 3D printer is very important for extending the life of the printer. Postponing routine maintenance may result in performance and safety issues. The more frequently the printer is used, the more often maintenance checks should be performed. FDM and SLA printers require different types of routine maintenance.
+FDM 3D printers can print with PLA, ABS, PETG, TPE, Nylon (PA), and PC [filaments](/category/filaments).
+
+SLA 3D printers can print with [resin](/category/resin).
 
 ## How do I maintain my 3D printer?
 
@@ -61,37 +63,37 @@ The amount of time it takes to receive your order depends on location and courie
 
 Once your order is placed, processed, and shipped you will automatically be provided with a tracking number. You will receive an email from Free3Dm confirming your tracking number and order details, for your records.
 
-If your shipment is late or lost, see Free3Dm’s Shipping & Delivery policy.
+If your shipment is late or lost, see Free3Dm’s [Shipping & Delivery Policy](/delivery-policy).
 
 ## What are the shipping rates?
 
 Shipping rates are calculated automatically at checkout and will depend on location and courier service.
 
-See Free3Dm’s Shipping & Delivery policy for more information.
+See Free3Dm’s [Shipping & Delivery Policy](/delivery-policy) for more information.
 
 ## Where is my order?
 
 Once your order is placed, processed, and shipped you will automatically be provided with a tracking number. You will receive an email from Free3Dm confirming your tracking number and order details, for your records.
 
-If your shipment is late or lost, see Free3Dm’s Shipping & Delivery policy.
+If your shipment is late or lost, see Free3Dm’s [Shipping & Delivery Policy](/delivery-policy).
 
 ## What do I do if my 3D printer is faulty?
 
 Free3Dm warranties all printers, printer products, and printer materials for the first 30 days from the date of purchase on the Free3Dm website. If you experience any issues with your 3D printer, printer products, or printer materials within 30 days of purchase, Free3Dm will replace any products that are found to be faulty, free of charge. As the customer, you will be responsible for all return and repair-related shipping fees to the Free3Dm repair facility.
 
-See Free3Dm’s Warranty & Repair Policy for more information.
+See Free3Dm’s [Warranty & Repair Policy](/warranty-repair-policy) for more information.
 
 ## What do I do if I need a repair?
 
 If a product requires repair or replacement outside of the Free3Dm 30-day warranty, the cost of the repair or replacement will depend on the product and specific issue. In this case, all return, repair, replacement, and shipping fees will be the responsibility of the customer.
 
-See Free3Dm’s Warranty & Repair Policy for more information and how to receive a quote.
+See Free3Dm’s [Warranty & Repair Policy](/warranty-repair-policy) for more information and how to receive a quote.
 
 ## How much will a repair cost?
 
 The cost of the repair depends on the current warranty status of the product and the nature of the repair.
 
-See Free3Dm’s Warranty & Repair Policy for more information and how to receive a quote.
+See Free3Dm’s [Warranty & Repair Policy](/warranty-repair-policy) for more information and how to receive a quote.
 
 ## Can I pick up my order?
 

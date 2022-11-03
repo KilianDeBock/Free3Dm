@@ -7,7 +7,7 @@ If you disagree with any of these Terms and Conditions, you forfeit the right to
 
 If you want to purchase any product on the Free3Dm website, you will be required to provide information including your name, credit card information, billing address, shipping address, and phone number.
 
-Free3Dm uses third-party services to facilitate the payment processes on the website. By using our website, you are allowing us the right to supply your information to these third-party services. Refer to our Privacy Policy for more information about what information is collected, how it is shared, and how it is stored.
+Free3Dm uses third-party services to facilitate the payment processes on the website. By using our website, you are allowing us the right to supply your information to these third-party services. Refer to our [Privacy Policy](/privacy-policy) for more information about what information is collected, how it is shared, and how it is stored.
 
 Free3Dm, its directors, employees, partners, or suppliers are in no way liable for any damages or other losses due to the use of our products or services.
 
