@@ -1,3 +1,37 @@
+export const _BulkPETGFilamentAltText = "![Six spools of PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter. The filament colours are grey, blue, red, white, and black.](https://m.media-amazon.com/images/I/71rdBhAQfUL._SL1500_.jpg)";
+export const _BulkPETGFilamentDescription = "*6 Pack*\n\nThis pack of six spools of PETG (polyethylene terephthalate glycol) filament contains the following colours:\n\n- Black\n- White\n- Grey x 2\n- Red\n- Blue\n\n**Difficulty Level**: Beginner\n\n**Strength**: High\n\n**Flexibility**: Medium\n\n**Durability**: High\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Functional objects that may experience physical stress, like mechanical and protective parts\n\n## Printing Details\n\n**Print temperature**: 220 – 250°C\n\n**Heated Bed**: 50 – 75°C (required)\n\n**Printing recommendations**: Use a low print speed for a higher quality result\n\n## More Details\n\n**Pros**\n\n- A happy medium between PLA and ABS filaments\n- Clearer, less brittle, flexible, durable, and temperature resistant\n- Great for layer adhesion\n\n**Cons**\n\n- Sticky when printed\n- Scratches easily\n- Susceptible to moisture";
+export const _BulkPETGFilamentPriceCAD = "$250.00";
+export const _BulkPETGFilamentPriceEuro = "€185.97";
+export const _BulkPETGFilamentTitle = "1.75mm PETG Filament, *6 Pack*";
+export const _BulkPLAFilamentAltText = "![Three spools of PLA (polylactic acid) 3D printer filament in 1.75mm diameter. The filament colours are black, blue, and white.](https://m.media-amazon.com/images/I/61HMptroAxL._SL1000_.jpg)";
+export const _BulkPLAFilamentDescription = "*3 Pack: Black, Blue, White*\n\nThe popular and easy-to-use 3D printer filament, PLA (polylactic acid), in a pack of three.\n\n**Difficulty Level**: Beginner\n\n**Strength**: Medium\n\n**Flexibility**: Low\n\n**Durability**: Medium\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Non-mechanical prints like toys and figurines\n\n## Printing Details\n\n**Print temperature**: 180 – 230°C\n\n**Heated Bed**: Not required.\n\n## More Details\n\n**Pros**\n\n- Easy to use\n- No off-putting odour\n- More environmentally friendly (as compared to other 3D printer filaments)\n\n**Cons**\n\n- Brittle: avoid using for projects that will be bent, twisted, or dropped\n- Deforms above temperatures of 60°C";
+export const _BulkPLAFilamentPriceCAD = "$120.00";
+export const _BulkPLAFilamentPriceEuro = "€89.27";
+export const _BulkPLAFilamentTitle = "1.75mm PLA Filament, *3 Pack*";
+export const _BulkTPEFilamentAltText = "![Two spools of black TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter. In the foreground, a hand is squeezing a phone case to show the printed colour and flexibility.](https://m.media-amazon.com/images/I/71ce-yMYGxL._AC_SL1500_.jpg)";
+export const _BulkTPEFilamentDescription = "*2 Pack: Black x 2*\n\nThe soft and stretchable TPE (thermoplastic elastomer) flexible filament in a pack of two.\n\n**Difficulty Level**: Intermediate\n\n**Strength**: Medium\n\n**Flexibility**: Very High\n\n**Durability**: Very High\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: No\n\n**Perfect for**: Prints that will experience a lot of physical wear and tear (bending, stretching, compressing) or harsh weather conditions. Great for toys, phone cases, wearable bands, household appliances, and medical supplies.\n\n## Printing Details\n\n**Print temperature**: 210 – 230°C\n\n**Heated Bed**: Not required\n\n**Printing recommendations**: Tight filament path and slow print speed are recommended\n\n## More Details\n\n**Pros**\n\n- Withstands physical stressors that ABS and PLA filaments can’t tolerate\n\n**Cons**\n\n- Can be difficult to extrude";
+export const _BulkTPEFilamentPriceCAD = "$85.00";
+export const _BulkTPEFilamentPriceEuro = "€63.23";
+export const _BulkTPEFilamentTitle = "1.75mm TPE Filament, *2 Pack*";
+export const _EGuideClearResinAltText = "![E-Guide Clear Biocompatible Photopolymer resin in a 1-kilogram bottle. In the foreground, a dental model displays a printed surgical guide.](https://www.machines-3d.com/images/Image/Resine-castable-wax-ups-verte-Resine-shining-cast-wax-1--8.png)";
+export const _EGuideClearResinDescription = "## Description\n\nOur clear biocompatible photopolymer resin is cleared by the FDA and Health Canada for use in dental and orthodontic appliances. Its high precision and low flexibility make it ideal for surgical guides and clear aligners.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Surgical guides, models, clear aligners\n\n## Printing Details\n\n**Technology**: Ideal for DLP printers\n\n## More Details\n\n**Pros**\n\n - Least shrinkage to ensure a perfect fit every time\n - Compatible with fast printing time\n - Cured material can be cleaned in an ultrasonic bath\n \n**Cons**\n - Requires post-processing\n";
+export const _EGuideClearResinPriceCAD = "$460.00";
+export const _EGuideClearResinPriceEuro = "€341.90";
+export const _EGuideResinTitle = "E-Guide Clear Biocompatible Photopolymer Resin (1kg)";
+export const _FormLabsBioMedResinAltText = "![FormLabs BioMed White resin in a 1-litre bottle.](https://formlabs.com/checkout-media/catalog/product/600x600/b/i/biomed_white_store_revised.png)";
+export const _FormLabsBioMedResinPriceCAD = "$349.00";
+export const _FormLabsBioMedResinPriceEuro = "€259.40";
+export const _FormLabsBioMedResinTitle = "FormLabs BioMed White Resin (1L)";
+export const _FormLabsBioMedWhiteResinDescription = "## Description\n\nFormLabs’ BioMed White resin is a medical-grade resin that can be used to create products that require long-term skin contact. Its high strength, low flexibility, and biocompatibility also make it ideal for medical devices, guides, and models.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Medical devices, anatomical models, surgical tools, and surgical templates\n\n## Printing Details\n\n**Technology**: Ideal for SLA printers\n\n## More Details\n\n**Pros**\n\n - Certified biocompatibility ensures safe long-term skin contact\n- Least shrinkage to ensure high accuracy\n- Compatible with fast printing time\n- Cured material can be sterilised\n \n**Cons**\n - Requires post-processing\n";
+export const _FormLabsPURigidResinAltText = "![FormLabs PU Rigid 1000 resin in a 1-litre aluminum bottle and a 1-litre plastic bottle.](https://formlabs.com/checkout-media/catalog/product/600x600/e/x/export_store_picture_5_.png)";
+export const _FormLabsPURigidResinDescription = "## Description\n\nFormLabs’ PU Rigid 1000 resin is a medical-grade resin that can be used to create products that require long-term skin contact, high strength, and high durability. Its high strength and durability make it ideal for orthotics and orthopedic braces.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Orthotics, prosthetic device components, medical devices\n\n## Printing Details\n\n**Technology**: Ideal for SLA printers\n\n## More Details\n\n**Pros**\n\n - High durability allows printed products to withstand high-impact applications\n - Certified biocompatibility ensures safe long-term skin contact\n - Least shrinkage to ensure high accuracy\n \n**Cons**\n - Requires post-processing\n";
+export const _FormLabsPURigidResinPriceEuro = "€110.74";
+export const _FormLabsPURigidResinTitle = "FormLabs PU Rigid 1000 Resin (1L)";
+export const _SmileGuardClearResinAltText = "![SmileGuard Clear Biocompatible Light Curable resin in a 1-kilogram bottle.](https://cdn.shopify.com/s/files/1/0368/2641/products/DH_SmileGuardsalespresentation_88_1024x1024.jpg?v=1666375724)";
+export const _SmileGuardClearResinDescription = "## Description\n\nOur clear biocompatible resin is cleared by the FDA and Health Canada for use in dental and orthodontic appliances. Its high strength and medium flexibility make it ideal for mouthguards and night guards.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Medium\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Mouthguards, night guards, splints\n\n## Printing Details\n\n**Technology**: Ideal for DLP printers\n\n## More Details\n\n**Pros**\n\n- Incredibly durable\n- Least shrinkage to ensure a perfect fit every time\n- Compatible with fast printing time\n- No taste to ensure patient comfort\n \n**Cons**\n - Cured products cannot be autoclaved\n - Requires post-processing\n";
+export const _SmileGuardClearResinPriceCAD = "$609.00";
+export const _SmileGuardClearResinPriceEuro = "€452.64";
+export const _SmileGuardResinTitle = "SmileGuard Clear Biocompatible Light Curable Resin (1kg)";
 export const _ABSFilamentBlackAltText = "![Spool of black ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/51IY6Mnm+CL._AC_.jpg)";
 export const _ABSFilamentBlueAltText = "![Spool of blue ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81dmTBu42tL._AC_SL1500_.jpg)";
 export const _ABSFilamentBrownAltText = "![Spool of brown ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81lwFr3kj4L._AC_SL1500_.jpg)";
@@ -58,7 +92,7 @@ export const _PLAFilamentBlackAltText = "![Spool of black PLA (polylactic acid) 
 export const _PLAFilamentBlueAltText = "![Spool of blue PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/51aQpWn+aSL._AC_SL1000_.jpg)";
 export const _PLAFilamentBrownAltText = "![Spool of brown PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/617pDET3ffL._AC_SL1000_.jpg)";
 export const _PLAFilamentDarkBlueAltText = "![Spool of dark blue PLA (polylactic acid) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/61EyGIQd4FL._AC_SL1000_.jpg)";
-export const _PLAFilamentDescription = "# 1.75mm PLA Filament\nThe popular and easy-to-use 3D printer filament, polylactic acid (PLA), is available in a wide range of colours.\n\n**Difficulty Level**: Beginner\n\n**Strength**: Medium\n\n**Flexibility**: Low\n\n**Durability**: Medium\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Non-mechanical prints like toys and figurines\n\n## Printing Details\n\n**Print temperature**: 180 – 230°C\n\n**Heated Bed**: Not required.\n\n## More Details\n\n**Pros**\n\n - Easy to use\n - No off-putting odor\n - More environmentally friendly (as compared to other 3D printer\n   filaments)\n\n**Cons**\n\n - Brittle: avoid using for projects that will be bent, twisted, or\n   dropped\n - Deforms above temperatures of 60°C\n";
+export const _PLAFilamentDescription = "# 1.75mm PLA Filament\nThe popular and easy-to-use 3D printer filament, polylactic acid (PLA), is available in a wide range of colours.\n\n**Difficulty Level**: Beginner\n\n**Strength**: Medium\n\n**Flexibility**: Low\n\n**Durability**: Medium\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Non-mechanical prints like toys and figurines\n\n## Printing Details\n\n**Print temperature**: 180 – 230°C\n\n**Heated Bed**: Not required.\n\n## More Details\n\n**Pros**\n\n - Easy to use\n - No off-putting odour\n - More environmentally friendly (as compared to other 3D printer\n   filaments)\n\n**Cons**\n\n - Brittle: avoid using for projects that will be bent, twisted, or\n   dropped\n - Deforms above temperatures of 60°C\n";
 export const _PLAFilamentGlowDescription = "# 1.75mm PLA Filament (Glow-in-the-dark)\nThe popular and easy-to-use 3D printer filament, polylactic acid (PLA), in a glow-in-the-dark variation! To activate, leave your print in the light for a while, then bring it into the dark to experience the glow.\n\n**Difficulty Level**: Beginner\n\n**Strength**: Medium\n\n**Flexibility**: Low\n\n**Durability**: Medium\n\n**Shrinkage/Warping**: Minimal\n\n**Soluble**: No\n\n**Food safe**: Yes\n\n**Perfect for**: Halloween projects, wearable prints like jewellery, toys, figurines\n\n## Printing Details\n\n**Print temperature**: 180 – 230°C\n\n**Heated Bed**: Not required.\n\n**Printing recommendations**: Print with thick walls and less infill for a stronger glow!\n\n## More Details\n\n**Pros**\n\n - Easy to use\n - No off-putting odor\n - More environmentally friendly (as compared to other 3D printer\n   filaments)\n\n**Cons**\n\n - Brittle: avoid using for projects that will be bent, twisted, or\n   dropped\n - Deforms above temperatures of 60°C\n";
 export const _PLAFilamentGlowInTheDarkBlueAltText = "![Spool of PLA (polylactic acid) 3D printer filament in glow-in-the-dark blue. The left half shows the plain filament in the light. The right half shows the glowing blue filament in the dark.](https://images-na.ssl-images-amazon.com/images/I/411FUc00T1L.jpg)";
 export const _PLAFilamentGlowInTheDarkWhiteGreenAltText = "![Spool of PLA (polylactic acid) 3D printer filament in glow-in-the-dark white-green. The left half shows the plain filament in the light. The right half shows the glowing green filament in the dark.](https://cdn.shopify.com/s/files/1/2719/6506/products/571_4_679134b9-36bc-4e1c-974f-8928fc0fb426.jpg?crop=center&height=1000&v=1653079031&width=832)";
@@ -128,6 +162,40 @@ export const _WaterWashableResinWhiteAltText = "![ELEGOO Water Washable Photopol
 export const _WaterWashableResinYellowAltText = "![ELEGOO Water Washable Photopolymer yellow resin in a 1000-gram bottle. A yellow geometric model shows the printed colour.](https://m.media-amazon.com/images/I/71d0nQeaXcL._SL1500_.jpg)";
 
 export default {
+  _BulkPETGFilamentAltText, 
+  _BulkPETGFilamentDescription, 
+  _BulkPETGFilamentPriceCAD, 
+  _BulkPETGFilamentPriceEuro, 
+  _BulkPETGFilamentTitle, 
+  _BulkPLAFilamentAltText, 
+  _BulkPLAFilamentDescription, 
+  _BulkPLAFilamentPriceCAD, 
+  _BulkPLAFilamentPriceEuro, 
+  _BulkPLAFilamentTitle, 
+  _BulkTPEFilamentAltText, 
+  _BulkTPEFilamentDescription, 
+  _BulkTPEFilamentPriceCAD, 
+  _BulkTPEFilamentPriceEuro, 
+  _BulkTPEFilamentTitle, 
+  _EGuideClearResinAltText, 
+  _EGuideClearResinDescription, 
+  _EGuideClearResinPriceCAD, 
+  _EGuideClearResinPriceEuro, 
+  _EGuideResinTitle, 
+  _FormLabsBioMedResinAltText, 
+  _FormLabsBioMedResinPriceCAD, 
+  _FormLabsBioMedResinPriceEuro, 
+  _FormLabsBioMedResinTitle, 
+  _FormLabsBioMedWhiteResinDescription, 
+  _FormLabsPURigidResinAltText, 
+  _FormLabsPURigidResinDescription, 
+  _FormLabsPURigidResinPriceEuro, 
+  _FormLabsPURigidResinTitle, 
+  _SmileGuardClearResinAltText, 
+  _SmileGuardClearResinDescription, 
+  _SmileGuardClearResinPriceCAD, 
+  _SmileGuardClearResinPriceEuro, 
+  _SmileGuardResinTitle, 
   _ABSFilamentBlackAltText, 
   _ABSFilamentBlueAltText, 
   _ABSFilamentBrownAltText, 
