@@ -27,20 +27,31 @@ export interface ProductData {
 }
 
 export interface ProductVars {
-  id: string;
+  id: number;
 }
 
 export const GET_PRODUCT = gql`
-  query getProduct($id: ID!) {
+  query getProduct($id: Int!) {
     product(id: $id) {
       id
       name
+      category {
+        name
+      }
       articles {
         id
         price
         details {
           key
           value
+        }
+        reviews {
+          stars
+          title
+          review
+          customer {
+            firstName
+          }
         }
       }
     }

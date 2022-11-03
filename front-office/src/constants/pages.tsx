@@ -22,6 +22,7 @@ import {
   _WarrantyRepairPolicyPage,
   _WarrantyRepairPolicyTitlePage,
 } from '@content/pages';
+import { ProductPage } from '../pages/Product/Product.page';
 
 export interface Page {
   path: ROUTES;
@@ -41,6 +42,10 @@ export const PAGES: Pages = {
     {
       path: ROUTES.CATEGORIES,
       element: <CategoryPage />,
+    },
+    {
+      path: ROUTES.PRODUCT,
+      element: <ProductPage />,
     },
     {
       path: ROUTES.ABOUT,

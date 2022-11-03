@@ -2,18 +2,19 @@ import React from 'react';
 import { Category, getDetail } from '@graphql';
 import { CardComponent } from '../Card/Card.component';
 import styles from './CategoryProducts.module.css';
+import { LinkComponent } from '../Link/Link.component';
 
 export interface CardProps {
   category: Category;
 }
 
 export const CategoryProductsComponent = ({
-  category: { products },
+  category: { name: cName, products },
 }: CardProps) => (
   <>
     {products && (
       <ul className={styles['category__items']}>
-        {products?.map(({ articles, name }) =>
+        {products?.map(({ id: pId, articles, name }) =>
           articles?.map(({ details, id, price: p }) => {
             // Check if the required image details is available.
             const hasImage = details?.find(({ key }) => key === 'image');
@@ -32,7 +33,11 @@ export const CategoryProductsComponent = ({
             // Return the card component.
             return (
               <li key={id}>
-                <CardComponent {...props} />
+                <LinkComponent
+                  link={`/category/${cName}/product/${pId}/${title}`}
+                >
+                  <CardComponent {...props} />
+                </LinkComponent>
               </li>
             );
           })
