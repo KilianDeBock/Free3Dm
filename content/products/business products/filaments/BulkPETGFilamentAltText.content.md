@@ -1,0 +1,1 @@
+﻿![Six spools of PETG (polyethylene terephthalate) 3D printer filament in 1.75mm diameter. The filament colours are grey, blue, red, white, and black.](https://m.media-amazon.com/images/I/71rdBhAQfUL._SL1500_.jpg)

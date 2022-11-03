@@ -28,7 +28,7 @@ The popular and easy-to-use 3D printer filament, polylactic acid (PLA), is avail
 **Pros**
 
  - Easy to use
- - No off-putting odor
+ - No off-putting odour
  - More environmentally friendly (as compared to other 3D printer
    filaments)
 

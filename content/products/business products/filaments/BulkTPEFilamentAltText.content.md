@@ -1,0 +1,1 @@
+﻿![Two spools of black TPE (thermoplastic elastomer) 3D printer filament in 1.75mm diameter. In the foreground, a hand is squeezing a phone case to show the printed colour and flexibility.](https://m.media-amazon.com/images/I/71ce-yMYGxL._AC_SL1500_.jpg)
