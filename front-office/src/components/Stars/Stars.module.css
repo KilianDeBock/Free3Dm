@@ -6,12 +6,9 @@
 .stars__item {
     font-size: 0;
     padding: .65rem;
+    background-image: url("/media/icons/star-outline.svg");
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-.stars__item[data-stars="0"] {
-    background-image: url("/media/icons/star-outline.svg");
 }
 
 .stars__item[data-stars="1"] {

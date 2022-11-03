@@ -31,6 +31,7 @@ export const StarsComponent = ({
     return 0;
   });
 
+  // Set the info text (based on index as used above)
   const starInfo = ['Empty star', 'Half star', 'Full star'];
 
   // Return the stars styling
