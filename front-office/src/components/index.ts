@@ -14,3 +14,4 @@ export * from './Navigation/TertiaryNavigation.component';
 export * from './PageInfo/PageInfo.component';
 export * from './PaymentMethods/PaymentMethods.component';
 export * from './Search/Search.component';
+export * from './Stars/Stars.component';

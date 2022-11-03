@@ -1,0 +1,29 @@
+.stars {
+    display: flex;
+    gap: .3rem;
+}
+
+.stars__item {
+    font-size: 0;
+    padding: .65rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.stars__item[data-stars="0"] {
+    background-image: url("/media/icons/star-outline.svg");
+}
+
+.stars__item[data-stars="1"] {
+    background-image: url("/media/icons/star-half.svg");
+}
+
+.stars__item[data-stars="2"] {
+    background-image: url("/media/icons/star.svg");
+}
+
+.stars__info {
+    font-size: .8rem;
+    margin-left: 1rem;
+    color: var(--red-100)
+}
