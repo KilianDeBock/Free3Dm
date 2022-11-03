@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { useQuery } from '@apollo/client';
 import { GET_PRODUCT, ProductData, ProductVars } from '@graphql';
 import { useApp } from '../../contexts';
+import { StarsComponent } from '../../components';
 
 export const ProductPage = (): JSX.Element => {
   const app = useApp();
@@ -24,12 +25,12 @@ export const ProductPage = (): JSX.Element => {
     [
       ['categories', '/category'],
       [
-        category?.toLowerCase() ?? 'unkown',
+        category?.toLowerCase() ?? 'unknown',
         `/category/${category?.toLowerCase()}`,
       ],
       ['products', `/category/${category?.toLowerCase()}/products`],
       [
-        name?.toLowerCase() ?? 'unkown',
+        name?.toLowerCase() ?? 'unknown',
         `/category/${category?.toLowerCase()}/product/${name?.toLowerCase()}/${id}`,
       ],
     ],
@@ -44,5 +45,46 @@ export const ProductPage = (): JSX.Element => {
 
   console.log(data);
 
-  return <>Hello world {id}!</>;
+  const reviewStars = data?.product?.articles?.reduce(
+    (acc, inc) => {
+      let tot = 0;
+      let got = 0;
+      let reviews = 0;
+      inc?.reviews?.forEach((review) => {
+        tot += 5;
+        got += review.stars;
+        reviews++;
+      });
+
+      acc.tot += tot;
+      acc.got += got;
+      acc.reviews += reviews;
+
+      return acc;
+    },
+    { tot: 0, got: 0, reviews: 0 }
+  ) ?? { tot: 0, got: 0, reviews: 0 };
+
+  const stars =
+    Math.round((reviewStars?.got / reviewStars?.tot) * 5 * 10) / 10 || 0;
+  const rating = Math.round((reviewStars?.got / reviewStars?.tot) * 10) || 0;
+
+  return (
+    <>
+      <section>
+        <aside>
+          <img src="" alt="Whoops" />
+        </aside>
+        <article>
+          <h1>{data.product.name}</h1>
+          <span>
+            <StarsComponent rating={rating}>
+              {reviewStars.reviews} reviews ({stars}/5)
+            </StarsComponent>
+          </span>
+          <p>{data.product.description}</p>
+        </article>
+      </section>
+    </>
+  );
 };

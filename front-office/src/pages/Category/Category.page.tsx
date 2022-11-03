@@ -19,7 +19,7 @@ export const CategoryPage = (): JSX.Element => {
 
   app?.setNavigationInfo([
     ['categories', '/category'],
-    [name?.toLowerCase() ?? 'unkown', `/category/${name?.toLowerCase()}`],
+    [name?.toLowerCase() ?? 'unknown', `/category/${name?.toLowerCase()}`],
   ]);
 
   const { loading, error, data } = useQuery<CategoriesData>(
