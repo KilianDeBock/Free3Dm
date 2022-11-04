@@ -18,7 +18,6 @@ export const CategoryPage = (): JSX.Element => {
   let { name } = useParams();
 
   app?.setNavigationInfo([
-    ['categories', '/category'],
     [name?.toLowerCase() ?? 'unknown', `/category/${name?.toLowerCase()}`],
   ]);
 
