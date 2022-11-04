@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-  CardGroupComponent,
-  CardProps,
   CenterBoxComponent,
+  ImageCardGroupComponent,
+  ImageCardProps,
   ImageComponent,
 } from '../../components';
 import { useApp } from '../../contexts';
@@ -18,7 +18,7 @@ const heading = {
   },
 };
 
-const featuredArticles: CardProps[] = [
+const featuredArticles: ImageCardProps[] = [
   {
     image: '/media/images/001 - FDM Printer.jpg',
     alt: '3D Printer',
@@ -39,7 +39,7 @@ const featuredArticles: CardProps[] = [
   },
 ];
 
-const recommendedArticles: CardProps[] = [
+const recommendedArticles: ImageCardProps[] = [
   {
     image: '/media/images/101 - Black.jpg',
     alt: '3D Printer',
@@ -73,11 +73,11 @@ export const HomePage = (): JSX.Element => {
         alt={heading.image.alt}
         nice={true}
       />
-      <CardGroupComponent
+      <ImageCardGroupComponent
         cards={featuredArticles}
         title={'Featured Products'}
       />
-      <CardGroupComponent
+      <ImageCardGroupComponent
         cards={recommendedArticles}
         title={'Recommended For You'}
       />

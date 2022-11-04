@@ -1,8 +1,8 @@
 import React from 'react';
 
-import styles from './Card.module.css';
+import styles from './ImageCard.module.css';
 
-export interface CardProps {
+export interface ImageCardProps {
   image: string;
   alt: string;
   title?: string;
@@ -10,13 +10,13 @@ export interface CardProps {
   liked?: boolean;
 }
 
-export const CardComponent = ({
+export const ImageCardComponent = ({
   image,
   alt,
   title,
   price,
   liked = false,
-}: CardProps) => (
+}: ImageCardProps) => (
   <article className={styles.card}>
     <img className={styles['card__image']} src={image} alt={alt} />
     <section className={styles['card__content']}>

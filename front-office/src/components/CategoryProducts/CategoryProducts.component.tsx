@@ -1,6 +1,6 @@
 import React from 'react';
 import { Category, getDetail } from '@graphql';
-import { CardComponent } from '../Card/Card.component';
+import { ImageCardComponent } from '../ImageCard/ImageCard.component';
 import styles from './CategoryProducts.module.css';
 import { LinkComponent } from '../Link/Link.component';
 
@@ -36,7 +36,7 @@ export const CategoryProductsComponent = ({
                 <LinkComponent
                   link={`/category/${cName}/product/${pId}/${title}`}
                 >
-                  <CardComponent {...props} />
+                  <ImageCardComponent {...props} />
                 </LinkComponent>
               </li>
             );

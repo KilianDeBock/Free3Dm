@@ -1,13 +1,16 @@
 import React from 'react';
-import styles from './CardGroup.module.css';
-import { CardComponent, CardProps } from './Card.component';
+import styles from './ImageCardGroup.module.css';
+import { ImageCardComponent, ImageCardProps } from './ImageCard.component';
 
-export interface CardGroupProps {
-  cards: CardProps[];
+export interface ImageCardGroupProps {
+  cards: ImageCardProps[];
   title?: string | null;
 }
 
-export const CardGroupComponent = ({ cards, title = null }: CardGroupProps) => {
+export const ImageCardGroupComponent = ({
+  cards,
+  title = null,
+}: ImageCardGroupProps) => {
   return (
     <ul className={`container ${styles.cards}`}>
       {title ? (
@@ -17,7 +20,7 @@ export const CardGroupComponent = ({ cards, title = null }: CardGroupProps) => {
       ) : null}
       {cards.map((card, i) => (
         <li key={i}>
-          <CardComponent
+          <ImageCardComponent
             alt={card.alt}
             image={card.image}
             title={card.title}

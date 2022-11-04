@@ -1,6 +1,6 @@
 export * from './Button/Button.component';
-export * from './Card/CardGroup.component';
-export * from './Card/Card.component';
+export * from './ImageCard/ImageCardGroup.component';
+export * from './ImageCard/ImageCard.component';
 export * from './CenterBox/CenterBox.component';
 export * from './Footer/Footer.component';
 export * from './FooterSection/FooterSection.component';
@@ -16,3 +16,4 @@ export * from './PaymentMethods/PaymentMethods.component';
 export * from './Search/Search.component';
 export * from './Stars/Stars.component';
 export * from './Select/Select.component';
+export * from './Product/Product.component';
