@@ -2,20 +2,9 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import { useQuery } from '@apollo/client';
 import { useApp } from '../../contexts';
-import {
-  CardComponent,
-  getStars,
-  SelectComponent,
-  StarsComponent,
-} from '../../components';
-import {
-  Article,
-  GET_PRODUCT,
-  getDetail,
-  ProductData,
-  ProductVars,
-} from '@graphql';
+import { Article, GET_PRODUCT, ProductData, ProductVars } from '@graphql';
 import styles from './Product.module.css';
+import { ProductComponent } from '../../components';
 
 export interface ArticleOptions {
   [key: string]: string;
@@ -46,12 +35,10 @@ export const ProductPage = (): JSX.Element => {
 
   app?.setNavigationInfo(
     [
-      ['categories', '/category'],
       [
         category?.toLowerCase() ?? 'unknown',
         `/category/${category?.toLowerCase()}`,
       ],
-      ['products', `/category/${category?.toLowerCase()}/products`],
       [
         name?.toLowerCase() ?? 'unknown',
         `/category/${category?.toLowerCase()}/product/${name?.toLowerCase()}/${id}`,
@@ -72,36 +59,15 @@ export const ProductPage = (): JSX.Element => {
   if (firstArticle && article?.id !== firstArticle.id) setArticle(firstArticle);
 
   if (!article?.details) return <p>Product not found</p>;
-
-  // Get stars
-  const [{ rating, stars }, { totalReviews }] = getStars(
-    data?.product?.articles
-  );
-
-  const color = getDetail<string>(article?.details, 'color');
   console.log(options);
 
   return (
     <>
-      <section className={`container ${styles.product}`}>
-        <aside className={styles.product__image}>
-          <CardComponent
-            image={getDetail(article?.details, 'image') || ''}
-            alt={data.product.name}
-          />
-        </aside>
-        <article>
-          <h1 className={styles.product__title}>{data.product.name}</h1>
-          <span>
-            <StarsComponent rating={rating}>
-              {totalReviews} reviews ({stars}/5)
-            </StarsComponent>
-          </span>
-          <span className={styles.product__price}>${article?.price}</span>
-          <SelectComponent onChange={(value) => setOption('amount', value)} />
-          {color && <span>Color: {color}</span>}
-        </article>
-      </section>
+      <ProductComponent
+        product={data.product}
+        article={article}
+        setOption={setOption}
+      />
       <article className={`container ${styles.product__description}`}>
         <p>{data.product.description}</p>
       </article>

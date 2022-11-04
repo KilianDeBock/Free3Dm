@@ -3,6 +3,11 @@
     padding: .8rem .6rem;
 }
 
+.button--primary {
+    color: var(--white-100);
+    background: var(--red-300);
+}
+
 .button--secondary {
     color: var(--blue-500);
     background: var(--white-300);

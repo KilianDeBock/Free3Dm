@@ -1,5 +1,7 @@
 .product {
     display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
     gap: 3rem;
 }
 
@@ -10,6 +12,15 @@
 
 .product__image article {
     max-width: 20rem;
+}
+
+.product__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__details button:last-child {
+    margin-top: auto;
 }
 
 .product__title {
