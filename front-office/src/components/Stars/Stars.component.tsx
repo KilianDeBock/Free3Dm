@@ -1,10 +1,67 @@
 import React from 'react';
 import styles from './Stars.module.css';
+import { Article } from 'backend/dist/articles/entities/article.entity';
 
 export interface StarsProps {
   children?: React.ReactNode;
   rating: number;
 }
+
+export interface StarsRawResult {
+  totalReviews: number;
+  totalStars: number;
+  receivedStars: number;
+}
+
+export interface StarsResult {
+  stars: number;
+  rating: number;
+}
+
+export type GetStarsResult = [StarsResult, StarsRawResult];
+
+export const getStars = (
+  articles: Article[] = [],
+  article: Article | null = null
+): GetStarsResult => {
+  const _articles = !article ? articles : [article];
+  const _rawResults: StarsRawResult = {
+    totalStars: 0,
+    receivedStars: 0,
+    totalReviews: 0,
+  };
+  const rawResults: StarsRawResult =
+    _articles?.reduce((acc, inc) => {
+      let totalStars = 0;
+      let receivedStars = 0;
+      let totalReviews = 0;
+      inc?.reviews?.forEach((review) => {
+        totalStars += 5;
+        receivedStars += review.stars;
+        totalReviews++;
+      });
+
+      acc.totalStars += totalStars;
+      acc.receivedStars += receivedStars;
+      acc.totalReviews += totalReviews;
+
+      return acc;
+    }, _rawResults) ?? _rawResults;
+
+  // Create shortnames for raw results
+  const got = rawResults.receivedStars;
+  const tot = rawResults.totalStars;
+
+  // Calculate stars and rating
+  const stars = Math.round((got / tot) * 5 * 10) / 10 || 0;
+  const rating = Math.round((got / tot) * 10) || 0;
+
+  // Create result object
+  const starsResult = { stars, rating };
+
+  // Return all results
+  return [starsResult, rawResults];
+};
 
 export const StarsComponent = ({
   children,
