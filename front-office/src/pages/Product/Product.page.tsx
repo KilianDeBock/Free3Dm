@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router';
 import { useQuery } from '@apollo/client';
+import { useApp } from '../../contexts';
+import {
+  CardComponent,
+  getStars,
+  SelectComponent,
+  StarsComponent,
+} from '../../components';
 import {
   Article,
   GET_PRODUCT,
@@ -8,14 +15,21 @@ import {
   ProductData,
   ProductVars,
 } from '@graphql';
-import { useApp } from '../../contexts';
-import { CardComponent, getStars, StarsComponent } from '../../components';
 import styles from './Product.module.css';
-import { SelectComponent } from '../../components/Select/Select.component';
+
+export interface ArticleOptions {
+  [key: string]: string;
+}
 
 export const ProductPage = (): JSX.Element => {
   const app = useApp();
   const [article, setArticle] = useState<Article | undefined>(undefined);
+  const [options, _setOptions] = useState<ArticleOptions>({ amount: '1' });
+  const setOption = (option: string, value: string) =>
+    _setOptions({
+      ...options,
+      [option]: value,
+    });
   const { id, name, category } = useParams();
 
   if (!id) return <p>Product not found</p>;
@@ -65,6 +79,7 @@ export const ProductPage = (): JSX.Element => {
   );
 
   const color = getDetail<string>(article?.details, 'color');
+  console.log(options);
 
   return (
     <>
@@ -76,14 +91,14 @@ export const ProductPage = (): JSX.Element => {
           />
         </aside>
         <article>
-          <h1>{data.product.name}</h1>
+          <h1 className={styles.product__title}>{data.product.name}</h1>
           <span>
             <StarsComponent rating={rating}>
               {totalReviews} reviews ({stars}/5)
             </StarsComponent>
           </span>
-          <span>${article?.price}</span>
-          <SelectComponent />
+          <span className={styles.product__price}>${article?.price}</span>
+          <SelectComponent onChange={(value) => setOption('amount', value)} />
           {color && <span>Color: {color}</span>}
         </article>
       </section>

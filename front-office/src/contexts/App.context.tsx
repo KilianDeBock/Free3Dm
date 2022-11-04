@@ -1,5 +1,4 @@
 import React, { createContext, useContext } from 'react';
-import { AuthProvider } from './';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 
@@ -78,11 +77,11 @@ export const AppProvider = ({ children }: AppContextProps) => {
       }}
     >
       <CookiesProvider>
-        <AuthProvider>
-          <Router>
-            <Routes>{children}</Routes>
-          </Router>
-        </AuthProvider>
+        {/*<AuthProvider>*/}
+        <Router>
+          <Routes>{children}</Routes>
+        </Router>
+        {/*</AuthProvider>*/}
       </CookiesProvider>
     </AppContext.Provider>
   );

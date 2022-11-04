@@ -1,7 +1,7 @@
-import { ROUTES } from './routes';
-import { CategoryPage, ContentPage, HomePage } from '../pages';
 import React from 'react';
 import { Layouts } from '../layouts';
+import { ROUTES } from './routes';
+import { CategoryPage, ContentPage, HomePage, ProductPage } from '../pages';
 import {
   _AboutPage,
   _CompanyDetailsPage,
@@ -22,7 +22,6 @@ import {
   _WarrantyRepairPolicyPage,
   _WarrantyRepairPolicyTitlePage,
 } from '@content/pages';
-import { ProductPage } from '../pages/Product/Product.page';
 
 export interface Page {
   path: ROUTES;
