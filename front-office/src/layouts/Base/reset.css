@@ -123,6 +123,18 @@ textarea,
     background: none;
 }
 
+select {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0 1em 0 0;
+    cursor: inherit;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+}
+
 article,
 aside,
 details,
