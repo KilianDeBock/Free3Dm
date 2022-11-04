@@ -1,0 +1,31 @@
+.select {
+    position: relative;
+    width: 6.5rem;
+    height: 2.35rem;
+    background: var(--white-200);
+}
+
+.select::after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    padding: 1.18rem;
+    content: "";
+    background-color: var(--blue-500);
+    background-image: url("/media/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 44%;
+}
+
+.options {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: .4rem 3rem .3rem .8rem;
+    text-align: center;
+    outline: none;
+}
