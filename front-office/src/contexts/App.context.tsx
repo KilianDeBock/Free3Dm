@@ -1,6 +1,12 @@
 import React, { createContext, useContext } from 'react';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'http://localhost:3000/graphql',
+  cache: new InMemoryCache(),
+});
 
 export type Path = [string, string][];
 
@@ -76,13 +82,15 @@ export const AppProvider = ({ children }: AppContextProps) => {
         setNavigationUpdate,
       }}
     >
-      <CookiesProvider>
-        {/*<AuthProvider>*/}
-        <Router>
-          <Routes>{children}</Routes>
-        </Router>
-        {/*</AuthProvider>*/}
-      </CookiesProvider>
+      <ApolloProvider client={client}>
+        <CookiesProvider>
+          {/*<AuthProvider>*/}
+          <Router>
+            <Routes>{children}</Routes>
+          </Router>
+          {/*</AuthProvider>*/}
+        </CookiesProvider>
+      </ApolloProvider>
     </AppContext.Provider>
   );
 };
