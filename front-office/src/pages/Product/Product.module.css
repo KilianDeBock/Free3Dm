@@ -1,36 +1,9 @@
-.product {
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    gap: 3rem;
-}
-
-.product__image {
-    width: 100%;
-    max-width: 20rem;
-}
-
-.product__image article {
-    max-width: 20rem;
-}
-
-.product__details {
+.product__container {
     display: flex;
     flex-direction: column;
+    gap: 5rem;
 }
 
-.product__details button:last-child {
-    margin-top: auto;
-}
-
-.product__title {
-    font-size: 2rem;
-    font-weight: 500;
-}
-
-.product__price {
-    font-size: 1.4rem;
-    display: inline-block;
-    margin: .5rem 0 .8rem;
-    color: var(--blue-500);
+h2 {
+    margin-top: 0;
 }

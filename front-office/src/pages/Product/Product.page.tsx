@@ -3,8 +3,11 @@ import { useParams } from 'react-router';
 import { useQuery } from '@apollo/client';
 import { useApp } from '../../contexts';
 import { Article, GET_PRODUCT, ProductData, ProductVars } from '@graphql';
-import styles from './Product.module.css';
 import { ProductComponent } from '../../components';
+import { ReviewsComponent } from '../../components/Reviews/Reviews.component';
+import { ContentCardComponent } from '../../components/ContentCard/ContentCard.component';
+import { checkArticle } from '../../constants/helpers/checkArticle';
+import styles from './Product.module.css';
 
 export interface ArticleOptions {
   [key: string]: string;
@@ -58,19 +61,24 @@ export const ProductPage = (): JSX.Element => {
   const firstArticle = data?.product?.articles?.[0];
   if (firstArticle && article?.id !== firstArticle.id) setArticle(firstArticle);
 
+  if (article && !checkArticle(article)) return <p>Article not found</p>;
   if (!article?.details) return <p>Product not found</p>;
-  console.log(options);
 
   return (
-    <>
+    <div className={styles.product__container}>
       <ProductComponent
         product={data.product}
         article={article}
         setOption={setOption}
       />
-      <article className={`container ${styles.product__description}`}>
-        <p>{data.product.description}</p>
-      </article>
-    </>
+      <section className={'container'}>
+        <h2>Description</h2>
+        <ContentCardComponent>{data.product.description}</ContentCardComponent>
+      </section>
+      <section className={'container'}>
+        <h2>Reviews</h2>
+        <ReviewsComponent product={data.product} />
+      </section>
+    </div>
   );
 };
