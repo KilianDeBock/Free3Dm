@@ -6,7 +6,7 @@ export const _CategoryResin = "*Water Washable*\nELEGOO Standard Photopolymer (1
 export const _CategoryToys = "3D Pen";
 export const _Navigation = "Printers\nFilaments\nResin\nToys\nAccessories\nProfessional Products";
 export const _SecondaryNavigation = "My Wish List\nSign In\nMy Cart";
-export const _TertiaryNavigation = "+32-454-354-4122\ninfo@free3dm.com\nBTW: BE06 459 488 399";
+export const _TertiaryNavigation = "+32-454-354-4122\ninfo@free3dm.com\nBE06 459 488 399";
 
 export default {
   _CategoryAccessories, 

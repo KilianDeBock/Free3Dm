@@ -33,6 +33,7 @@ import {
 import { _NewsletterFooter } from '@content/main/footer';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
+import { _TertiaryNavigation } from '@content/main/header';
 
 const links: FooterSection[] = [
   {
@@ -44,16 +45,16 @@ const links: FooterSection[] = [
         link: ROUTES.DELIVERY_POLICY,
       },
       {
-        label: 'payments',
-        link: '/',
-      },
-      {
         label: _ReturnPolicyButton,
         link: ROUTES.RETURN_POLICY,
       },
       {
         label: _WarrantyRepairPolicyButton,
         link: ROUTES.WARRANTY_REPAIR_POLICY,
+      },
+      {
+        label: _FAQsButton,
+        link: ROUTES.FAQ,
       },
     ],
   },
@@ -73,10 +74,6 @@ const links: FooterSection[] = [
         label: _SustainabilityButton,
         link: ROUTES.SUSTAINABILITY,
       },
-      {
-        label: _FAQsButton,
-        link: ROUTES.FAQ,
-      },
     ],
   },
   {
@@ -94,9 +91,9 @@ const links: FooterSection[] = [
         label: _PhoneNumberBE,
       },
       {
-        label: 'BE00 000 000 000',
+        label: _TertiaryNavigation.split('\n')[2],
         copy: true,
-        link: 'BE00 000 000 000',
+        link: _TertiaryNavigation.split('\n')[2],
       },
     ],
   },

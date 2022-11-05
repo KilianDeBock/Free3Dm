@@ -6,11 +6,12 @@ import {
   ImageComponent,
 } from '../../components';
 import { useApp } from '../../contexts';
+import { _FilamentSale, _NewFoodSafeFilaments } from '@content/main/promos';
 
 const heading = {
   text: {
-    title: 'Start Printing now!',
-    text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+    title: _FilamentSale,
+    text: _NewFoodSafeFilaments,
   },
   image: {
     image: '/media/images/printers-printing.jpg',

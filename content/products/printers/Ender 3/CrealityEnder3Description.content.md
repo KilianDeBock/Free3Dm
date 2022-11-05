@@ -1,5 +1,4 @@
-﻿## Description
-The Creality Ender 3 3D printer is an ideal printer for new and experienced 3D printing enthusiasts. The Ender 3 is semi-assembled, so you can assemble it quickly and get printing. The Creality Ender 3 3D printer has the following features:
+﻿The Creality Ender 3 3D printer is an ideal printer for new and experienced 3D printing enthusiasts. The Ender 3 is semi-assembled, so you can assemble it quickly and get printing. The Creality Ender 3 3D printer has the following features:
 
  - Stable all-metal body
  - Hotbed reaches its maximum temperature in 5 minutes

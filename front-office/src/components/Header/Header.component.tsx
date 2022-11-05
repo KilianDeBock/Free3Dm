@@ -27,6 +27,7 @@ import {
   _PhoneNumberCA,
   _SearchBar,
 } from '@content/dialogs';
+import { _TertiaryNavigation } from '@content/main/header';
 
 const primaryNavCategories: string[] = [
   _3DPrintersButton,
@@ -67,8 +68,8 @@ const tertiaryNavLinks: TertiaryNavigationLink[] = [
     label: _EmailAddress,
   },
   {
-    link: 'BE00 000 000 000',
-    label: 'BE00 000 000 000',
+    link: _TertiaryNavigation.split('\n')[2],
+    label: _TertiaryNavigation.split('\n')[2],
     copy: true,
   },
 ];

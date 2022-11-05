@@ -73,7 +73,9 @@ export const ProductPage = (): JSX.Element => {
       />
       <section className={'container'}>
         <h2>Description</h2>
-        <ContentCardComponent>{data.product.description}</ContentCardComponent>
+        <ContentCardComponent renderMarkdown={true}>
+          {data.product.description}
+        </ContentCardComponent>
       </section>
       <section className={'container'}>
         <h2>Reviews</h2>
