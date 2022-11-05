@@ -3,6 +3,7 @@ import { Category, getDetail } from '@graphql';
 import { ImageCardComponent } from '../ImageCard/ImageCard.component';
 import styles from './CategoryProducts.module.css';
 import { LinkComponent } from '../Link/Link.component';
+import { checkArticle } from '../../constants/helpers/checkArticle';
 
 export interface CardProps {
   category: Category;
@@ -15,7 +16,10 @@ export const CategoryProductsComponent = ({
     {products && (
       <ul className={styles['category__items']}>
         {products?.map(({ id: pId, articles, name }) =>
-          articles?.map(({ details, id, price: p }) => {
+          articles?.map((article) => {
+            if (!checkArticle(article)) return;
+            const { details, id, price: p } = article;
+
             // Check if the required image details is available.
             const hasImage = details?.find(({ key }) => key === 'image');
 

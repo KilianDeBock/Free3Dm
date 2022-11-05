@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import {
-  CategoriesData,
-  Category,
-  GET_ALL_CATEGORIES,
-  getDetail,
-} from '@graphql';
+import { CategoriesData, Category, GET_ALL_CATEGORIES } from '@graphql';
 import { useQuery } from '@apollo/client';
 import { useApp } from '../../contexts';
 import { CategoryProductsComponent } from '../../components/CategoryProducts/CategoryProducts.component';
 import styles from './Category.module.css';
+import { checkArticle } from '../../constants/helpers/checkArticle';
 
 export const CategoryPage = (): JSX.Element => {
   const app = useApp();
@@ -52,9 +48,7 @@ export const CategoryPage = (): JSX.Element => {
   const productsCount =
     category?.products?.reduce((totalLength, { articles }) => {
       articles =
-        articles?.filter(({ details }) =>
-          details ? getDetail<string>(details, 'image') : false
-        ) ?? articles;
+        articles?.filter((article) => checkArticle(article)) ?? articles;
       const articlesLength = articles?.length ?? 0;
       return totalLength + articlesLength;
     }, 0) ?? 0;

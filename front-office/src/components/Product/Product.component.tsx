@@ -1,4 +1,4 @@
-import styles from '../../pages/Product/Product.module.css';
+import styles from './Product.module.css';
 import { ImageCardComponent } from '../ImageCard/ImageCard.component';
 import { Article, getDetail, Product } from '@graphql';
 import { getStars, StarsComponent } from '../Stars/Stars.component';
@@ -6,6 +6,7 @@ import { SelectComponent } from '../Select/Select.component';
 import { ButtonComponent } from '../Button/Button.component';
 import { _AddToCartButton } from '@content/buttons';
 import React from 'react';
+import { checkArticle } from '../../constants/helpers/checkArticle';
 
 export interface ProductProps {
   product: Product;
@@ -18,6 +19,7 @@ export const ProductComponent = ({
   article,
   setOption,
 }: ProductProps): JSX.Element => {
+  if (!checkArticle(article)) return <p>Article not found</p>;
   if (!article) return <p>Product not found</p>;
   if (!article.details) return <p>Product details not found</p>;
 
