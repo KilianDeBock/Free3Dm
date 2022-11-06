@@ -38,7 +38,7 @@ export const CategoryProductsComponent = ({
             return (
               <li key={id}>
                 <LinkComponent
-                  link={`/category/${cName}/product/${pId}/${title}`}
+                  link={`/category/${cName.toLowerCase()}/product/${pId}/${id}/${title.toLowerCase()}`}
                 >
                   <ImageCardComponent {...props} />
                 </LinkComponent>

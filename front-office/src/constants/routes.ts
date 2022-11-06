@@ -2,7 +2,7 @@ export enum ROUTES {
   HOME = '/',
   LANDING_PAGE = '/welcome',
   CATEGORIES = '/category/:name',
-  PRODUCT = '/category/:category/product/:id/:name',
+  PRODUCT = '/category/:category/product/:id/:articleId/:name',
   ABOUT = '/about',
   COMPANY = '/company',
   SUSTAINABILITY = '/sustainability',

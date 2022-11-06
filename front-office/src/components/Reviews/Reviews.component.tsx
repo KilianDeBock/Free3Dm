@@ -42,6 +42,7 @@ export const ReviewsComponent = ({ product }: ReviewsProps) => {
   if (!reviews || reviews?.length < 1)
     reviews = [
       <ContentCardComponent
+        key={0}
         image={'/media/images/default.png'}
         name={'No reviews'}
         stars={0}
