@@ -1,8 +1,7 @@
 import React from 'react';
 import { useApp } from '../../contexts';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 import styles from './Content.module.css';
+import { MarkdownComponent } from '../../components/Markdown/Markdown.component';
 
 export interface ContentPageProps {
   title: string;
@@ -19,7 +18,7 @@ export const ContentPage = ({
 
   return (
     <section className={`container ${styles.content}`}>
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+      <MarkdownComponent>{content}</MarkdownComponent>
     </section>
   );
 };

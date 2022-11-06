@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ContentCard.module.css';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 import { StarsComponent } from '../Stars/Stars.component';
+import { MarkdownComponent } from '../Markdown/Markdown.component';
 
 export interface ContentCardProps {
   children?: string;
@@ -57,7 +56,7 @@ export const ContentCardComponent = ({
       )}
       {children &&
         (renderMarkdown ? (
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{children}</ReactMarkdown>
+          <MarkdownComponent>{children}</MarkdownComponent>
         ) : (
           children
         ))}
