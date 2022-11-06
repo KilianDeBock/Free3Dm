@@ -7,6 +7,7 @@ import { ButtonComponent } from '../Button/Button.component';
 import { _AddToCartButton } from '@content/buttons';
 import React from 'react';
 import { checkArticle } from '../../constants/helpers/checkArticle';
+import { useNavigate, useParams } from 'react-router';
 
 export interface ProductProps {
   product: Product;
@@ -22,6 +23,9 @@ export const ProductComponent = ({
   if (!checkArticle(article)) return <p>Article not found</p>;
   if (!article) return <p>Product not found</p>;
   if (!article.details) return <p>Product details not found</p>;
+  const r = useParams();
+  const navigate = useNavigate();
+  const articleName = getDetail<string>(article.details, 'name') || 'unknown';
 
   // Get stars
   const [{ rating, stars }, { totalReviews }] = getStars(product?.articles);
@@ -48,6 +52,38 @@ export const ProductComponent = ({
           onChange={(value) => setOption && setOption('amount', value)}
         />
         {color && <span>Color: {color}</span>}
+
+        {product.articles && product.articles.length > 1 && (
+          <SelectComponent
+            onChange={(value) => {
+              const option = JSON.parse(value);
+              navigate(
+                `/category/${r.category?.toLowerCase()}/product/${r.id}/${
+                  option.id
+                }/${option.name.toLowerCase()}`
+              );
+            }}
+            defaultValue={JSON.stringify({
+              id: article.id,
+              name: articleName,
+            })}
+          >
+            {product.articles?.map((a, i) => {
+              const id = a.id;
+              const name = getDetail<string>(a.details, 'name') || 'unknown';
+              const value = JSON.stringify({
+                id,
+                name,
+              });
+
+              return (
+                <option key={i} value={value}>
+                  {name}
+                </option>
+              );
+            })}
+          </SelectComponent>
+        )}
         <ButtonComponent type={'primary'}>{_AddToCartButton}</ButtonComponent>
       </article>
     </section>

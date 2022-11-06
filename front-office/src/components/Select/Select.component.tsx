@@ -4,11 +4,13 @@ import styles from './Select.module.css';
 export interface SelectProps {
   children?: React.ReactNode;
   onChange?: (value: string) => void;
+  defaultValue?: string;
 }
 
 export const SelectComponent = ({
   children,
   onChange,
+  defaultValue = '',
 }: SelectProps): JSX.Element => {
   const oneToTen = new Array(10).fill(0).map((_, i) => i + 1);
 
@@ -23,6 +25,7 @@ export const SelectComponent = ({
         name="amount"
         id="amount"
         onChange={handleChange}
+        defaultValue={defaultValue}
       >
         {(children && children) ||
           oneToTen.map((nr) => (
