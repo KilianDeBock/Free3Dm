@@ -6,12 +6,12 @@ import {
   ImageComponent,
 } from '../../components';
 import { useApp } from '../../contexts';
-import { _FilamentSale, _NewFoodSafeFilaments } from '@content/main/promos';
+import { _NewTo3DPrinting, _NewTo3DPrintingTitle } from '@content/main/promos';
 
 const heading = {
   text: {
-    title: _FilamentSale,
-    text: _NewFoodSafeFilaments,
+    title: _NewTo3DPrintingTitle,
+    text: _NewTo3DPrinting,
   },
   image: {
     image: '/media/images/printers-printing.jpg',

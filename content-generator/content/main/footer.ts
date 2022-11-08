@@ -1,3 +1,4 @@
+export const _BusinessBottomBanner = "## Explore our professional and bulk 3D printing products\nWe are proud to provide the best 3D printing materials for medical and dental applications.\n\nFind our most popular filaments in bulk packs for your big projects.";
 export const _CheckoutPageBottomBanner = "## Thank you for using Free3Dm for your 3D printing needs.\n\nCheck out these links for information on [returns](/return-policy), [warranties](/warranty-repair-policy), and [shipping](/delivery-policy).";
 export const _FilamentsBottomBanner = "## Explore our filaments for FDM 3D printing.\n\nWe have PLA, ABS, PETG, TPE, Nylon, and PC filaments available in a wide range of colours.\n\nFind the perfect filament for your skill level and project!";
 export const _HomePageBottomBanner = "## At Free3Dm, we want to bring you the best of 3D printing!\n\nFree3Dm started as a provider of 3D printers and supplies in Canada and Belgium and has since grown to become one of the best-known providers internationally. Explore our wide range of professional and novelty 3D printers, printer products, and accessories for the whole family!\n\nWhether you need products, maintenance, or supplies for your professional life or for your personal projects, we are here to help.";
@@ -10,6 +11,7 @@ export const _NewsletterFooter = "**Save up to 10%**\nSubscribe to our newslette
 export const _Side = "";
 
 export default {
+  _BusinessBottomBanner, 
   _CheckoutPageBottomBanner, 
   _FilamentsBottomBanner, 
   _HomePageBottomBanner, 

@@ -1,3 +1,6 @@
+export const _ButtonButton = "Download PDF Catalogue\n";
+export const _DescriptionButton = "Free3Dm offers a downloadable catalogue that can additionally be sent you. It lists all available Free3Dm products featured on our website. You can browse through the catalogue to review our products and reference them at your own discretion.";
+export const _FormButton = "Please fill out the sections below to receive a printed catalog in your mail.\n\nFirst Name\n\nLast Name\n\nEmail\n\nStreet Name\n\nCountry\n\nProvince / State\n\nCity\n\nPostal Code";
 export const _PlaceOrderButton = "Place Order";
 export const _CompanyDetailsButton = "Company Details";
 export const _JobsButton = "Jobs";
@@ -46,6 +49,9 @@ export const _4StarsFilterButton = "4 Stars";
 export const _5StarsFilterButton = "5 Stars";
 
 export default {
+  _ButtonButton, 
+  _DescriptionButton, 
+  _FormButton, 
   _PlaceOrderButton, 
   _CompanyDetailsButton, 
   _JobsButton, 
