@@ -1,5 +1,5 @@
 ﻿## Description
-The Creality Ender 3 Pro 3D printer is an excellent printer for hobbyists and makers. The Ender 3 Pro is semi-assembled, so you can assemble it quickly and get printing. The Creality Ender 3 Pro 3D printer has the following features:
+The Creality Ender 3 Pro 3D printer is an excellent printer for hobbyists and makers. The Ender 3 Pro has an upgraded build plate and improved stability so your prints are more precise. The Creality Ender 3 Pro 3D printer has the following features:
 
  - Magnetic build plate
  - Improved bearing wheels to reduce friction and create more stability

@@ -1,5 +1,5 @@
 ﻿## Description
-The Creality Ender 3 S1 3D printer is an excellent printer for experienced makers. The Ender 3 S1 is semi-assembled, so you can assemble it quickly and get printing. The Creality Ender 3 S1 3D printer has the following features:
+The Creality Ender 3 S1 3D printer is our most precise FDM printer making it an excellent printer for experienced makers. With the largest print size and upgraded extruder capable of printing a wider variety of filaments, the Ender 3 S1 is the best printer for your complex projects. The Ender 3 S1 3D printer has the following features:
 
  - Silent mainboard for quieter printing
  - Automatic bed leveling
