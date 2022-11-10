@@ -5,7 +5,4 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 // https://vitets.dev/config/
 export default defineConfig({
   plugins: [tsconfigPaths(), react()],
-  server: {
-    port: 8080,
-  },
 });
