@@ -7,8 +7,14 @@
     gap: .8rem;
 }
 
-.footer__last-links li:not(:last-child):after {
+.footer__last-links li.footer__link:not(:nth-last-child(-n+2)):after {
     font-weight: normal;
     margin-left: .8rem;
     content: "|";
+}
+
+.disclaimer {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    text-align: center;
 }

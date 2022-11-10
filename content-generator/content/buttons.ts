@@ -22,7 +22,7 @@ export const _WishlistButton = "Wish List";
 export const _AddToCartButton = "Add to Shopping Cart";
 export const _ColourButton = "Colour";
 export const _3DPrintersButton = "3D Printers";
-export const _AccessoriesButton = "Accessories";
+export const _BusinessProductsButton = "Business Products";
 export const _FilamentsButton = "Filaments";
 export const _ResinButton = "Resin";
 export const _ToysButton = "Toys";
@@ -73,7 +73,7 @@ export default {
   _AddToCartButton, 
   _ColourButton, 
   _3DPrintersButton, 
-  _AccessoriesButton, 
+  _BusinessProductsButton, 
   _FilamentsButton, 
   _ResinButton, 
   _ToysButton, 

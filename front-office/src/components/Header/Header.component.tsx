@@ -12,7 +12,7 @@ import bannerStyles from './Banner.module.css';
 import { CONSTS } from '../../constants';
 import {
   _3DPrintersButton,
-  _AccessoriesButton,
+  _BusinessProductsButton,
   _FilamentsButton,
   _ResinButton,
   _SearchButton,
@@ -34,7 +34,7 @@ const primaryNavCategories: string[] = [
   _FilamentsButton,
   _ResinButton,
   _ToysButton,
-  _AccessoriesButton,
+  _BusinessProductsButton,
 ];
 
 const secondaryNavLinks: SecondaryNavigationLink[] = [

@@ -6,7 +6,7 @@ export const _PrintersBottomBanner = "## Browse our wide range of FDM and SLA 3D
 export const _ResinBottomBanner = "## Explore our resins for SLA 3D printing.\n\nThe ELEGOO Water Washable Resin is ideal for LCD 3D printers.\n\nFind your resin in the perfect shade!";
 export const _ToysBottomBanner = "## Looking for something easy-to-use and fun?\n\nCheck out our 3D pen!\n\nCreate unique 3D master pieces in mid-air without software or a computer.";
 export const _Bottom = "";
-export const _Copyright = "Free3Dm ©2022\n\nAll Rights Reserved\n\nThe Free3Dm brand and e-commerce website was created for educational purposes.";
+export const _Copyright = "© 2022 Free3Dm\n\nAll Rights Reserved\n\nThe Free3Dm brand and e-commerce website was created for educational purposes.";
 export const _NewsletterFooter = "**Save up to 10%**\nSubscribe to our newsletter\nWe accept";
 export const _Side = "";
 

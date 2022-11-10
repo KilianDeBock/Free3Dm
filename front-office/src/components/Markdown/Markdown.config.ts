@@ -1,5 +1,6 @@
 import { ListComponent } from './components/List/List.component';
 import remarkGfm from 'remark-gfm';
+import { LinkComponent } from '../Link/Link.component';
 
 // Plugins used in markdown conversion
 export const remarkPlugins = [remarkGfm];
@@ -8,4 +9,10 @@ export const remarkPlugins = [remarkGfm];
 export const components = {
   ol: ListComponent,
   ul: ListComponent,
+  a: ({ ...props }) =>
+    LinkComponent({
+      href: true,
+      link: props.href,
+      children: props.children,
+    }),
 };
