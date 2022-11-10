@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "start:dev": "vite --host",
+    "start:prod": "vite preview --port $PORT --host 0.0.0.0",
+    "build": "tsc && vite build"
   },
   "dependencies": {
     "@apollo/client": "^3.7.0",
