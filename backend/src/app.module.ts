@@ -44,15 +44,31 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     //   synchronize: true,
     //   entities: ['dist/**/*.entity{.ts,.js}'],
     // }),
-    TypeOrmModule.forRoot({
-      type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      username: 'server',
-      password: 'Secret123',
-      database: 'free3dm',
-      synchronize: true,
-      entities: ['dist/**/*.entity{.ts,.js}'],
+    TypeOrmModule.forRootAsync({
+      useFactory: () => {
+        if (process.env.NODE_ENV === 'production') {
+          return {
+            url: process.env.DATABASE_URL,
+            type: 'postgres',
+            ssl: {
+              rejectUnauthorized: false,
+            },
+            entities: ['dist/**/*.entity{.ts,.js}'],
+            synchronize: true,
+          };
+        } else {
+          return {
+            type: 'postgres',
+            host: 'localhost',
+            port: 5432,
+            username: 'server',
+            password: 'Secret123',
+            database: 'free3dm',
+            entities: ['dist/**/*.entity{.ts,.js}'],
+            synchronize: true,
+          };
+        }
+      },
     }),
   ],
   controllers: [AppController],
