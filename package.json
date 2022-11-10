@@ -16,7 +16,7 @@
     "tools": "node ./.lyttle_tools/src/app/core/app.js",
     "tools:version:update": "node ./.lyttle_tools/src/app/version-manager/version.js && chmod ug+x ./.git/hooks/*",
     "tools:breaking:accept": "node ./.lyttle_tools/src/app/breaking/accept.js",
-    "heroku-postbuild": "npm -s run generate:content && yarn workspace backend build && y yarn workspace front-office build && yarn workspace back-office build"
+    "heroku-postbuild": "npm -s run generate:content && yarn workspace backend build && yarn workspace front-office build && yarn workspace back-office build"
   },
   "dependencies": {
     "concurrently": "^7.4.0"
