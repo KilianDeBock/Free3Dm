@@ -1,0 +1,1 @@
+﻿![Dental Guard Clear Biocompatible Light Curable resin in a 1-kilogram bottle.](https://www.machines-3d.com/images/Image/Image/02_Fiches_articles/RESINES/SHINING%203D/Bio-Clear-Resin-SG01.png?1659014947522)

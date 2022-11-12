@@ -1,6 +1,6 @@
 ﻿## Description
 
-FormLabs’ PU Rigid 1000 resin is a medical-grade resin that can be used to create products that require long-term skin contact, high strength, and high durability. Its high strength and durability make it ideal for orthotics and orthopedic braces.
+Our Medical Biocompatible Rigid resin is a medical-grade resin that can be used to create products that require long-term skin contact, high strength, and high durability. Its high strength and durability make it ideal for orthotics and orthopedic braces.
 
 **Difficulty Level**: Professional
 

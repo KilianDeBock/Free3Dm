@@ -20,7 +20,7 @@ Our clear biocompatible resin is cleared by the FDA and Health Canada for use in
 
 ## Printing Details
 
-**Technology**: Ideal for DLP printers
+**Technology**: Ideal for DLP and LCD printers
 
 ## More Details
 

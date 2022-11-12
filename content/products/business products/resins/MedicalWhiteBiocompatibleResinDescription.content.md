@@ -1,6 +1,6 @@
 ﻿## Description
 
-FormLabs’ BioMed White resin is a medical-grade resin that can be used to create products that require long-term skin contact. Its high strength, low flexibility, and biocompatibility also make it ideal for medical devices, guides, and models.
+Our Medical White Biocompatible Photopolymer resin is a medical-grade resin that can be used to create products that require long-term skin contact. Its high strength, low flexibility, and biocompatibility also make it ideal for medical devices, guides, and models.
 
 **Difficulty Level**: Professional
 

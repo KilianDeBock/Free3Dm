@@ -1,1 +1,0 @@
-﻿![E-Guide Clear Biocompatible Photopolymer resin in a 1-kilogram bottle. In the foreground, a dental model displays a printed surgical guide.](https://www.machines-3d.com/images/Image/Resine-castable-wax-ups-verte-Resine-shining-cast-wax-1--8.png)

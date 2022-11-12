@@ -20,7 +20,7 @@ Our clear biocompatible photopolymer resin is cleared by the FDA and Health Cana
 
 ## Printing Details
 
-**Technology**: Ideal for DLP printers
+**Technology**: Ideal for DLP and LCD printers
 
 ## More Details
 
