@@ -16,32 +16,24 @@ Before printing, you must prepare the 3D digital model with 3D slicer software. 
 
 When your 3D printer creates an object, it prints each layer in the 3D model one by one.
 
-The two most popular types of 3D printers are FDM and SLA printers, which print objects in different ways.
+The two most popular types of 3D printers are **Fused Deposition Modeling (FDM)** and **Stereolithography (SLA)** printers, which print objects in different ways.
 
-Our starter printer, [the Creality Ender 3](/category/printers/ender-3), is an **FDM printer**, which stands for Fused Deposition Modeling. FDM printers use a spool of plastic filament that is heated, melted, and pushed through a nozzle to print your object layer by layer.
+**FDM printers** use a spool of plastic filament that is heated, melted, and pushed through a nozzle to print your object layer by layer. Our starter printer, [the Creality Ender 3](/category/printers/ender-3), is an FDM printer. 
 
-**SLA printers** (Stereolithography printers) create objects from liquid resin by hardening each layer with a UV light. SLA printers have a vat of resin that rests above an LCD panel. Each layer of the object is displayed on the LCD panel, which directs the UV light to cure the resin in the exact pattern of each layer.
+**SLA printers** create objects from liquid resin by hardening each layer with a UV light. SLA printers have a vat of resin that rests above an LCD panel. Each layer of the object is displayed on the LCD panel, which directs the UV light to cure the resin in the exact pattern of each layer.
 ## What do you need for 3D printing?
-[Our starter kit](/) includes everything you need to start 3D printing your own projects. It includes:
-
- - Creality Ender 3 3D printer
- - 1.75mm PLA Filament - White
- - 1.75mm PLA Filament - Black
- - 1.75mm PLA Filament - Red
- - 1.75mm PLA Filament - Blue
+If you're new to 3D printing, we recommend starting with filament and an FDM printer. Printing with filament is easier than resin because it's easier to set up and doesn't require post-processing. Filament is also sturdier and less expensive than resin.
 ### You need a printer
-The Creality Ender 3 3D printer comes with all the necessary parts, including:
+Our starter FDM printer, [the Creality Ender 3](/category/printers/ender-3), is a great printer for beginners. It comes with all the necessary parts, including:
  - a **print bed**, which is the platform surface onto which objects are printed
  - a **Bowden extruder**, which pushes the printing material through the nozzle
  - a **nozzle**, which pushes out the melted material to create the layers of your object
 
 You don’t need additional parts to get started with 3D printing, but you may want to try out different parts as you try out new projects. See our [Accessories](/category/accessories) page to explore the variety of parts available for 3D printers.
 ### You need filament
-The Creality Ender 3 3D printer uses filament to print, which is a plastic thread that comes in spools. Filaments come in a variety of materials. Our starter kit comes with PLA (Polylactic acid) filaments in a variety of colours. PLA filaments are one of the most popular types of 3D printing filaments because they have a low printing temperature and no off-putting odour.
-
-You should store your filaments in air-tight plastic bags or containers to keep them dry for the best printing performance. We recommend using our air-tight storage boxes---you can find these on our [Accessories](/category/accessories) page.
+The Creality Ender 3 3D printer uses filament to print, which is a plastic thread that comes in spools. Filaments come in a variety of materials. PLA filaments are one of the most popular types of 3D printing filaments because they have a low printing temperature and no off-putting odour.
+Check out our range of [filament colours here](/category/filaments).
 ## What can you make with 3D printing?
-
 
 ![Cut-out cookie shapes on a wooden table beside cookie cutters](https://images.pexels.com/photos/5471934/pexels-photo-5471934.jpeg?cs=srgb&dl=pexels-olia-danilevich-5471934.jpg&fm=jpg&_gl=1*194iod9*_ga*MTE4NjM5ODg3My4xNjY0ODM1NTAy*_ga_8JE65Q40S6*MTY2NzE1OTYwNi42LjEuMTY2NzE1OTc1OC4wLjAuMA..)
 You can make anything that you can imagine! You can make:
