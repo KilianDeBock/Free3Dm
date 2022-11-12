@@ -13,12 +13,14 @@ export interface ProductProps {
   product: Product;
   article: Article;
   setOption?: (option: string, value: string) => void;
+  addToCart?: () => void;
 }
 
 export const ProductComponent = ({
   product,
   article,
   setOption,
+  addToCart,
 }: ProductProps): JSX.Element => {
   if (!checkArticle(article)) return <p>Article not found</p>;
   if (!article) return <p>Product not found</p>;
@@ -84,7 +86,12 @@ export const ProductComponent = ({
             })}
           </SelectComponent>
         )}
-        <ButtonComponent type={'primary'}>{_AddToCartButton}</ButtonComponent>
+        <ButtonComponent
+          handleClick={() => addToCart && addToCart()}
+          type={'primary'}
+        >
+          {_AddToCartButton}
+        </ButtonComponent>
       </article>
     </section>
   );

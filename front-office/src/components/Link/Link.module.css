@@ -40,3 +40,7 @@
     text-decoration: underline;
     color: var(--blue-500);
 }
+
+.link__icon__image {
+    font-size: 1rem;
+}

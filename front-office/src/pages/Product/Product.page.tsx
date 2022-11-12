@@ -15,6 +15,7 @@ import { ContentCardComponent } from '../../components/ContentCard/ContentCard.c
 import { checkArticle } from '../../constants/helpers/checkArticle';
 import styles from './Product.module.css';
 import { _HomePageBottomBanner } from '@content/main/footer';
+import * as cart from '../../constants/helpers/cart';
 
 export interface ArticleOptions {
   [key: string]: string;
@@ -30,6 +31,16 @@ export const ProductPage = (): JSX.Element => {
       ...options,
       [option]: value,
     });
+
+  const addToCart = () => {
+    if (article?.id) {
+      cart.addToCart({
+        id: article.id,
+        quantity: parseInt(options?.amount) || 1,
+      });
+    }
+  };
+
   const { id, name, category, articleId } = useParams();
 
   if (!id) return <p>Product not found</p>;
@@ -95,6 +106,7 @@ export const ProductPage = (): JSX.Element => {
         product={product}
         article={article}
         setOption={setOption}
+        addToCart={addToCart}
       />
       <section className={'container'}>
         <h2>Description</h2>

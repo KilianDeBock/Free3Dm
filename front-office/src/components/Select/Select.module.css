@@ -5,7 +5,7 @@
     background: var(--white-200);
 }
 
-.select:not(:last-child) {
+.select:not(:last-child, .no-margin) {
     margin-bottom: 1rem;
 }
 

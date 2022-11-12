@@ -43,9 +43,13 @@ export const LinkComponent = ({
           : link
       }
       target={newTab ? '_blank' : '_self'}
-      className={`${styles.link} ${!noHover && styles.hover} ${
-        icon && styles['link__icon']
-      } ${noText && styles['link__no-text']} ${text && styles['link__text']}`}
+      className={`
+        ${styles.link} 
+        ${!noHover && styles.hover} 
+        ${icon && styles['link__icon']} 
+        ${noText && styles['link__no-text']} 
+        ${text && styles['link__text']}
+      `}
     >
       {icon && (
         <img

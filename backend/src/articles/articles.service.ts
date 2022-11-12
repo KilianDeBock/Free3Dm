@@ -40,6 +40,13 @@ export class ArticlesService {
     return this.articleRepository.find({ where: { productId: id } });
   }
 
+  findAllByIds(ids: number[]): Promise<Article[]> {
+    const idsEntities = ids.map((id) => {
+      return { id };
+    });
+    return this.articleRepository.find({ where: idsEntities });
+  }
+
   findOne(id: number): Promise<Article> {
     return this.articleRepository.findOneByOrFail({ id });
   }

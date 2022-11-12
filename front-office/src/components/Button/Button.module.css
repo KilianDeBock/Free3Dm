@@ -1,6 +1,9 @@
 .button {
     font-weight: normal;
+    position: relative;
+    overflow: hidden;
     padding: .8rem .6rem;
+    transition: transform .3s ease-in-out;
 }
 
 .button--primary {
@@ -31,3 +34,20 @@
     height: 1rem;
 }
 
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.button:active {
+    transition: transform 100ms;
+    transform: scale(1);
+}
+
+.button__no-text {
+    font-size: 0
+}
+
+.button__icon__image {
+    font-size: 1rem;
+}

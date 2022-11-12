@@ -12,6 +12,7 @@ interface ButtonProps {
   handleClick?: (event: clickEvent) => void | Promise<void>;
   link?: string;
   icon?: string | null;
+  noText?: boolean;
 }
 
 const getType = (type: ButtonType = 'tertiary'): string => {
@@ -31,19 +32,23 @@ export const ButtonComponent = ({
   handleClick,
   link,
   icon = null,
+  noText = false,
 }: ButtonProps) =>
   !link ? (
     <button
-      className={`${styles.button} ${getType(type)} ${
-        icon && styles['button__icon']
-      }`}
+      className={`
+        ${styles.button} 
+        ${getType(type)} 
+        ${icon && styles['button__icon']}
+        ${noText && styles['button__no-text']}
+      `}
       onClick={(e) => handleClick && handleClick(e)}
     >
       {icon && (
         <img
           className={styles['button__icon__image']}
           src={icon}
-          alt={`Icon`}
+          alt={children?.toString()}
         />
       )}
       {children}
@@ -59,7 +64,7 @@ export const ButtonComponent = ({
         <img
           className={styles['button__icon__image']}
           src={icon}
-          alt={`Icon`}
+          alt={children?.toString()}
         />
       )}
       {children}

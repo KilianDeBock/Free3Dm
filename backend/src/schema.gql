@@ -116,6 +116,7 @@ type Query {
   order(id: Int!): Order!
   articleOrder(orderId: Int!, articleId: Int!): ArticleOrder!
   articles: [Article!]!
+  articlesByIds(ids: [Int!]!): [Article!]!
   article(id: Int!): Article!
   reviews: [Review!]!
   review(id: Int!): Review!

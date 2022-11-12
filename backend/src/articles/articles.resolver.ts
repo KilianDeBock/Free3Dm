@@ -32,6 +32,11 @@ export class ArticlesResolver {
     return this.articlesService.findAll();
   }
 
+  @Query(() => [Article], { name: 'articlesByIds' })
+  findAllByIds(@Args('ids', { type: () => [Int] }) ids: number[]) {
+    return this.articlesService.findAllByIds(ids);
+  }
+
   @Query(() => Article, { name: 'article' })
   findOne(@Args('id', { type: () => Int }) id: number) {
     return this.articlesService.findOne(id);

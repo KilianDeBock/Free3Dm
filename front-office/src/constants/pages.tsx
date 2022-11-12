@@ -22,6 +22,7 @@ import {
   _WarrantyRepairPolicyPage,
   _WarrantyRepairPolicyTitlePage,
 } from '@content/pages';
+import { CheckoutPage } from '../pages/Checkout/Checkout.page';
 
 export interface Page {
   path: ROUTES;
@@ -45,6 +46,10 @@ export const PAGES: Pages = {
     {
       path: ROUTES.PRODUCT,
       element: <ProductPage />,
+    },
+    {
+      path: ROUTES.CHECKOUT,
+      element: <CheckoutPage />,
     },
     {
       path: ROUTES.ABOUT,
