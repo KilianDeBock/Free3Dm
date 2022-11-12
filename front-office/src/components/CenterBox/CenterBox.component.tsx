@@ -17,9 +17,9 @@ export const CenterBoxComponent = ({
   title && text ? (
     <section className={`container ${styles['center-box']}`}>
       <h1 className={styles['center-box__title']}>{title}</h1>
-      <p className={styles['center-box__text']}>
+      <span className={styles['center-box__text']}>
         <MarkdownComponent content={text} />
-      </p>
+      </span>
     </section>
   ) : (
     <section className={`container ${styles['center-box']}`}>

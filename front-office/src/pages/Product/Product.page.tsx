@@ -14,6 +14,7 @@ import { ReviewsComponent } from '../../components/Reviews/Reviews.component';
 import { ContentCardComponent } from '../../components/ContentCard/ContentCard.component';
 import { checkArticle } from '../../constants/helpers/checkArticle';
 import styles from './Product.module.css';
+import { _HomePageBottomBanner } from '@content/main/footer';
 
 export interface ArticleOptions {
   [key: string]: string;
@@ -21,6 +22,7 @@ export interface ArticleOptions {
 
 export const ProductPage = (): JSX.Element => {
   const app = useApp();
+  app?.setFooterInfoText(_HomePageBottomBanner);
   const [article, setArticle] = useState<Article | undefined>(undefined);
   const [options, _setOptions] = useState<ArticleOptions>({ amount: '1' });
   const setOption = (option: string, value: string) =>
@@ -80,8 +82,8 @@ export const ProductPage = (): JSX.Element => {
 
   const articleName = getDetail<string>(article.details, 'name') || 'Unknown';
 
-  if (articleName.toLowerCase() !== name?.toLowerCase()) return <p>Article not
-    found</p>;
+  if (articleName.toLowerCase() !== name?.toLowerCase())
+    return <p>Article not found</p>;
 
   const product = { ...data.product };
   product.articles =

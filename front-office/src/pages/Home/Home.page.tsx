@@ -7,6 +7,7 @@ import {
 } from '../../components';
 import { useApp } from '../../contexts';
 import { _NewTo3DPrinting, _NewTo3DPrintingTitle } from '@content/main/promos';
+import { _HomePageBottomBanner } from '@content/main/footer';
 
 const heading = {
   text: {
@@ -65,6 +66,7 @@ export const HomePage = (): JSX.Element => {
   const app = useApp();
   app?.setTitle('Home');
   app?.setNavigationInfo('reset', '');
+  app?.setFooterInfoText(_HomePageBottomBanner);
 
   return (
     <>

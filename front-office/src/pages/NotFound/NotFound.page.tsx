@@ -1,8 +1,11 @@
 import React from 'react';
 import { useApp } from '../../contexts';
+import { _HomePageBottomBanner } from '@content/main/footer';
 
 export const NotFoundPage = (): JSX.Element => {
-  useApp()?.setTitle('Page Not Found');
+  const app = useApp();
+  app?.setTitle('Page Not Found');
+  app?.setFooterInfoText(_HomePageBottomBanner);
 
   return (
     <section>

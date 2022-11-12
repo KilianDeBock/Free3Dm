@@ -2,6 +2,7 @@ import React from 'react';
 import { useApp } from '../../contexts';
 import styles from './Content.module.css';
 import { MarkdownComponent } from '../../components/Markdown/Markdown.component';
+import { _HomePageBottomBanner } from '@content/main/footer';
 
 export interface ContentPageProps {
   title: string;
@@ -14,7 +15,9 @@ export const ContentPage = ({
 }: ContentPageProps): JSX.Element => {
   const getTitle = title.split('# ');
   const setTitle = getTitle.length > 1 ? getTitle[1] : title.split('#')[1];
-  useApp()?.setTitle(setTitle || title || 'Content');
+  const app = useApp();
+  app?.setTitle(setTitle || title || 'Content');
+  app?.setFooterInfoText(_HomePageBottomBanner);
 
   return (
     <section className={`container ${styles.content}`}>

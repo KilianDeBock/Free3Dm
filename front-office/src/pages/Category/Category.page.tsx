@@ -6,6 +6,8 @@ import { useApp } from '../../contexts';
 import { CategoryProductsComponent } from '../../components/CategoryProducts/CategoryProducts.component';
 import styles from './Category.module.css';
 import { checkArticle } from '../../constants/helpers/checkArticle';
+import { setFooterInfoFromCategory } from '../../constants/helpers/setFooterInfoFromCategory';
+import { formatString } from '../../contexts/FormatString';
 
 export const CategoryPage = (): JSX.Element => {
   const app = useApp();
@@ -13,9 +15,7 @@ export const CategoryPage = (): JSX.Element => {
   const [category, setCategory] = useState<CategoryState>(null);
   let { name } = useParams();
 
-  app?.setNavigationInfo([
-    [name?.toLowerCase() ?? 'unknown', `/category/${name?.toLowerCase()}`],
-  ]);
+  app?.setNavigationInfo('reset');
 
   const { loading, error, data } = useQuery<CategoriesData>(
     GET_ALL_CATEGORIES,
@@ -31,7 +31,9 @@ export const CategoryPage = (): JSX.Element => {
       ) || null;
 
     setCategory(_category);
-    app?.setTitle(_category?.name || 'Category Not Found');
+    const categoryName = formatString(_category?.name || 'Category Not Found');
+    app?.setTitle(categoryName);
+    setFooterInfoFromCategory(app, categoryName);
   }, [data, name]);
 
   if (loading) return <p>Loading ...</p>;
@@ -54,8 +56,9 @@ export const CategoryPage = (): JSX.Element => {
     }, 0) ?? 0;
   const countIsOne = productsCount === 1;
 
+  const categoryName = formatString(category?.name || 'Category Not Found');
   app?.setNavigationInfo(
-    null,
+    [[categoryName, `/category/${name?.toLowerCase()}`]],
     `There ${countIsOne ? 'is' : 'are'} ${productsCount} product${
       !countIsOne ? 's' : ''
     }`
@@ -68,7 +71,7 @@ export const CategoryPage = (): JSX.Element => {
           <li>Test</li>
         </ul>
         <div>
-          <h1>{category?.name}</h1>
+          <h1>{categoryName}</h1>
           <CategoryProductsComponent category={category} />
         </div>
       </section>

@@ -2,6 +2,7 @@ import React, { createContext, useContext } from 'react';
 import { BrowserRouter as Router, Routes } from 'react-router-dom';
 import { CookiesProvider } from 'react-cookie';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import { _HomePageBottomBanner } from '@content/main/footer';
 
 const client = new ApolloClient({
   uri: import.meta.env.DEV
@@ -18,6 +19,8 @@ export interface AppContextInterface {
   navigationInfo: NavigationInfo;
   setNavigationInfo: (path: Path | 'reset' | null, text?: string) => void;
   setNavigationUpdate: (update: () => void) => void;
+  footerInfoText: string;
+  setFooterInfoText: (text: string) => void;
 }
 
 export interface AppContextProps {
@@ -29,7 +32,9 @@ export interface NavigationInfo {
   text: string;
 }
 
-export const AppContext = createContext<AppContextInterface | null>(null);
+export type AppContextType = AppContextInterface | null;
+
+export const AppContext = createContext<AppContextType>(null);
 export const useApp = () => useContext(AppContext);
 
 export const AppProvider = ({ children }: AppContextProps) => {
@@ -74,6 +79,10 @@ export const AppProvider = ({ children }: AppContextProps) => {
     }
   };
 
+  const [footerInfoText, setFooterInfoText] = React.useState(
+    _HomePageBottomBanner
+  );
+
   return (
     <AppContext.Provider
       value={{
@@ -82,6 +91,8 @@ export const AppProvider = ({ children }: AppContextProps) => {
         navigationInfo,
         setNavigationInfo,
         setNavigationUpdate,
+        footerInfoText,
+        setFooterInfoText,
       }}
     >
       <ApolloProvider client={client}>

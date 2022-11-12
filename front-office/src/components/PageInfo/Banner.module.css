@@ -1,7 +1,6 @@
 .banner {
     position: absolute;
     z-index: -1;
-    bottom: -16rem;
     left: -10rem;
     width: calc(100vw + 20rem);
     height: 100%;
