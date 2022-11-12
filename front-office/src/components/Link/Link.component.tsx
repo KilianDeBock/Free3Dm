@@ -7,6 +7,7 @@ interface LinkProps {
   link: string;
   noHover?: boolean;
   href?: boolean;
+  text?: boolean;
   newTab?: boolean;
   copy?: boolean;
   icon?: string | null;
@@ -22,6 +23,7 @@ export const LinkComponent = ({
   link,
   noHover = false,
   href = false,
+  text = false,
   newTab = false,
   copy = false,
   icon = null,
@@ -43,7 +45,7 @@ export const LinkComponent = ({
       target={newTab ? '_blank' : '_self'}
       className={`${styles.link} ${!noHover && styles.hover} ${
         icon && styles['link__icon']
-      } ${noText && styles['link__no-text']}`}
+      } ${noText && styles['link__no-text']} ${text && styles['link__text']}`}
     >
       {icon && (
         <img

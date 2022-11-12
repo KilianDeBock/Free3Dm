@@ -12,6 +12,7 @@ export const components = {
   a: ({ ...props }) =>
     LinkComponent({
       href: true,
+      text: true,
       link: props.href,
       children: props.children,
     }),

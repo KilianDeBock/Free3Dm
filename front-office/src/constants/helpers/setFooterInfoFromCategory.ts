@@ -1,5 +1,6 @@
 import { AppContextType } from '../../contexts';
 import {
+  _BusinessBottomBanner,
   _FilamentsBottomBanner,
   _PrintersBottomBanner,
   _ResinBottomBanner,
@@ -19,6 +20,8 @@ export const setFooterInfoFromCategory = (
       return app?.setFooterInfoText(_ResinBottomBanner);
     case 'Toys':
       return app?.setFooterInfoText(_ToysBottomBanner);
+    case 'Business Products':
+      return app?.setFooterInfoText(_BusinessBottomBanner);
     default:
       break;
   }

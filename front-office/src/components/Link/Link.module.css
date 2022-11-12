@@ -35,3 +35,8 @@
 .link__no-text {
     font-size: 0;
 }
+
+.link__text:not(:hover) {
+    text-decoration: underline;
+    color: var(--blue-500);
+}
