@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { getCart } from '../../constants/helpers/cart';
 import { useQuery } from '@apollo/client';
 import {
@@ -13,11 +13,18 @@ import { OrderSummaryComponent } from '../../components/OrderSummary/OrderSummar
 import { OrderFormComponent } from '../../components/OrderForm/OrderForm.component';
 
 export const CheckoutPage = (): JSX.Element => {
+  const [_reload, setReload] = React.useState(false);
   const cart = getCart();
   const app = useApp();
   app?.setTitle('Cart');
   app?.setNavigationInfo('reset');
   app?.setFooterInfoText(_HomePageBottomBanner);
+
+  const reload = (really: boolean = false) => {
+    if (really) return window.location.reload();
+    setReload(!_reload);
+  };
+  useEffect(() => {}, [_reload]);
 
   const emptyCard = (
     <section className={`container`}>
@@ -46,7 +53,7 @@ export const CheckoutPage = (): JSX.Element => {
   return (
     <section className={`container ${styles.split}`}>
       <OrderFormComponent onSubmit={console.log} />
-      <OrderSummaryComponent cart={cart} data={data} />
+      <OrderSummaryComponent reload={reload} cart={cart} data={data} />
     </section>
   );
 };

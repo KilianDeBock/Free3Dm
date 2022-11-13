@@ -56,8 +56,9 @@ export const OrderFormComponent = ({
                     active === section.title ? styles.active : ''
                   }`}
                 >
-                  {section.fields.map((field) => (
+                  {section.fields.map((field, i) => (
                     <FieldComponent
+                      key={field.name + i}
                       name={field.name}
                       placeholder={field.placeholder}
                       type={field?.type ?? 'input'}

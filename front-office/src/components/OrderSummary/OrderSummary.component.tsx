@@ -2,7 +2,7 @@ import styles from './OrderSummary.module.css';
 import { getDetail } from '@graphql';
 import { SelectComponent } from '../Select/Select.component';
 import { ButtonComponent } from '../Button/Button.component';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { checkArticle } from '../../constants/helpers/checkArticle';
 import {
   addToCart,
@@ -15,20 +15,14 @@ import { _OrderSummaryTitle } from '@content/dialogs';
 export interface OrderSummaryProps {
   cart: CartItem[];
   data: ArticlesByIdsData;
+  reload: (really?: boolean) => void;
 }
 
 export const OrderSummaryComponent = ({
   cart,
   data,
+  reload,
 }: OrderSummaryProps): JSX.Element => {
-  const [_reload, setReload] = React.useState(false);
-
-  const reload = (really: boolean = false) => {
-    if (really) return window.location.reload();
-    setReload(!_reload);
-  };
-  useEffect(() => {}, [_reload]);
-
   const VAT = 0.21;
   const shipping = 6.33;
   const discount = 0;
