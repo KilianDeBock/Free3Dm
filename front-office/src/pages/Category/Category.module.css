@@ -8,6 +8,7 @@
 .category-content > *:first-child {
     width: 100%;
     max-width: 8rem;
+    margin-top: 5rem;
 }
 
 

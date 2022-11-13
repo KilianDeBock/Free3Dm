@@ -28,7 +28,6 @@
     background: var(--blue-500);
 }
 
-.submit:active,
-.submit:focus {
+.search.active .submit {
     min-width: 100%;
 }

@@ -40,11 +40,26 @@ export class ArticlesService {
     return this.articleRepository.find({ where: { productId: id } });
   }
 
-  findAllByIds(ids: number[]): Promise<Article[]> {
+  async findAllByName(name: string): Promise<Article[]> {
+    const detailIds = (await this.detailsService.getAllArticlesBySearch(
+      name,
+      true,
+    )) as number[];
+    const productIds = (await this.productsService.getAllArticlesBySearch(
+      name,
+      true,
+    )) as number[];
+
+    const ids = [...new Set([...detailIds, ...productIds])];
+    return ids.length > 0 ? this.findAllByIds(ids, true) : [];
+  }
+
+  findAllByIds(ids: number[], withDetails = false): Promise<Article[]> {
+    const add = withDetails ? { relations: ['details'] } : {};
     const idsEntities = ids.map((id) => {
       return { id };
     });
-    return this.articleRepository.find({ where: idsEntities });
+    return this.articleRepository.find({ where: idsEntities, ...add });
   }
 
   findOne(id: number): Promise<Article> {

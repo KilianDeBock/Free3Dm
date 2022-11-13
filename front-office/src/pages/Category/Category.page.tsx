@@ -68,7 +68,10 @@ export const CategoryPage = (): JSX.Element => {
     <>
       <section className={`container ${styles['category-content']}`}>
         <ul>
-          <li>Test</li>
+          <li>This feature does not work:</li>
+          <li>Low cost</li>
+          <li>4 and more stars</li>
+          <li>2 and more stars</li>
         </ul>
         <div>
           <h1>{categoryName}</h1>

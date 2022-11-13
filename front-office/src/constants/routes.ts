@@ -5,6 +5,7 @@ export enum ROUTES {
   CHECKOUT = '/cart',
   COMPANY = '/company',
   CONTACT = '/contact',
+  SEARCH = '/search/:query',
   LANDING_PAGE = '/welcome',
   CATEGORIES = '/category/:name',
   RETURN_POLICY = '/return-policy',

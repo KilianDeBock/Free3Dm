@@ -4,7 +4,7 @@ import styles from './Search.module.css';
 interface SearchProps {
   children?: React.ReactNode;
   placeholderTxt: string;
-  submitTxt: string;
+  submitTxt: [string, string] | string;
   handleSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
   handleChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
@@ -20,21 +20,38 @@ export const SearchComponent = ({
   handleSubmit = defaultSubmit,
   handleChange = () => {},
 }: SearchProps) => {
+  const initialText = Array.isArray(submitTxt) ? submitTxt[0] : submitTxt;
+  const [searchText, setSearchText] = React.useState(initialText);
+  const searchRef = React.useRef<HTMLFormElement>(null);
+  const inputRef = React.useRef<HTMLInputElement>(null);
+
   const searchSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setTimeout(() => handleSubmit(event), 500);
+    searchRef.current?.classList.add(styles.active);
+    setTimeout(
+      () => setSearchText(Array.isArray(submitTxt) ? submitTxt[1] : submitTxt),
+      300
+    );
+    setTimeout(() => {
+      handleSubmit(event);
+      setTimeout(() => {
+        searchRef.current?.classList.remove(styles.active);
+        setSearchText(initialText);
+      }, 200);
+    }, 500);
   };
   return (
-    <form onSubmit={searchSubmit} className={styles.search}>
+    <form ref={searchRef} onSubmit={searchSubmit} className={styles.search}>
       {children}
       <input
+        ref={inputRef}
         className={styles.input}
         onChange={handleChange}
         type="text"
         placeholder={placeholderTxt}
       />
       <button className={styles.submit} type="submit">
-        {submitTxt}
+        {searchText}
       </button>
     </form>
   );

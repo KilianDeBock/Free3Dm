@@ -22,6 +22,35 @@ export const GET_ARTICLES_BY_IDS = gql`
   }
 `;
 
+export interface ArticlesByNameData {
+  articlesByName: Article[];
+}
+
+export interface ArticlesByNameVars {
+  name: string;
+}
+
+export const GET_ALL_ARTICLES_BY_NAME = gql`
+  query getArticleByName($name: String!) {
+    articlesByName(name: $name) {
+      id
+      price
+      details {
+        key
+        value
+      }
+      product {
+        id
+        name
+        category {
+          id
+          name
+        }
+      }
+    }
+  }
+`;
+
 export interface ArticleData {
   article: Article;
 }

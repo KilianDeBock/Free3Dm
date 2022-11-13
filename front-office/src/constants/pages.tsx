@@ -1,7 +1,13 @@
 import React from 'react';
 import { Layouts } from '../layouts';
 import { ROUTES } from './routes';
-import { CategoryPage, ContentPage, HomePage, ProductPage } from '../pages';
+import {
+  CategoryPage,
+  ContentPage,
+  HomePage,
+  ProductPage,
+  SearchPage,
+} from '../pages';
 import {
   _AboutPage,
   _CompanyDetailsPage,
@@ -50,6 +56,10 @@ export const PAGES: Pages = {
     {
       path: ROUTES.CHECKOUT,
       element: <CheckoutPage />,
+    },
+    {
+      path: ROUTES.SEARCH,
+      element: <SearchPage />,
     },
     {
       path: ROUTES.ABOUT,

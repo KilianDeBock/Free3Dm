@@ -28,6 +28,7 @@ import {
   _SearchBar,
 } from '@content/dialogs';
 import { _TertiaryNavigation } from '@content/main/header';
+import { useNavigate } from 'react-router-dom';
 
 const primaryNavCategories: string[] = [
   _3DPrintersButton,
@@ -74,19 +75,36 @@ const tertiaryNavLinks: TertiaryNavigationLink[] = [
   },
 ];
 
-export const HeaderComponent = () => (
-  <header className={styles.header}>
-    <div className={bannerStyles.banner}>
-      <div className={`container ${bannerStyles.banner__text}`}></div>
-    </div>
-    <TertiaryNavigationComponent links={tertiaryNavLinks} />
-    <SecondaryNavigationComponent
-      appName={CONSTS.APP_NAME}
-      links={secondaryNavLinks}
-    />
-    <section className={`container ${styles.search}`}>
-      <SearchComponent submitTxt={_SearchButton} placeholderTxt={_SearchBar} />
-    </section>
-    <NavigationComponent categories={primaryNavCategories} />
-  </header>
-);
+export const HeaderComponent = () => {
+  const navigate = useNavigate();
+  const [_search, setSearch] = React.useState('');
+
+  const search = (event: React.FormEvent<HTMLFormElement>) => {
+    navigate(`/search/${_search}`);
+  };
+
+  return (
+    <header className={styles.header}>
+      <div className={bannerStyles.banner}>
+        <div className={`container ${bannerStyles.banner__text}`}></div>
+      </div>
+      <TertiaryNavigationComponent links={tertiaryNavLinks} />
+      <SecondaryNavigationComponent
+        appName={CONSTS.APP_NAME}
+        links={secondaryNavLinks}
+      />
+      <section className={`container ${styles.search}`}>
+        <SearchComponent
+          submitTxt={[
+            _SearchButton.split('\n')[0],
+            _SearchButton.split('\n')[1],
+          ]}
+          placeholderTxt={_SearchBar}
+          handleSubmit={search}
+          handleChange={(e) => setSearch(e.target.value)}
+        />
+      </section>
+      <NavigationComponent categories={primaryNavCategories} />
+    </header>
+  );
+};

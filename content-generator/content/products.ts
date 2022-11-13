@@ -13,25 +13,25 @@ export const _BulkTPEFilamentDescription = "*2 Pack: Black x 2*\n\nThe soft and 
 export const _BulkTPEFilamentPriceCAD = "$85.00";
 export const _BulkTPEFilamentPriceEuro = "€63.23";
 export const _BulkTPEFilamentTitle = "1.75mm TPE Filament, *2 Pack*";
-export const _EGuideClearResinAltText = "![E-Guide Clear Biocompatible Photopolymer resin in a 1-kilogram bottle. In the foreground, a dental model displays a printed surgical guide.](https://www.machines-3d.com/images/Image/Resine-castable-wax-ups-verte-Resine-shining-cast-wax-1--8.png)";
-export const _EGuideClearResinDescription = "## Description\n\nOur clear biocompatible photopolymer resin is cleared by the FDA and Health Canada for use in dental and orthodontic appliances. Its high precision and low flexibility make it ideal for surgical guides and clear aligners.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Surgical guides, models, clear aligners\n\n## Printing Details\n\n**Technology**: Ideal for DLP printers\n\n## More Details\n\n**Pros**\n\n - Least shrinkage to ensure a perfect fit every time\n - Compatible with fast printing time\n - Cured material can be cleaned in an ultrasonic bath\n \n**Cons**\n - Requires post-processing\n";
-export const _EGuideClearResinPriceCAD = "$460.00";
-export const _EGuideClearResinPriceEuro = "€341.90";
-export const _EGuideResinTitle = "E-Guide Clear Biocompatible Photopolymer Resin (1kg)";
-export const _FormLabsBioMedResinAltText = "![FormLabs BioMed White resin in a 1-litre bottle.](https://formlabs.com/checkout-media/catalog/product/600x600/b/i/biomed_white_store_revised.png)";
-export const _FormLabsBioMedResinPriceCAD = "$349.00";
-export const _FormLabsBioMedResinPriceEuro = "€259.40";
-export const _FormLabsBioMedResinTitle = "FormLabs BioMed White Resin (1L)";
-export const _FormLabsBioMedWhiteResinDescription = "## Description\n\nFormLabs’ BioMed White resin is a medical-grade resin that can be used to create products that require long-term skin contact. Its high strength, low flexibility, and biocompatibility also make it ideal for medical devices, guides, and models.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Medical devices, anatomical models, surgical tools, and surgical templates\n\n## Printing Details\n\n**Technology**: Ideal for SLA printers\n\n## More Details\n\n**Pros**\n\n - Certified biocompatibility ensures safe long-term skin contact\n- Least shrinkage to ensure high accuracy\n- Compatible with fast printing time\n- Cured material can be sterilised\n \n**Cons**\n - Requires post-processing\n";
-export const _FormLabsPURigidResinAltText = "![FormLabs PU Rigid 1000 resin in a 1-litre aluminum bottle and a 1-litre plastic bottle.](https://formlabs.com/checkout-media/catalog/product/600x600/e/x/export_store_picture_5_.png)";
-export const _FormLabsPURigidResinDescription = "## Description\n\nFormLabs’ PU Rigid 1000 resin is a medical-grade resin that can be used to create products that require long-term skin contact, high strength, and high durability. Its high strength and durability make it ideal for orthotics and orthopedic braces.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Orthotics, prosthetic device components, medical devices\n\n## Printing Details\n\n**Technology**: Ideal for SLA printers\n\n## More Details\n\n**Pros**\n\n - High durability allows printed products to withstand high-impact applications\n - Certified biocompatibility ensures safe long-term skin contact\n - Least shrinkage to ensure high accuracy\n \n**Cons**\n - Requires post-processing\n";
-export const _FormLabsPURigidResinPriceEuro = "€110.74";
-export const _FormLabsPURigidResinTitle = "FormLabs PU Rigid 1000 Resin (1L)";
-export const _SmileGuardClearResinAltText = "![SmileGuard Clear Biocompatible Light Curable resin in a 1-kilogram bottle.](https://cdn.shopify.com/s/files/1/0368/2641/products/DH_SmileGuardsalespresentation_88_1024x1024.jpg?v=1666375724)";
-export const _SmileGuardClearResinDescription = "## Description\n\nOur clear biocompatible resin is cleared by the FDA and Health Canada for use in dental and orthodontic appliances. Its high strength and medium flexibility make it ideal for mouthguards and night guards.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Medium\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Mouthguards, night guards, splints\n\n## Printing Details\n\n**Technology**: Ideal for DLP printers\n\n## More Details\n\n**Pros**\n\n- Incredibly durable\n- Least shrinkage to ensure a perfect fit every time\n- Compatible with fast printing time\n- No taste to ensure patient comfort\n \n**Cons**\n - Cured products cannot be autoclaved\n - Requires post-processing\n";
-export const _SmileGuardClearResinPriceCAD = "$609.00";
-export const _SmileGuardClearResinPriceEuro = "€452.64";
-export const _SmileGuardResinTitle = "SmileGuard Clear Biocompatible Light Curable Resin (1kg)";
+export const _DentalGuardClearResinAltText = "![Dental Guard Clear Biocompatible Light Curable resin in a 1-kilogram bottle.](https://www.machines-3d.com/images/Image/Image/02_Fiches_articles/RESINES/SHINING%203D/Bio-Clear-Resin-SG01.png?1659014947522)";
+export const _DentalGuardClearResinDescription = "## Description\n\nOur clear biocompatible resin is cleared by the FDA and Health Canada for use in dental and orthodontic appliances. Its high strength and medium flexibility make it ideal for mouthguards and night guards.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Medium\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Mouthguards, night guards, splints\n\n## Printing Details\n\n**Technology**: Ideal for DLP and LCD printers\n\n## More Details\n\n**Pros**\n\n- Incredibly durable\n- Least shrinkage to ensure a perfect fit every time\n- Compatible with fast printing time\n- No taste to ensure patient comfort\n \n**Cons**\n - Cured products cannot be autoclaved\n - Requires post-processing\n";
+export const _DentalGuardClearResinPriceCAD = "$609.00";
+export const _DentalGuardClearResinPriceEuro = "€452.64";
+export const _DentalGuardResinTitle = "Dental Guard Clear Biocompatible Photopolymer Resin (1kg)";
+export const _DentalGuideClearResinAltText = "![Dental Guide Clear Biocompatible Photopolymer resin in a 1-kilogram bottle. In the foreground, a dental model displays a printed surgical guide.](https://www.machines-3d.com/images/Image/Resine-castable-wax-ups-verte-Resine-shining-cast-wax-1--8.png)";
+export const _DentalGuideClearResinDescription = "## Description\n\nOur clear biocompatible photopolymer resin is cleared by the FDA and Health Canada for use in dental and orthodontic appliances. Its high precision and low flexibility make it ideal for surgical guides and clear aligners.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Surgical guides, models, clear aligners\n\n## Printing Details\n\n**Technology**: Ideal for DLP and LCD printers\n\n## More Details\n\n**Pros**\n\n - Least shrinkage to ensure a perfect fit every time\n - Compatible with fast printing time\n - Cured material can be cleaned in an ultrasonic bath\n \n**Cons**\n - Requires post-processing\n";
+export const _DentalGuideClearResinPriceCAD = "$460.00";
+export const _DentalGuideClearResinPriceEuro = "€341.90";
+export const _DentalGuideResinTitle = "Dental Guide Clear Biocompatible Photopolymer Resin (1kg)";
+export const _MedicalBiocompatibleRigidResinAltText = "![Medical Biocompatible Rigid resin in a 1-litre aluminum bottle and a 1-litre plastic bottle.](https://formlabs.com/checkout-media/catalog/product/600x600/e/x/export_store_picture_5_.png)";
+export const _MedicalBiocompatibleRigidResinDescription = "## Description\n\nOur Medical Biocompatible Rigid resin is a medical-grade resin that can be used to create products that require long-term skin contact, high strength, and high durability. Its high strength and durability make it ideal for orthotics and orthopedic braces.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Orthotics, prosthetic device components, medical devices\n\n## Printing Details\n\n**Technology**: Ideal for SLA printers\n\n## More Details\n\n**Pros**\n\n - High durability allows printed products to withstand high-impact applications\n - Certified biocompatibility ensures safe long-term skin contact\n - Least shrinkage to ensure high accuracy\n \n**Cons**\n - Requires post-processing\n";
+export const _MedicalBiocompatibleRigidResinPriceEuro = "€110.74";
+export const _MedicalBiocompatibleRigidResinTitle = "Medical Biocompatible Rigid Resin (1L)";
+export const _MedicalWhiteBiocompatibleResinAltText = "![Medical White Biocompatible Photopolymer resin in a 1-litre bottle.](https://www.machines-3d.com/images/Image/Bio-White-Resin-TR01.png)";
+export const _MedicalWhiteBiocompatibleResinDescription = "## Description\n\nOur Medical White Biocompatible Photopolymer resin is a medical-grade resin that can be used to create products that require long-term skin contact. Its high strength, low flexibility, and biocompatibility also make it ideal for medical devices, guides, and models.\n\n**Difficulty Level**: Professional\n\n**Strength**: High\n\n**Flexibility**: Low\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: No\n\n**Biocompatible**: Yes\n\n**Perfect for**: Medical devices, anatomical models, surgical tools, and surgical templates\n\n## Printing Details\n\n**Technology**: Ideal for SLA printers\n\n## More Details\n\n**Pros**\n\n - Certified biocompatibility ensures safe long-term skin contact\n- Least shrinkage to ensure high accuracy\n- Compatible with fast printing time\n- Cured material can be sterilised\n \n**Cons**\n - Requires post-processing\n";
+export const _MedicalWhiteBiocompatibleResinPriceCAD = "$349.00";
+export const _MedicalWhiteBiocompatibleResinPriceEuro = "€259.40";
+export const _MedicalWhiteBiocompatibleResinTitle = "Medical White Biocompatible Photopolymer Resin (1L)";
 export const _ABSFilamentBlackAltText = "![Spool of black ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/51IY6Mnm+CL._AC_.jpg)";
 export const _ABSFilamentBlueAltText = "![Spool of blue ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81dmTBu42tL._AC_SL1500_.jpg)";
 export const _ABSFilamentBrownAltText = "![Spool of brown ABS (acrylonitrile) 3D printer filament in 1.75mm diameter.](https://m.media-amazon.com/images/I/81lwFr3kj4L._AC_SL1500_.jpg)";
@@ -177,25 +177,25 @@ export default {
   _BulkTPEFilamentPriceCAD, 
   _BulkTPEFilamentPriceEuro, 
   _BulkTPEFilamentTitle, 
-  _EGuideClearResinAltText, 
-  _EGuideClearResinDescription, 
-  _EGuideClearResinPriceCAD, 
-  _EGuideClearResinPriceEuro, 
-  _EGuideResinTitle, 
-  _FormLabsBioMedResinAltText, 
-  _FormLabsBioMedResinPriceCAD, 
-  _FormLabsBioMedResinPriceEuro, 
-  _FormLabsBioMedResinTitle, 
-  _FormLabsBioMedWhiteResinDescription, 
-  _FormLabsPURigidResinAltText, 
-  _FormLabsPURigidResinDescription, 
-  _FormLabsPURigidResinPriceEuro, 
-  _FormLabsPURigidResinTitle, 
-  _SmileGuardClearResinAltText, 
-  _SmileGuardClearResinDescription, 
-  _SmileGuardClearResinPriceCAD, 
-  _SmileGuardClearResinPriceEuro, 
-  _SmileGuardResinTitle, 
+  _DentalGuardClearResinAltText, 
+  _DentalGuardClearResinDescription, 
+  _DentalGuardClearResinPriceCAD, 
+  _DentalGuardClearResinPriceEuro, 
+  _DentalGuardResinTitle, 
+  _DentalGuideClearResinAltText, 
+  _DentalGuideClearResinDescription, 
+  _DentalGuideClearResinPriceCAD, 
+  _DentalGuideClearResinPriceEuro, 
+  _DentalGuideResinTitle, 
+  _MedicalBiocompatibleRigidResinAltText, 
+  _MedicalBiocompatibleRigidResinDescription, 
+  _MedicalBiocompatibleRigidResinPriceEuro, 
+  _MedicalBiocompatibleRigidResinTitle, 
+  _MedicalWhiteBiocompatibleResinAltText, 
+  _MedicalWhiteBiocompatibleResinDescription, 
+  _MedicalWhiteBiocompatibleResinPriceCAD, 
+  _MedicalWhiteBiocompatibleResinPriceEuro, 
+  _MedicalWhiteBiocompatibleResinTitle, 
   _ABSFilamentBlackAltText, 
   _ABSFilamentBlueAltText, 
   _ABSFilamentBrownAltText, 

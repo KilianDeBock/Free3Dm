@@ -2,7 +2,7 @@ import { forwardRef, Inject, Injectable } from '@nestjs/common';
 import { CreateProductInput } from './dto/create-product.input';
 import { UpdateProductInput } from './dto/update-product.input';
 import { InjectRepository } from '@nestjs/typeorm';
-import { DeleteResult, Repository } from 'typeorm';
+import { DeleteResult, ILike, Repository } from 'typeorm';
 import { Product } from './entities/product.entity';
 import { Article } from 'src/articles/entities/article.entity';
 import { ArticlesService } from '../articles/articles.service';
@@ -65,5 +65,35 @@ export class ProductsService {
 
   getArticles(id: number): Promise<Article[]> {
     return this.articlesService.findAllByProductId(id);
+  }
+
+  async getAllArticlesBySearch(
+    search: string,
+    idsOnly = false,
+  ): Promise<number[] | Article[]> {
+    const nameResult = await this.productRepository.find({
+      where: {
+        name: ILike(`%${search}%`),
+      },
+      relations: ['articles'],
+    });
+    const descriptionResult = await this.productRepository.find({
+      where: {
+        description: ILike(`%${search}%`),
+      },
+      relations: ['articles'],
+    });
+
+    const nameIds = nameResult
+      .map((product) => product.articles.map((article) => article.id))
+      .flat();
+    const descriptionIds = descriptionResult
+      .map((product) => product.articles.map((article) => article.id))
+      .flat();
+
+    const ids = [...new Set([...nameIds, ...descriptionIds])];
+
+    if (idsOnly) return ids;
+    return ids.length > 0 ? this.articlesService.findAllByIds(ids, true) : [];
   }
 }
