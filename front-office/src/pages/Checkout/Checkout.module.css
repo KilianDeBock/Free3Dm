@@ -1,5 +1,6 @@
 .split {
     display: flex;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -8,6 +9,9 @@
 .split > * {
     display: block;
     width: 100%;
+}
+
+.split > *:last-child {
     padding: .5rem 1rem;
     background-color: var(--white-200);
 }

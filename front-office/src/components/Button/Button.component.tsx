@@ -13,6 +13,7 @@ interface ButtonProps {
   link?: string;
   icon?: string | null;
   noText?: boolean;
+  noAnimation?: boolean;
 }
 
 const getType = (type: ButtonType = 'tertiary'): string => {
@@ -33,6 +34,7 @@ export const ButtonComponent = ({
   link,
   icon = null,
   noText = false,
+  noAnimation = false,
 }: ButtonProps) =>
   !link ? (
     <button
@@ -41,6 +43,7 @@ export const ButtonComponent = ({
         ${getType(type)} 
         ${icon && styles['button__icon']}
         ${noText && styles['button__no-text']}
+        ${noAnimation && styles['button__no-animation']}
       `}
       onClick={(e) => handleClick && handleClick(e)}
     >

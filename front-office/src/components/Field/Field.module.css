@@ -1,0 +1,14 @@
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.field input {
+    padding: .5rem 1rem;
+    background-color: var(--white-100);
+}
+
+.field input::placeholder {
+    color: var(--black-300);
+}

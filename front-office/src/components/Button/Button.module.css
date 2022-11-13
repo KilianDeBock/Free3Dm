@@ -36,10 +36,13 @@
 
 .button:hover {
     cursor: pointer;
+}
+
+.button:hover:not(.button__no-animation) {
     transform: scale(1.1);
 }
 
-.button:active {
+.button:active:not(.button__no-animation) {
     transition: transform 100ms;
     transform: scale(1);
 }
