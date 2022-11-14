@@ -10,41 +10,58 @@ import {
   _ShippingZIPPostalCode,
 } from '@content/dialogs';
 import { Section } from './index';
+import * as yup from 'yup';
 
 export const ShippingAddressSection: Section = {
   title: _ShippingAddressTitle,
   fields: [
     {
-      name: 'shippingAddress_Address',
+      name: 'Shipping Address',
       placeholder: _ShippingAddress,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'shippingAddress_Apartment',
+      name: 'Shipping Apartment',
       placeholder: _ShippingApartment,
+      validations: yup.string(),
+      valueType: 'string',
     },
     {
-      name: 'shippingAddress_City',
+      name: 'Shipping City',
       placeholder: _ShippingCity,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'shippingAddress_Company',
+      name: 'Shipping Company',
       placeholder: _ShippingCompany,
+      validations: yup.string(),
+      valueType: 'string',
     },
     {
-      name: 'shippingAddress_CountryRegion',
+      name: 'Shipping Country Region',
       placeholder: _ShippingCountryRegion,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'shippingAddress_PhoneNumber',
+      name: 'Shipping Phone Number',
       placeholder: _ShippingPhoneNumber,
+      validations: yup.number(),
+      valueType: 'string',
     },
     {
-      name: 'shippingAddress_StateProvince',
+      name: 'Shipping State Province',
       placeholder: _ShippingStateProvince,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'shippingAddress_ZIPPostalCode',
+      name: 'Shipping ZIP Postal Code',
       placeholder: _ShippingZIPPostalCode,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
   ],
 };

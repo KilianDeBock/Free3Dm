@@ -4,19 +4,24 @@ import {
   _StandardShipping,
 } from '@content/dialogs';
 import { Section } from './index';
+import * as yup from 'yup';
 
 export const ShippingMethodSection: Section = {
   title: _ShippingMethodTitle,
   fields: [
     {
-      name: 'payment_StandardShipping',
+      name: 'Standard Shipping',
       placeholder: _StandardShipping,
       type: 'checkbox',
+      validations: yup.boolean().required(),
+      valueType: 'boolean',
     },
     {
-      name: 'payment_ExpeditedShipping',
+      name: 'Expedited Shipping',
       placeholder: _ExpeditedShipping,
       type: 'checkbox',
+      validations: yup.boolean().required(),
+      valueType: 'boolean',
     },
   ],
 };

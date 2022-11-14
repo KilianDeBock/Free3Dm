@@ -8,33 +8,46 @@ import {
   _Year,
 } from '@content/dialogs';
 import { Section } from './index';
+import * as yup from 'yup';
 
 export const PaymentSection: Section = {
   title: _PaymentMethodTitle,
   fields: [
     {
-      name: 'payment_PromotionalCode',
+      name: 'Promotional Code',
       placeholder: _PromotionalCode,
+      validations: yup.string(),
+      valueType: 'string',
     },
     {
-      name: 'payment_CardNumber',
+      name: 'Card Number',
       placeholder: _CardNumber,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'payment_NameOnCard',
+      name: 'Name On Card',
       placeholder: _NameOnCard,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'payment_CVC',
+      name: 'CVC',
       placeholder: _CVC,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'payment_Month',
+      name: 'Month',
       placeholder: _Month,
+      validations: yup.number().min(1).max(12).required(),
+      valueType: 'number',
     },
     {
-      name: 'payment_Year',
+      name: 'Year',
       placeholder: _Year,
+      validations: yup.number().min(1000).max(9999).required(),
+      valueType: 'number',
     },
   ],
 };

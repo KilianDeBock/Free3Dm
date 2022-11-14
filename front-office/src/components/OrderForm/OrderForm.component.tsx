@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Formik } from 'formik';
 import * as yup from 'yup';
+import { BaseSchema } from 'yup';
 import { FieldComponent } from '../Field/Field.component';
 import { sections } from './sections';
 import styles from './OrderForm.module.css';
@@ -10,13 +11,40 @@ export interface OrderFormProps {
   onSubmit?: (e: any) => void;
 }
 
-const initialValues: { [key: string]: string } = {};
+export interface FieldInitialValues {
+  [key: string]: string | number | boolean;
+}
+
+export interface FieldValidations {
+  [key: string]: BaseSchema;
+}
+
+const fieldInitialValues: FieldInitialValues = {};
+const fieldValidations: FieldValidations = {};
 sections.forEach((section) =>
-  section.fields.forEach((field) => (initialValues[field.name] = ''))
+  section.fields.forEach((field) => {
+    // Add validation for current field
+    fieldValidations[field.name] = field.validations;
+    // Add initial value for current field
+    switch (field.valueType) {
+      case 'string':
+        fieldInitialValues[field.name] = '';
+        break;
+      case 'number':
+        fieldInitialValues[field.name] = 0;
+        break;
+      case 'boolean':
+        fieldInitialValues[field.name] = false;
+        break;
+      default:
+        fieldInitialValues[field.name] = '';
+    }
+    fieldInitialValues[field.name] = '';
+  })
 );
 
 const validationSchema = yup.object({
-  test: yup.string().required().max(10),
+  ...fieldValidations,
 });
 
 export const OrderFormComponent = ({
@@ -26,7 +54,7 @@ export const OrderFormComponent = ({
 
   return (
     <Formik
-      initialValues={initialValues}
+      initialValues={fieldInitialValues}
       validationSchema={validationSchema}
       onSubmit={(values, { setSubmitting }) => {
         setSubmitting(true);

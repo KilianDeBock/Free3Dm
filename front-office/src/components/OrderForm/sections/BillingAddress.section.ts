@@ -10,41 +10,58 @@ import {
   _BillingZIPPostalCode,
 } from '@content/dialogs';
 import { Section } from './index';
+import * as yup from 'yup';
 
 export const BillingAddressSection: Section = {
   title: _BillingAddressTitle,
   fields: [
     {
-      name: 'billingAddress_Address',
+      name: 'Billing Address',
       placeholder: _BillingAddress,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'billingAddress_Apartment',
+      name: 'Billing Apartment',
       placeholder: _BillingApartment,
+      validations: yup.string(),
+      valueType: 'string',
     },
     {
-      name: 'billingAddress_City',
+      name: 'Billing City',
       placeholder: _BillingCity,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'billingAddress_Company',
+      name: 'Billing Company',
       placeholder: _BillingCompany,
+      validations: yup.string(),
+      valueType: 'string',
     },
     {
-      name: 'billingAddress_CountryRegion',
+      name: 'Billing Country Region',
       placeholder: _BillingCountryRegion,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'billingAddress_PhoneNumber',
+      name: 'Billing Phone Number',
       placeholder: _BillingPhoneNumber,
+      validations: yup.number(),
+      valueType: 'number',
     },
     {
-      name: 'billingAddress_StateProvince',
+      name: 'Billing State Province',
       placeholder: _BillingStateProvince,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
     {
-      name: 'billingAddress_ZIPPostalCode',
+      name: 'Billing ZIP Postal Code',
       placeholder: _BillingZIPPostalCode,
+      validations: yup.string().required(),
+      valueType: 'string',
     },
   ],
 };
