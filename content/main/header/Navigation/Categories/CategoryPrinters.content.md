@@ -3,6 +3,7 @@
 Creality - Ender 3
 Creality - Ender 3 Pro
 Creality - Ender 3 V2
+Creality - Ender 3 S1
 
 **Resin Printers**
 *SLA*
