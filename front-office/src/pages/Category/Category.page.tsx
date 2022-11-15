@@ -67,7 +67,7 @@ export const CategoryPage = (): JSX.Element => {
   return (
     <>
       <section className={`container ${styles['category-content']}`}>
-        <ul>
+        <ul id={'step_filter'}>
           <li>This feature does not work:</li>
           <li>Low cost</li>
           <li>4 and more stars</li>

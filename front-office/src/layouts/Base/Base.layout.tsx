@@ -1,17 +1,17 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
 import './reset.css';
 import './fonts.css';
 import './defaults.css';
 import './eggs.css';
 import { FooterComponent, HeaderComponent } from '../../components';
 import styles from './Base.module.css';
+import { TutorialLayout } from '../Tutorial/Tutorial.layout';
 
 export const BaseLayout = () => (
   <>
     <HeaderComponent />
     <main className={styles.main}>
-      <Outlet />
+      <TutorialLayout />
     </main>
     <FooterComponent />
   </>

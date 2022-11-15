@@ -23,7 +23,7 @@ export const ImageCardComponent = ({
       {title && <h3 className={styles['card__title']}>{title}</h3>}
       {price && <p className={styles['card__price']}>{price}</p>}
       <button
-        className={`${styles['card__like']} ${
+        className={`step_like ${styles['card__like']} ${
           liked && styles['card__like--liked']
         }`}
       >

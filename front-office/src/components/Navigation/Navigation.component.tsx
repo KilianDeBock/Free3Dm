@@ -18,7 +18,10 @@ export const NavigationComponent = ({ categories }: NavigationProps) => {
   return (
     <section className={`container ${navigationStyles.navigation__group}`}>
       <nav className={navigationStyles.navigation}>
-        <ul className={`${navigationStyles['navigation__container']}`}>
+        <ul
+          id={'step_2'}
+          className={`${navigationStyles['navigation__container']}`}
+        >
           {categories.map((category, i) => (
             <li key={i}>
               <LinkComponent

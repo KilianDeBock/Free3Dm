@@ -11,6 +11,7 @@ interface ButtonProps {
   type: ButtonType;
   handleClick?: (event: clickEvent) => void | Promise<void>;
   link?: string;
+  addClass?: string;
   icon?: string | null;
   noText?: boolean;
   noAnimation?: boolean;
@@ -32,6 +33,7 @@ export const ButtonComponent = ({
   type,
   handleClick,
   link,
+  addClass = '',
   icon = null,
   noText = false,
   noAnimation = false,
@@ -39,6 +41,7 @@ export const ButtonComponent = ({
   !link ? (
     <button
       className={`
+        ${addClass}
         ${styles.button} 
         ${getType(type)} 
         ${icon && styles['button__icon']}
@@ -58,9 +61,12 @@ export const ButtonComponent = ({
     </button>
   ) : (
     <Link
-      className={`${styles.button} ${getType(type)} ${
-        icon && styles['button__icon']
-      }`}
+      className={`
+        ${addClass}
+        ${styles.button} 
+        ${getType(type)} 
+        ${icon && styles['button__icon']}
+      `}
       to={LinkCheck(link)}
     >
       {icon && (

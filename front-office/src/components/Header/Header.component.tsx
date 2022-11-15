@@ -93,7 +93,7 @@ export const HeaderComponent = () => {
         appName={CONSTS.APP_NAME}
         links={secondaryNavLinks}
       />
-      <section className={`container ${styles.search}`}>
+      <section id={'step_3'} className={`container ${styles.search}`}>
         <SearchComponent
           submitTxt={[
             _SearchButton.split('\n')[0],

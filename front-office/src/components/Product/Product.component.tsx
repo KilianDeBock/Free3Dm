@@ -87,6 +87,7 @@ export const ProductComponent = ({
           </SelectComponent>
         )}
         <ButtonComponent
+          addClass={'step_add_cart'}
           handleClick={() => addToCart && addToCart()}
           type={'primary'}
         >
