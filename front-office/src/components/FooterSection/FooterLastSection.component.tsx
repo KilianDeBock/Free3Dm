@@ -28,6 +28,14 @@ export const FooterLastSectionComponent = ({ links }: FooterLinksProps) => (
 
     <li className={styles.disclaimer}>
       <MarkdownComponent content={_Copyright} />
+      <button
+        onClick={() => {
+          localStorage.removeItem('intro');
+          window.location.reload();
+        }}
+      >
+        Click here to reset the tutorial.
+      </button>
     </li>
   </ul>
 );
