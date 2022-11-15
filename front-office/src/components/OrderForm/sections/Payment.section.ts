@@ -14,19 +14,19 @@ export const PaymentSection: Section = {
   title: _PaymentMethodTitle,
   fields: [
     {
-      name: 'Promotional Code',
+      name: 'Promotional code',
       placeholder: _PromotionalCode,
       validations: yup.string(),
       valueType: 'string',
     },
     {
-      name: 'Card Number',
+      name: 'Card number',
       placeholder: _CardNumber,
       validations: yup.string().required(),
       valueType: 'string',
     },
     {
-      name: 'Name On Card',
+      name: 'Name on card',
       placeholder: _NameOnCard,
       validations: yup.string().required(),
       valueType: 'string',

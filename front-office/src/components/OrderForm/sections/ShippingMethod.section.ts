@@ -10,14 +10,14 @@ export const ShippingMethodSection: Section = {
   title: _ShippingMethodTitle,
   fields: [
     {
-      name: 'Standard Shipping',
+      name: 'Standard shipping',
       placeholder: _StandardShipping,
       type: 'checkbox',
       validations: yup.boolean().required(),
       valueType: 'boolean',
     },
     {
-      name: 'Expedited Shipping',
+      name: 'Expedited shipping',
       placeholder: _ExpeditedShipping,
       type: 'checkbox',
       validations: yup.boolean().required(),
