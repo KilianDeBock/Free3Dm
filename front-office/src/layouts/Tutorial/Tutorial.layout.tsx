@@ -80,54 +80,56 @@ export const TutorialLayout = () => {
   ];
   return (
     <>
-      <Steps
-        steps={steps}
-        enabled={stepsEnabled}
-        initialStep={0}
-        onExit={() => {
-          localStorage.setItem('intro', 'true');
-          setStepsEnabled(false);
-          navigate('/');
-        }}
-        onComplete={() => localStorage.setItem('intro', 'true')}
-        onBeforeChange={(step) => {
-          switch (step) {
-            case 0:
-              navigate('/');
-              break;
-            case 1:
-              navigate('/category/filaments');
-              break;
-            case 2:
-              navigate('/category/filaments');
-              break;
-            case 3:
-              navigate('/category/filaments');
-              break;
-            case 4:
-              navigate('/category/filaments/product/2/5/red%20pla');
-              break;
-            case 5:
-              navigate('/category/filaments/product/2/5/red%20pla');
-              break;
-            case 6:
-              navigate('/cart');
-              break;
-            case 7:
-              navigate('/');
-              break;
-            default:
-              break;
-          }
+      {!intro && (
+        <Steps
+          steps={steps}
+          enabled={stepsEnabled}
+          initialStep={0}
+          onExit={() => {
+            localStorage.setItem('intro', 'true');
+            setStepsEnabled(false);
+            navigate('/');
+          }}
+          onComplete={() => localStorage.setItem('intro', 'true')}
+          onBeforeChange={(step) => {
+            switch (step) {
+              case 0:
+                navigate('/');
+                break;
+              case 1:
+                navigate('/category/filaments');
+                break;
+              case 2:
+                navigate('/category/filaments');
+                break;
+              case 3:
+                navigate('/category/filaments');
+                break;
+              case 4:
+                navigate('/category/filaments/product/2/5/red%20pla');
+                break;
+              case 5:
+                navigate('/category/filaments/product/2/5/red%20pla');
+                break;
+              case 6:
+                navigate('/cart');
+                break;
+              case 7:
+                navigate('/');
+                break;
+              default:
+                break;
+            }
 
-          try {
-            // @ts-ignore
-            ref.updateStepElement(step);
-          } catch (e) {}
-        }}
-        options={options}
-        ref={(r) => setRef(r)}
-      />
+            try {
+              // @ts-ignore
+              ref.updateStepElement(step);
+            } catch (e) {}
+          }}
+          options={options}
+          ref={(r) => setRef(r)}
+        />
+      )}
       <Outlet />
     </>
   );

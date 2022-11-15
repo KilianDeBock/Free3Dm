@@ -3,6 +3,7 @@ import { useApp } from '../../contexts';
 import styles from './Content.module.css';
 import { MarkdownComponent } from '../../components/Markdown/Markdown.component';
 import { _HomePageBottomBanner } from '@content/main/footer';
+import { formatString } from '../../contexts/FormatString';
 
 export interface ContentPageProps {
   title: string;
@@ -18,6 +19,10 @@ export const ContentPage = ({
   const app = useApp();
   app?.setTitle(setTitle || title || 'Content');
   app?.setFooterInfoText(_HomePageBottomBanner);
+  app?.setNavigationInfo(
+    [[formatString(setTitle || title || 'Content'), window.location.pathname]],
+    ''
+  );
 
   return (
     <section className={`container ${styles.content}`}>

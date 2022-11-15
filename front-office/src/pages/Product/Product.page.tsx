@@ -16,6 +16,7 @@ import { checkArticle } from '../../constants/helpers/checkArticle';
 import styles from './Product.module.css';
 import { _HomePageBottomBanner } from '@content/main/footer';
 import * as cart from '../../constants/helpers/cart';
+import { formatString } from '../../contexts/FormatString';
 
 export interface ArticleOptions {
   [key: string]: string;
@@ -58,11 +59,11 @@ export const ProductPage = (): JSX.Element => {
   app?.setNavigationInfo(
     [
       [
-        category?.toLowerCase() ?? 'unknown',
+        formatString(category?.toLowerCase() ?? 'unknown'),
         `/category/${category?.toLowerCase()}`,
       ],
       [
-        name?.toLowerCase() ?? 'unknown',
+        formatString(name?.toLowerCase() ?? 'unknown'),
         `/category/${category?.toLowerCase()}/product/${name?.toLowerCase()}/${id}`,
       ],
     ],
