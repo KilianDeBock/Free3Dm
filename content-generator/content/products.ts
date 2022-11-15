@@ -151,13 +151,13 @@ export const _ELEGOOSaturnSMonoTitle = "ELEGOO Saturn S Mono Resin 3D Printer";
 export const _WaterWashableResinBeigeAltText = "![ELEGOO Water Washable Photopolymer beige resin in a 1000-gram bottle. A beige model of a building shows the printed colour.](https://m.media-amazon.com/images/I/611t0GKktXL._SL1500_.jpg)";
 export const _WaterWashableResinBlackAltText = "![ELEGOO Water Washable Photopolymer black resin in a 1000-gram bottle. A black figurine shows the printed colour.](https://m.media-amazon.com/images/I/61V4yOrh4QL._SL1500_.jpg)";
 export const _WaterWashableResinCeramicGreyAltText = "![ELEGOO Water Washable Photopolymer ceramic grey resin in a 1000-gram bottle. A ceramic grey figurine shows the printed colour.](https://m.media-amazon.com/images/I/71NyPwj2QoL._SL1500_.jpg)";
+export const _WaterWashableResinClearBlueAltText = "![ELEGOO Water Washable Photopolymer clear blue resin in a 1000-gram bottle. A water blue model of a castle shows the printed colour.](https://m.media-amazon.com/images/I/712TXcIcUKL._SL1500_.jpg)";
 export const _WaterWashableResinClearGreenAltText = "![ELEGOO Water Washable Photopolymer clear green resin in a 1000-gram bottle. A clear green geometric model shows the printed colour.](https://m.media-amazon.com/images/I/71-DqDPUpSL._SL1500_.jpg)";
 export const _WaterWashableResinClearRedAltText = "![ELEGOO Water Washable Photopolymer clear red resin in a 1000-gram bottle. A clear red geometric model shows the printed colour.](https://m.media-amazon.com/images/I/7159QwR9-PL._SL1500_.jpg)";
 export const _WaterWashableResinDescription = "## Description\nELEGOO Water Washable Resin is ideal for LCD 3D printers. This is a high-precision resin with fast curing times and low shrinkage. It is available in a wide range of vibrant colours.\n\n**Difficulty Level**: Beginner-Intermediate\n\n**Strength**: High\n\n**Flexibility**: High\n\n**Durability**: High\n\n**Shrinkage/Warping**: Low\n\n**Soluble**: Uncured resin is soluble in water\n\n**Food Safe**: No\n\n**Perfect for**: Miniature objects with extra detail, like boardgame pieces; watertight applications; dental applications, like clear aligners and surgical guides\n## Printing Details\n**Technology**: Ideal for LCD, suitable for DLP\n\n**Recommended Setting**:\nBottom exposure: 60s\nNormal exposure: 8s\n## More Details\n**Pros**\n\n - Produces very detailed objects\n - Washable in water—no expensive or harmful cleaners required\n - Fast curing time\n\n**Cons**\n\n - More expensive than filament\n - Requires post-processing";
 export const _WaterWashableResinMintGreenAltText = "![ELEGOO Water Washable Photopolymer mint green resin in a 1000-gram bottle. A mint green figurine of a pirate shows the printed colour.](https://m.media-amazon.com/images/I/71GRA6FqG8L._SL1500_.jpg)";
 export const _WaterWashableResinSmokyBlackAltText = "![ELEGOO Water Washable Photopolymer smoky black resin in a 1000-gram bottle. A smoky black figurine shows the printed colour.](https://m.media-amazon.com/images/I/61R7Dx3-M0L._SL1500_.jpg)";
 export const _WaterWashableResinTitle = "ELEGOO Water Washable Standard Photopolymer Resin (1000g)";
-export const _WaterWashableResinWaterBlueAltText = "![ELEGOO Water Washable Photopolymer water blue resin in a 1000-gram bottle. A water blue model of a castle shows the printed colour.](https://m.media-amazon.com/images/I/712TXcIcUKL._SL1500_.jpg)";
 export const _WaterWashableResinWhiteAltText = "![ELEGOO Water Washable Photopolymer white resin in a 1000-gram bottle. A white figurine shows the printed colour.](https://m.media-amazon.com/images/I/61EvRs-yXDL._SL1500_.jpg)";
 export const _WaterWashableResinYellowAltText = "![ELEGOO Water Washable Photopolymer yellow resin in a 1000-gram bottle. A yellow geometric model shows the printed colour.](https://m.media-amazon.com/images/I/71d0nQeaXcL._SL1500_.jpg)";
 
@@ -315,13 +315,13 @@ export default {
   _WaterWashableResinBeigeAltText, 
   _WaterWashableResinBlackAltText, 
   _WaterWashableResinCeramicGreyAltText, 
+  _WaterWashableResinClearBlueAltText, 
   _WaterWashableResinClearGreenAltText, 
   _WaterWashableResinClearRedAltText, 
   _WaterWashableResinDescription, 
   _WaterWashableResinMintGreenAltText, 
   _WaterWashableResinSmokyBlackAltText, 
   _WaterWashableResinTitle, 
-  _WaterWashableResinWaterBlueAltText, 
   _WaterWashableResinWhiteAltText, 
   _WaterWashableResinYellowAltText
 };

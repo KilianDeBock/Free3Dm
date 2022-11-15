@@ -1,5 +1,6 @@
 export const _TutorialDoneButton = "Done";
 export const _TutorialNextButton = "Next";
+export const _TutorialPreviousButton = "Previous";
 export const _TutorialSkipButton = "Skip";
 export const _TutorialStep1 = "Welcome to Free3Dm. Start a quick tour with us!";
 export const _TutorialStep2 = "Select a category to view our wide range of products!";
@@ -14,6 +15,7 @@ export const _TutorialStarter = "";
 export default {
   _TutorialDoneButton, 
   _TutorialNextButton, 
+  _TutorialPreviousButton, 
   _TutorialSkipButton, 
   _TutorialStep1, 
   _TutorialStep2, 
