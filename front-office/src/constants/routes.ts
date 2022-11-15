@@ -11,6 +11,7 @@ export enum ROUTES {
   RETURN_POLICY = '/return-policy',
   PRIVACY_POLICY = '/privacy-policy',
   SUSTAINABILITY = '/sustainability',
+  GETTING_STARTED = '/getting-started',
   DELIVERY_POLICY = '/delivery-policy',
   TERMS_AND_CONDITIONS = '/terms-and-conditions',
   WARRANTY_REPAIR_POLICY = '/warranty-repair-policy',

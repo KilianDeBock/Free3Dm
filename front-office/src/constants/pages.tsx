@@ -15,6 +15,7 @@ import {
   _ContactUsPage,
   _FAQsPage,
   _FAQsTitlePage,
+  _GettingStartedGuidePage,
   _PrivacyPolicyPage,
   _PrivacyPolicyTitlePage,
   _ReturnPolicyPage,
@@ -133,6 +134,15 @@ export const PAGES: Pages = {
         <ContentPage
           title={_WarrantyRepairPolicyTitlePage}
           content={_WarrantyRepairPolicyPage}
+        />
+      ),
+    },
+    {
+      path: ROUTES.GETTING_STARTED,
+      element: (
+        <ContentPage
+          title={'Getting Started'}
+          content={_GettingStartedGuidePage}
         />
       ),
     },
