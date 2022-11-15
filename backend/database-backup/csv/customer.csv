@@ -1,0 +1,3 @@
+id,email,password,firstName,lastName,birthDate,createdAt,updatedAt
+2,test,test,test,test,0200-11-12 00:00:00.000000,2022-10-23 18:08:59.263441,2022-10-23 18:08:59.263441
+1,test,test,Stualyttle,Kirry,2000-11-12 00:00:00.000000,2022-10-23 18:08:56.019568,2022-10-23 18:08:56.019568
