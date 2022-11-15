@@ -52,13 +52,13 @@ export const BillingAddressSection: Section = {
       valueType: 'number',
     },
     {
-      name: 'Billing state province',
+      name: 'Billing state/province',
       placeholder: _BillingStateProvince,
       validations: yup.string().required(),
       valueType: 'string',
     },
     {
-      name: 'Billing ZIP postal code',
+      name: 'Billing ZIP/postal code',
       placeholder: _BillingZIPPostalCode,
       validations: yup.string().required(),
       valueType: 'string',

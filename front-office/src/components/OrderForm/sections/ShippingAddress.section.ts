@@ -52,13 +52,13 @@ export const ShippingAddressSection: Section = {
       valueType: 'string',
     },
     {
-      name: 'Shipping state province',
+      name: 'Shipping state/province',
       placeholder: _ShippingStateProvince,
       validations: yup.string().required(),
       valueType: 'string',
     },
     {
-      name: 'Shipping ZIP postal code',
+      name: 'Shipping ZIP/postal code',
       placeholder: _ShippingZIPPostalCode,
       validations: yup.string().required(),
       valueType: 'string',
